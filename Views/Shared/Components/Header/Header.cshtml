@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="~/css/header.style.css">
+<nav class="navbar">
+    <div class="logo-container">
+        <img class="logo" src="~/assets/black-logo.png" alt="">
+    </div>
+    <ul class="links">
+        <div class="navbar__links__decor left"></div>
+        <li class="links__item">主頁</li>
+        <li class="links__item">概要</li>
+        <li class="links__item">連絡</li>
+        <li class="links__item">支待</li>
+        <div class="navbar__links__decor right"></div>
+    </ul>
+    <div class="navbar__btn-container">
+        <div class="navbar__btn-container__decor left"></div>
+        <a class="navbar__btn register" asp-area="" asp-page="/Auth/auth" asp-route-view="register">
+            登録
+        </a>
+        <a class="navbar__btn login" asp-page="/Auth/auth" asp-route-view="login">
+            ログイン
+        </a>
+        <div class="navbar__btn-container__decor right"></div>
+    </div>
+</nav>

@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="~/css/heroBanner.style.css">
+
+<div class="hero">
+    <div class="hero-pattern">
+        <div id="txt-scroll" class="hero-txt-scroll">
+            <p class="scroll-txt">マリオと一緒にデータ構造とアルゴリズムのエキサイティングな世界を探検しましょう</p>
+        </div>
+        <img class="hero-img block01 sc1" src="~/assets/img-block-01.png" alt="">
+        <img class="hero-img block02 sc1" src="~/assets/img-block-02.png" alt="">
+        <img class="hero-img chara03 sc1" src="~/assets/img-chara-03.png" alt="">
+        <img class="hero-img chara04 sc1" src="~/assets/img-chara-04.png" alt="">
+        <img class="hero-img chara05 sc2" src="~/assets/img-chara-05.png" alt="">
+        <img class="hero-img chara06 sc4" src="~/assets/img-chara-06_02.png" alt="">
+        <img class="hero-img chara07 sc4" src="~/assets/img-chara-07.png" alt="">
+        <img class="hero-img chara08 sc1" src="~/assets/img-chara-08.png" alt="">
+        <img class="hero-img chara09 sc1" src="~/assets/img-chara-09.png" alt="">
+        <img class="hero-img chara10 sc1" src="~/assets/img-chara-10.png" alt="">
+        <img class="hero-img chara12 sc3" src="~/assets/img-chara-12.png" alt="">
+        <img class="hero-img chara13 sc3" src="~/assets/img-chara-13.png" alt="">
+        <img class="hero-img chara15 sc2" src="~/assets/img-chara-15.png" alt="">
+        <img class="hero-img chara19 sc2" src="~/assets/img-chara-19.png" alt="">
+        <img class="hero-img chara20 sc2" src="~/assets/img-chara-20.png" alt="">
+        <img class="hero-img chara21 sc3" src="~/assets/img-chara-21.png" alt="">
+        <img class="hero-img mario04 sc5" src="~/assets/img-mario-04.png" alt="">
+        <img class="hero-img luigi sc5" src="~/assets/luigi.png" alt="">
+    </div>
+</div>
+
+<script>
+    const delayTime = 6000
+    function showScene(scNo) {
+        const scEls = document.querySelectorAll(`.sc${scNo}`);
+
+        // Thêm class 'show'
+        scEls.forEach(el => el.classList.add("show"));
+
+        // 4s sau: thêm class 'hide'
+        setTimeout(() => {
+            scEls.forEach(el => el.classList.add("hide"));
+        }, delayTime);
+
+        // 5s sau: xóa class 'show'
+        setTimeout(() => {
+            scEls.forEach(el => el.classList.remove("show"));
+        }, delayTime + 500);
+
+        // 6s sau: xóa class 'hide'
+        setTimeout(() => {
+            scEls.forEach(el => el.classList.remove("hide"));
+        }, delayTime + 1000);
+    }
+
+    function showHeroLoop() {
+        let i = 1;
+
+        // Gọi scene đầu tiên sau 100ms
+        setTimeout(() => {
+            showScene(i);
+            i++;
+
+            // Cứ mỗi 4s, gọi scene tiếp theo
+            setInterval(() => {
+                showScene(i);
+                i = (i % 5) + 1; // Nếu i > 5 thì quay về 1
+            }, delayTime);
+        }, 100);
+    }
+    showHeroLoop()
+</script>

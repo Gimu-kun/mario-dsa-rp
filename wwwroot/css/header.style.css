@@ -1,0 +1,133 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 80px;
+  }
+  
+  .logo-container{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .logo{
+    height: 250%;
+    object-fit: 200%;
+    cursor: pointer;
+  }
+  
+  .links{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  .links__item{
+    position: relative;
+    display: block;
+    flex: 1;
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--btn-primary-txt-color);
+    cursor: pointer;
+    transition: color .3s ease-in;
+    text-align: center;
+  }
+  
+  .links__item:hover,
+  .navbar__btn:hover
+  {
+    color: var(--mario-color);
+  }
+  
+  .navbar__btn-container,.links{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    width: fit-content;
+    background-color: var(--btn-primary-color);
+    box-shadow: 5px 5px 1px var(--shadow-color);
+  }
+  
+  .navbar__links__decor{
+    width: 0;
+  }
+  
+  .navbar__btn-container__decor::before,
+  .navbar__btn-container__decor::after,
+  .navbar__links__decor::before,
+  .navbar__links__decor::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #f08200;
+    box-shadow: 1px 1px 0 rgba(7, 1, 2, 0.16) inset;
+    z-index: 5;
+  }
+  
+  .navbar__btn-container__decor.left::before,
+  .navbar__links__decor.left::before
+  {
+    top: 5px;
+    left: 5px;
+  }
+  
+  .navbar__btn-container__decor.left::after,
+  .navbar__links__decor.left::after
+  {
+    bottom: 5px;
+    left: 5px;
+  }
+  
+  .navbar__btn-container__decor.right::before,
+  .navbar__links__decor.right::before
+  {
+    top: 5px;
+    right: 5px;
+  }
+  
+  .navbar__btn-container__decor.right::after,
+  .navbar__links__decor.right::after
+  {
+    bottom: 5px;
+    right: 5px;
+  }
+  
+  .navbar__btn{
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    flex: 1;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--btn-primary-color);
+    color: var(--btn-primary-text-color);
+    text-decoration: none;
+    transition: color .3s ease-in;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .navbar__btn:not(:nth-last-child(2))::after,
+  .links__item:not(:nth-last-child(2))::after
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    height: 100%;
+    border-right: 1px solid var(--btn-primary-txt-color);
+  }
+  

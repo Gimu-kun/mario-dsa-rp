@@ -94,6 +94,10 @@
 /Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/ref/mario-dsa-rp.dll
 /Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/diy9ly4oq3-8x1wds4s0b.gz
 /Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0sddod3619-8x1wds4s0b.gz
-/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/bj1wsq60ct-q56kh74fmd.gz
 /Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0d8rim8131-de3gwydc4c.gz
-/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/6f7qvz96fi-i0u85ken2f.gz
+/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/mario-dsa-rp.sourcelink.json
+/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/cl0mks8tkc-641797xm6e.gz
+/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/6f7qvz96fi-5ipweew5fc.gz
+/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/47pgc2v0yf-pjyiaq067u.gz
+/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/bj1wsq60ct-5zdil3cfya.gz
+/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/w5eokjlzix-2t7hsdv2pu.gz

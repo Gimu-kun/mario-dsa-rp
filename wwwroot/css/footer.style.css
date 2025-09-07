@@ -1,0 +1,147 @@
+.footer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: var(--mario-color);
+}
+
+.mask-clip {
+    position: absolute;
+    top: -36px;
+    left: 0;
+    mask-image: url("../assets/mask-jag.png");
+    mask-repeat: repeat-x;
+    mask-size: contain;
+    background-color: var(--mario-color);
+    height: 36px;
+    width: 100%;
+}
+
+.footer-decor {
+    position: absolute;
+    bottom: 0;
+}
+
+.pf__container {
+    position: absolute;
+    width: 150px;
+    height: 70%;
+    bottom: 0;
+    left: 5%;
+    z-index: 10;
+}
+
+.block {
+    position: absolute;
+    width: 100%;
+}
+
+.pipe,
+.flower {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.flower {
+    bottom: 0;
+}
+
+.footer__cnt__containter {
+    display: flex;
+    padding: 50px 60px;
+    padding-left: 300px;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__contact__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    width: 100%;
+    height: 100%;
+}
+
+.footer__contact__box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.footer__contact__box input {
+    flex: 7;
+    padding: 0 20px;
+    outline: none;
+    font-size: 20px;
+}
+
+.contact_btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    border: none;
+    font-size: 20px;
+    background-color: var(--btn-primary-color);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.footer__logo {
+    width: 350px;
+}
+
+.contact_btn_decor::before,
+.contact_btn_decor::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #f08200;
+    box-shadow: 1px 1px 0 rgba(7, 1, 2, 0.16) inset;
+    z-index: 5;
+}
+
+.contact_btn_decor.left::before {
+    top: 5px;
+    left: 5px;
+}
+
+.contact_btn_decor.left::after {
+    bottom: 5px;
+    left: 5px;
+}
+
+.contact_btn_decor.right::before {
+    top: 5px;
+    right: 5px;
+}
+
+.contact_btn_decor.right::after {
+    bottom: 5px;
+    right: 5px;
+}
+
+.contact_btn_txt {
+    color: var(--btn-primary-txt-color);
+    font-weight: 700;
+}
+
+.contact__btn__mushroom {
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    width: 50px;
+    transition: all 1s ease-out;
+}
+
+.mr_show {
+    transform: translateY(-120%);
+}

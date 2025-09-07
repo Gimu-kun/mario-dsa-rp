@@ -52,6 +52,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/lehieunghiem/Desktop/mario-dsa-rp/Views/Shared/Components/Footer/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvRm9vdGVyL0Zvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lehieunghiem/Desktop/mario-dsa-rp/Views/Shared/Components/Header/Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvSGVhZGVyL0hlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lehieunghiem/Desktop/mario-dsa-rp/Views/Shared/Components/HeroBanner/HeroBanner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvSGVyb0Jhbm5lci9IZXJvQmFubmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lehieunghiem/Desktop/mario-dsa-rp/Views/Shared/Components/TopicFeature/TopicFeature.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvVG9waWNGZWF0dXJlL1RvcGljRmVhdHVyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/lehieunghiem/Desktop/mario-dsa-rp/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-65epb8l13u
