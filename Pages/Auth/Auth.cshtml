@@ -1,0 +1,42 @@
+﻿@page "/auth"
+@using MyApp.Namespace
+@model MyApp.Namespace.AuthModel
+@{
+    Layout = "_AuthLayout";
+    ViewData["Title"] = "Error";
+    var isLogin = Model.View == "login";
+}
+<link rel="stylesheet" href="~/css/auth.style.css">
+<div class="auth-page @(isLogin ? "theme__mario" : "theme__luigi")">
+    <img class="auth-logo" src="~/assets/white-logo.png" alt="">
+    <div class="wallpaper"></div>
+    <div class="clip-mask">
+        <img class="@(isLogin ? "character__mario" : "character__luigi")" src="~/assets/@(isLogin ? "mario.png" : "luigi.png")" alt="loading fault">
+    </div>
+    @if (isLogin)
+    {
+        <form class="form" action="">
+            <h2 class="form__title">ログイン</h2>
+            <div class="form__fields">
+                <input class="form__field" id="username_si" type="text" placeholder="アカウント">
+                <input class="form__field" id="passwords_si" type="passwords" placeholder="パスワード">
+                <button class="form__btn @(isLogin ? "theme__mario" : "theme__luigi")">行くぞ!</button>
+                <p class="form__article">アカウントがないか? <a asp-area="" asp-page="/Auth/auth" asp-route-view="register">即刻アカウント登録する</a></p>
+                <a class="form__article" href="">パスワードが忘れの場合? </a>
+            </div>
+        </form>
+    }
+    else
+    {
+        <form class="form" action="">
+            <h2 class="form__title">アカウント登録</h2>
+            <div class="form__fields">
+                <input class="form__field" id="fullname_su" type="text" placeholder="名前">
+                <input class="form__field" id="username_su" type="text" placeholder="アカウント">
+                <input class="form__field" id="passwords_su" type="passwords" placeholder="パスワード">
+                <button class="form__btn @(isLogin ? "theme__mario" : "theme__luigi")">注冊し!</button>
+                <p>アカウントがあった? <a asp-area="" asp-page="/Auth/auth" asp-route-view="login">行くぞ！</a></p>
+            </div>
+        </form>
+    }
+</div>

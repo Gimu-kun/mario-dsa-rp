@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - mario_dsa_rp</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/mario_dsa_rp.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div>
+        <main class="page">
+            <nav class="navbar">
+                <div class="logo-container">
+                    <img class="logo" src="~/assets/black-logo.png" alt="">
+                </div>
+                <ul class="links">
+                    <div class="navbar__links__decor left"></div>
+                    <li class="links__item">Home</li>
+                    <li class="links__item">About</li>
+                    <li class="links__item">Contact</li>
+                    <li class="links__item">Support</li>
+                    <div class="navbar__links__decor right"></div>
+                </ul>
+                <div class="navbar__btn-container">
+                    <div class="navbar__btn-container__decor left"></div>
+                    <a class="navbar__btn register" asp-area="" asp-page="/Auth/auth" asp-route-view="register">
+                        Register
+                    </a>
+                    <a class="navbar__btn login" asp-page="/Auth/auth" asp-route-view="login">
+                        Login
+                    </a>
+                    <div class="navbar__btn-container__decor right"></div>
+                </div>
+            </nav>
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

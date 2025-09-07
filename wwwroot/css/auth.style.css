@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+.auth-page{
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: inherit;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 0 100px;
+    background-color: var(--bg-color);
+    z-index: 0;
+}
+
+.auth-logo{
+    position: absolute;
+    right: 50px;
+    bottom: -100px;
+    z-index: 5;
+    width: 400px;
+    opacity: 0;
+    animation: fadeIn .5s 1s forwards ease-in-out;
+}
+
+.wallpaper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/bg-01.png");
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.auth-page::after{
+    content: "";
+    position: absolute;
+    transform: rotate(-15deg);
+    top: 120%;
+    left: -10%;
+    height: 100%;
+    width: 150%;
+    transition: 1s all ease-in-out;
+    animation: slideUp 1s forwards;
+    margin: 10px;
+    border-top: 10px dotted #ffffff;
+    z-index: 3;
+}
+
+.slide__txt{
+    position: absolute;
+    top: 30%;
+    font-size: 200px;
+    text-shadow: 0 0 10px #0000008a;
+    color: var(--mario-color);
+}
+.auth-page.theme__mario::after{
+    background-color: var(--mario-secondary-color);
+}
+
+.auth-page.theme__luigi::after{
+    background-color: var(--luigi-secondary-color);
+}
+.character__mario{
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    width: 700px;
+    opacity: 0;
+    animation: fadeIn .5s 1s forwards ease-in-out;
+    z-index: 2;
+}
+.character__luigi{
+    position: absolute;
+    right: 200px;
+    bottom: -120px;
+    width: 350px;
+    opacity: 0;
+    animation: fadeIn .5s 1s forwards ease-in-out;
+    z-index: 2;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    row-gap: 20px;
+    padding: 50px;
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    background-color: #ffffff;
+    box-shadow: 3px 2px 6px #000000;
+    opacity: 0;
+    animation: fadeIn .5s 1s forwards ease-in-out;
+    z-index: 2;
+}
+.form__title{
+    font-size: 35px;
+    text-align: center;
+}
+.form__fields{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.form__field{
+    height: 50px;
+    min-width: 450px;
+    font-size: 18px;
+    padding: 0 10px;
+    border-color: var(--border-color);
+    outline: none;
+}
+.form__btn{
+    color: #ffffff;
+    border: none;
+    padding: 5px;
+    font-size: 18px;
+}
+.form__article{
+    margin-bottom: .5rem;
+}
+.theme__mario{
+    background-color: var(--mario-color);
+}
+
+.theme__luigi{
+    background-color: var(--luigi-color);
+}
+
+@keyframes fadeIn {
+    from{
+        transform: translateY(10px);
+        opacity: 0;
+    }to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from{
+        top: 120%;
+    }to{
+        top: 80%;
+    }
+}

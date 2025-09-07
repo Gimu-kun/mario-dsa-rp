@@ -1,0 +1,397 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/scopedcss/projectbundle/mario-dsa-rp.bundle.scp.css",
+      "PackagePath": "staticwebassets/mario-dsa-rp.8x1wds4s0b.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/bg-01.png",
+      "PackagePath": "staticwebassets/assets/bg-01.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/black-logo.png",
+      "PackagePath": "staticwebassets/assets/black-logo.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/download.png",
+      "PackagePath": "staticwebassets/assets/download.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-block-01.png",
+      "PackagePath": "staticwebassets/assets/img-block-01.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-block-02.png",
+      "PackagePath": "staticwebassets/assets/img-block-02.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-02.png",
+      "PackagePath": "staticwebassets/assets/img-chara-02.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-03.png",
+      "PackagePath": "staticwebassets/assets/img-chara-03.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-04.png",
+      "PackagePath": "staticwebassets/assets/img-chara-04.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-05.png",
+      "PackagePath": "staticwebassets/assets/img-chara-05.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-06_02.png",
+      "PackagePath": "staticwebassets/assets/img-chara-06_02.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-07.png",
+      "PackagePath": "staticwebassets/assets/img-chara-07.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-08.png",
+      "PackagePath": "staticwebassets/assets/img-chara-08.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-09.png",
+      "PackagePath": "staticwebassets/assets/img-chara-09.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-10.png",
+      "PackagePath": "staticwebassets/assets/img-chara-10.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-12.png",
+      "PackagePath": "staticwebassets/assets/img-chara-12.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-13.png",
+      "PackagePath": "staticwebassets/assets/img-chara-13.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-15.png",
+      "PackagePath": "staticwebassets/assets/img-chara-15.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-19.png",
+      "PackagePath": "staticwebassets/assets/img-chara-19.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-20.png",
+      "PackagePath": "staticwebassets/assets/img-chara-20.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-21.png",
+      "PackagePath": "staticwebassets/assets/img-chara-21.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-mario-04.png",
+      "PackagePath": "staticwebassets/assets/img-mario-04.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/jean-bg.png",
+      "PackagePath": "staticwebassets/assets/jean-bg.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/luigi.png",
+      "PackagePath": "staticwebassets/assets/luigi.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario.png",
+      "PackagePath": "staticwebassets/assets/mario.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mask-jag.png",
+      "PackagePath": "staticwebassets/assets/mask-jag.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/wallpaper.jpg",
+      "PackagePath": "staticwebassets/assets/wallpaper.jpg"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/white-logo.png",
+      "PackagePath": "staticwebassets/assets/white-logo.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/auth.style.css",
+      "PackagePath": "staticwebassets/css/auth.style.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/home.style.css",
+      "PackagePath": "staticwebassets/css/home.style.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.js"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.mario-dsa-rp.props",
+      "PackagePath": "build\\mario-dsa-rp.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.mario-dsa-rp.props",
+      "PackagePath": "buildMultiTargeting\\mario-dsa-rp.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.mario-dsa-rp.props",
+      "PackagePath": "buildTransitive\\mario-dsa-rp.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.mario-dsa-rp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.mario-dsa-rp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
