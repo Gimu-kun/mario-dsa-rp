@@ -1,0 +1,56 @@
+@page "/challenge/knap-sack/play/choose-items"
+@model mario_dsa_rp.Namespace.ChooseItemModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Authentication";
+}
+
+<link rel="stylesheet" href="~/css/choose-item.style.css">
+
+<div class="play-page">
+    <div id="countdown-container">
+        <div id="countdown-dialog">@Model.countDown</div>
+        <div id="start-dialog">始めます!</div>
+    </div>
+    <div id="game-container">
+        <div class="question">
+            <div class="question_decor left"></div>
+            <p class="question_txt title">マスタープランを作りましょう</p>
+            <div class="question_decor right"></div>
+        </div>
+        
+        <div class="btn-container">
+            <button class="clean">
+                <span>クリア</span>
+            </button>
+            <button class="complete">
+                <span>完了します</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let countdown = @Model.countDown;
+        const countdownEl = document.getElementById("countdown-dialog");
+        const startDialog = document.getElementById("start-dialog");
+        const gameContainer = document.getElementById("game-container")
+        const countdownContainer = document.getElementById("countdown-container");
+
+        const timer = setInterval(() => {
+            countdown--;
+            if (countdown >= 0) {
+                countdownEl.textContent = countdown;
+            } else {
+                clearInterval(timer);
+                countdownEl.style.display = "none";
+                startDialog.style.display = "block";
+                setTimeout(() => {
+                    countdownContainer.style.display = 'none'
+                    gameContainer.style.display = 'flex';
+                }, 1000)
+            }
+        }, 1000);
+    </script>
+}

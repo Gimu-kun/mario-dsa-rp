@@ -1,0 +1,93 @@
+@page "/challenge/knap-sack/selecting"
+@model mario_dsa_rp.Pages.SelectingModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Challenge";
+    var id = Guid.NewGuid();
+}
+<link rel="stylesheet" href="~/css/selection.style.css">
+
+<div class="selecting-page">
+    <!-- Mode 1 -->
+    <div class="mode-container">
+        <div class="mode-title-container">
+            <div class="mode-title">
+                1人でプレイ <br> (マスタープランを作る)
+            </div>
+        </div>
+        <div class="level-container">
+            <a class="level-button easy" href="/challenge/knap-sack/play/dynamic-board?difficult=easy&mode=single&id=@id">
+                易しい
+            </a>
+            <a class="level-button advance" href="/challenge/knap-sack/play/dynamic-board?difficult=medium&mode=single&id=@id">
+                普通
+            </a>
+            <a class="level-button hard" href="/challenge/knap-sack/play/dynamic-board?difficult=hard&mode=single&id=@id">
+                難しい
+            </a>
+        </div>
+    </div>
+
+    <!-- Mode 2 -->
+    <div class="mode-container">
+        <div class="mode-title-container">
+            <div class="mode-title">
+                1人でプレイ<br>(ものを選べる)
+            </div>
+        </div>
+        <div class="level-container">
+            <a class="level-button easy" href="/challenge/knap-sack/play/choose-items?difficult=easy&mode=single&id=@id">
+                易しい
+            </a>
+            <a class="level-button advance" href="/challenge/knap-sack/play/choose-items?difficult=medium&mode=single&id=@id">
+                普通
+            </a>
+            <a class="level-button hard" href="/challenge/knap-sack/play/choose-items?difficult=hard&mode=single&id=@id">
+                難しい
+            </a>
+        </div>
+    </div>
+
+    <!-- Mode 3 -->
+    <div class="mode-container">
+        <div class="mode-title-container">
+            <div class="mode-title">
+                対人戦<br>(マスタープランを作る)
+            </div>
+        </div>
+        <div class="level-container">
+            <a class="level-button easy" href="/challenge/knap-sack/play/dynamic-board?difficult=easy&mode=duel">
+                易しい
+            </a>
+            <a class="level-button advance" href="/challenge/knap-sack/play/dynamic-board?difficult=medium&mode=duel">
+                普通
+            </a>
+            <a class="level-button hard" href="/challenge/knap-sack/play/dynamic-board?difficult=hard&mode=duel">
+                難しい
+            </a>
+        </div>
+    </div>
+
+    <!-- Mode 4 -->
+    <div class="mode-container">
+        <div class="mode-title-container">
+            <div class="mode-title">
+                対人戦 <br> (ものを選べる)
+            </div>
+        </div>
+        <div class="level-container">
+            <a class="level-button easy" href="/challenge/knap-sack/play/choose-items?difficult=easy&mode=duel">
+                易しい
+            </a>
+            <a class="level-button advance" href="/challenge/knap-sack/play/choose-items?difficult=medium&mode=duel">
+                普通
+            </a>
+            <a class="level-button hard" href="/challenge/knap-sack/play/choose-items?difficult=hard&mode=duel">
+                難しい
+            </a>
+        </div>
+    </div>
+
+    <!-- Sprite Mario -->
+    <div class="sprite"></div>
+</div>

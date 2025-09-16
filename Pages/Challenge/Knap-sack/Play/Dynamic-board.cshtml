@@ -1,0 +1,300 @@
+@page "/challenge/knap-sack/play/dynamic-board"
+@model mario_dsa_rp.Namespace.DynamicBoardModel
+@using System.Text.Json
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Authentication";
+    var challenge = @Html.Raw(JsonSerializer.Serialize(Model.Challenge));
+    var hh = Math.Floor((decimal)Model.challengeTimer / 3600);
+    var mm = Math.Floor((decimal)(Model.challengeTimer % 3600) / 60);
+    var ss = Model.challengeTimer % 60;
+    var dpBoardJson = JsonSerializer.Serialize(Model.Challenge.DpBoard);
+}
+
+<link rel="stylesheet" href="~/css/dynamic-board.style.css">
+
+<div class="play-page">
+    <div id="countdown-container">
+        <div id="countdown-dialog">@Model.countDown</div>
+        <div id="start-dialog">始めます!</div>
+    </div>
+    <div id="game-container">
+        <div class="question">
+            <div class="question_decor left"></div>
+            <p class="question_txt title">マスタープランを作りましょう</p>
+            <div class="question_decor right"></div>
+        </div>
+        <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+    <span class="countdown font-mono text-5xl">
+      <span id="timer-hour" style="--value:@hh;" aria-live="polite" aria-label="@hh">@hh</span>
+    </span>
+    時
+  </div>
+  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+    <span class="countdown font-mono text-5xl">
+      <span id="timer-minute" style="--value:@mm;" aria-live="polite" aria-label="@mm">@mm</span>
+    </span>
+    分
+  </div>
+  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+    <span class="countdown font-mono text-5xl">
+      <span id="timer-second" style="--value:@ss;" aria-live="polite" aria-label="@ss">@ss</span>
+    </span>
+    秒
+  </div>
+</div>
+
+        <div class="question-content">
+            <table class="item-table horizontal">
+                <thead>
+                    <tr>
+                        <th>品物</th>
+                        @for (int i = 1; i <= Model.Challenge.QuesData.Count; i++)
+                        {
+                            <th>@i</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>重量 (w)</td>
+                        @foreach (var item in Model.Challenge.QuesData)
+                        {
+                            <td>@item.Weight</td>
+                        }
+                    </tr>
+                    <tr>
+                        <td>価値 (v)</td>
+                        @foreach (var item in Model.Challenge.QuesData)
+                        {
+                            <td>@item.Value</td>
+                        }
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="playing-container">
+            <div class="dp-table-wrapper">
+                <table class="dp-table">
+                    <thead>
+                    <tr>
+                        <th>品物\容量</th>
+                        @for (int w = 0; w <= Model.Challenge.MaxCapacity; w++)
+                        {
+                            <th>@w</th>
+                        }
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @for (int i = 0; i <= Model.Challenge.QuesData.Count; i++)
+                    {
+                        <tr>
+                            <td>@i</td>
+                            @for (int w = 0; w <= Model.Challenge.MaxCapacity; w++)
+                            {
+                                @if (i == 0 || w == 0)
+                                {
+                                    <td>0</td>
+                                }
+                                else
+                                {
+                                    @if (Model.Challenge.DpBoardWithMiss[i][w] == -1)
+                                    {
+                                        <td>
+                                            <input onchange="answerChange(@i, @w, event)" value="0" class="dp-input-field" type="number">
+                                        </td>
+                                    }
+                                    else
+                                    {
+                                        <td>
+                                            <span class="dp-input-field">@Model.Challenge.DpBoardWithMiss[i][w]</span>
+                                        </td>
+                                    }
+                                }
+                            }
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <div class="btn-container">
+            <button class="clean" onclick="cleanAnswer()">
+                <span>クリア</span>
+            </button>
+            <button class="complete" onclick="sendAnswer()">
+                <span>完了します</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+<script>
+    let countdown = @Model.countDown;
+    let challengeTimer = 0;
+    let answer = [];
+    const dpBoard = @Html.Raw(dpBoardJson);
+
+    const countdownEl = document.getElementById("countdown-dialog");
+    const startDialog = document.getElementById("start-dialog");
+    const gameContainer = document.getElementById("game-container");
+    const countdownContainer = document.getElementById("countdown-container");
+
+    const hourEl = document.getElementById("timer-hour");
+    const minuteEl = document.getElementById("timer-minute");
+    const secondEl = document.getElementById("timer-second");
+
+    function updateTimerUI(seconds) {
+        const hh = Math.floor(seconds / 3600);
+        const mm = Math.floor((seconds % 3600) / 60);
+        const ss = seconds % 60;
+
+        hourEl.textContent = hh;
+        hourEl.setAttribute('aria-label', hh);
+        hourEl.style.setProperty('--value', hh);
+
+        minuteEl.textContent = mm;
+        minuteEl.setAttribute('aria-label', mm);
+        minuteEl.style.setProperty('--value', mm);
+
+        secondEl.textContent = ss;
+        secondEl.setAttribute('aria-label', ss);
+        secondEl.style.setProperty('--value', ss);
+    }
+
+    // ⏳ Countdown logic
+    const timer = setInterval(() => {
+        countdown--;
+        if (countdown >= 0) {
+            countdownEl.textContent = countdown;
+        } else {
+            clearInterval(timer);
+            countdownEl.style.display = "none";
+            startDialog.style.display = "block";
+
+            setTimeout(() => {
+                countdownContainer.style.display = 'none';
+                gameContainer.style.display = 'flex';
+                challengeTimer = 0;
+                updateTimerUI(challengeTimer);
+
+                setInterval(() => {
+                    challengeTimer++;
+                    updateTimerUI(challengeTimer);
+                }, 1000);
+            }, 1000);
+        }
+    }, 1000);
+
+    function answerChange(x, y, e) {
+        const val = parseInt(e.target.value, 10) || 0;
+        const existing = answer.find(a => a.x === x && a.y === y);
+
+        if (existing) {
+            existing.v = val;
+        } else {
+            answer.push({ x, y, v: val });
+        }
+    }
+
+    function cleanAnswer() {
+        const answers = document.querySelectorAll('.dp-input-field');
+        answers.forEach(el => {
+            el.value = '0';
+        });
+        // Reset answer array
+        for (let i = 0; i < answer.length; i++) {
+            for (let j = 0; j < answer[i].length; j++) {
+                answer[i][j] = 0;
+            }
+        }
+    }
+
+    async function sendAnswer() {
+        const diff = @Model.Challenge.Difficulty;
+        let maxScore;
+        let scorePerNum;
+        let standardCount;
+        if (diff === 0) {
+            maxScore = @Model.Taken[0].MaxScore - 50;
+            standardCount = 5;
+            
+        }else if(diff === 1){
+            maxScore = @Model.Taken[0].MaxScore - 100;
+            standardCount = 10;
+        }else{
+            maxScore = @Model.Taken[0].MaxScore - 200;
+            standardCount = 15;
+        }
+        scorePerNum = Math.floor(maxScore/standardCount);
+        
+        let correctCount = 0;
+
+        //Kiểm tra câu trả lời
+        answer.map(a => {
+            const x = a.x;
+            const y = a.y;
+            console.log("y",y);
+            console.log("x",x);
+            console.log("a.v",a.v);
+            console.log("dpBoard[x.y]",dpBoard[x][y]);
+            console.log("a.v === dpBoard[x.y]",a.v === dpBoard[x][y])
+            if (a.v === dpBoard[x][y]){
+                correctCount ++;
+                return {
+                    ...a,
+                    isCorrect: true
+                }
+            }
+            else{
+                return {
+                    ...a,
+                    isCorrect: false
+                }
+            }
+        })
+        
+        let finalScore;
+        if (diff === 0) {
+            finalScore = correctCount === standardCount ? maxScore + 50 : scorePerNum * correctCount;
+        }else if(diff === 1){
+            finalScore = correctCount === standardCount ? maxScore + 100 : scorePerNum * correctCount;
+        }else{
+            finalScore = correctCount === standardCount ? maxScore + 200 : scorePerNum * correctCount;
+        }
+        
+
+        const payload = {
+            SpendTime: challengeTimer,
+            TakenScore: finalScore,
+            UserAnswer: JSON.stringify(answer)
+        };
+
+        try {
+            const res = await fetch(`http://localhost:5119/api/take-challenge/save?id=@Model.Taken[0].Id`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(payload)
+            });
+
+            const data = await res.json();
+
+            if (res.ok) {
+                alert("🎉 Bài làm đã được lưu thành công!");
+            } else {
+                alert("❌ Lỗi khi lưu bài: " + data.message);
+            }
+        } catch (err) {
+            console.error("Fetch error:", err);
+            alert("❌ Có lỗi xảy ra khi gửi dữ liệu.");
+        }
+    }
+</script>
+}
+

@@ -12,8 +12,12 @@ public class IndexModel : PageModel
         _logger = logger;
     }
 
-    public void OnGet()
+    public void OnGet() { }
+    
+    public IActionResult OnPostLogout()
     {
-
+        HttpContext.Session.Remove("JwtToken");
+        HttpContext.Session.Remove("uid");
+        return RedirectToPage("/Index");
     }
 }

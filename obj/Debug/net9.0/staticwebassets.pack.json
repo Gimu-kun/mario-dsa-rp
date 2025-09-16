@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/scopedcss/projectbundle/mario-dsa-rp.bundle.scp.css",
-      "PackagePath": "staticwebassets/mario-dsa-rp.8x1wds4s0b.bundle.scp.css"
+      "PackagePath": "staticwebassets/mario-dsa-rp.5xc7mma84s.bundle.scp.css"
     },
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/bg-01.png",
@@ -15,6 +15,10 @@
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/boss-rmbg.png",
       "PackagePath": "staticwebassets/assets/boss-rmbg.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/castle-bg.jpg",
+      "PackagePath": "staticwebassets/assets/castle-bg.jpg"
     },
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/donkey-rmbg.png",
@@ -31,6 +35,10 @@
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-block-02.png",
       "PackagePath": "staticwebassets/assets/img-block-02.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-01.png",
+      "PackagePath": "staticwebassets/assets/img-chara-01.png"
     },
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-02.png",
@@ -105,8 +113,28 @@
       "PackagePath": "staticwebassets/assets/jean-bg.png"
     },
     {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg-green.jpg",
+      "PackagePath": "staticwebassets/assets/lego-bg-green.jpg"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg-yellow.jpg",
+      "PackagePath": "staticwebassets/assets/lego-bg-yellow.jpg"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg.jpg",
+      "PackagePath": "staticwebassets/assets/lego-bg.jpg"
+    },
+    {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/luigi.png",
       "PackagePath": "staticwebassets/assets/luigi.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario-background.png",
+      "PackagePath": "staticwebassets/assets/mario-background.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario-sprite.png",
+      "PackagePath": "staticwebassets/assets/mario-sprite.png"
     },
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario.png",
@@ -119,6 +147,18 @@
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/princess-rmbg.png",
       "PackagePath": "staticwebassets/assets/princess-rmbg.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/select-bg.jpg",
+      "PackagePath": "staticwebassets/assets/select-bg.jpg"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/sky-bg.jpg",
+      "PackagePath": "staticwebassets/assets/sky-bg.jpg"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/videoframe_4238.png",
+      "PackagePath": "staticwebassets/assets/videoframe_4238.png"
     },
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/wallpaper.jpg",
@@ -137,6 +177,22 @@
       "PackagePath": "staticwebassets/css/auth.style.css"
     },
     {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/challengeTopic.style.css",
+      "PackagePath": "staticwebassets/css/challengeTopic.style.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/choose-item.style.css",
+      "PackagePath": "staticwebassets/css/choose-item.style.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/dynamic-board.style.css",
+      "PackagePath": "staticwebassets/css/dynamic-board.style.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/footer.style.css",
+      "PackagePath": "staticwebassets/css/footer.style.css"
+    },
+    {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/header.style.css",
       "PackagePath": "staticwebassets/css/header.style.css"
     },
@@ -147,6 +203,10 @@
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/home.style.css",
       "PackagePath": "staticwebassets/css/home.style.css"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/selection.style.css",
+      "PackagePath": "staticwebassets/css/selection.style.css"
     },
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/site.css",

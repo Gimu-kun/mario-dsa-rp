@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UWqawywVfcF0vLU6pcaeNSnwfJgKyqLCgovlMkIWYXo=",
+  "Hash": "vvmfViAkVN6zSNEAekNEDiYEjZx7v0urDedCHkvwBd0=",
   "Source": "mario-dsa-rp",
   "BasePath": "_content/mario-dsa-rp",
   "Mode": "Default",
@@ -59,12 +59,12 @@
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0sddod3619-8x1wds4s0b.gz",
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0sddod3619-5xc7mma84s.gz",
       "SourceId": "mario-dsa-rp",
       "SourceType": "Computed",
       "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/mario-dsa-rp",
-      "RelativePath": "mario-dsa-rp#[.{fingerprint=8x1wds4s0b}]!.bundle.scp.css.gz",
+      "RelativePath": "mario-dsa-rp#[.{fingerprint=5xc7mma84s}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -73,8 +73,8 @@
       "RelatedAsset": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/scopedcss/projectbundle/mario-dsa-rp.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fj4n30y0aa",
-      "Integrity": "RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM=",
+      "Fingerprint": "17ztu5lqea",
+      "Integrity": "bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/scopedcss/projectbundle/mario-dsa-rp.bundle.scp.css"
@@ -143,6 +143,27 @@
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/2rz9rxberu-lwfgnoqfwj.gz",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "css/footer.style#[.{fingerprint=lwfgnoqfwj}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/footer.style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "juu5aq41wu",
+      "Integrity": "lWJkDqE3z2Le9AhE+kzl8ZlyhWbfRbXW8lRlAtkhGTk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/footer.style.css"
+    },
+    {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/36inrcvp43-ft3s53vfgj.gz",
       "SourceId": "mario-dsa-rp",
       "SourceType": "Discovered",
@@ -206,12 +227,12 @@
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/47pgc2v0yf-pjyiaq067u.gz",
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/47pgc2v0yf-x3diof5r5y.gz",
       "SourceId": "mario-dsa-rp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/mario-dsa-rp",
-      "RelativePath": "css/header.style#[.{fingerprint=pjyiaq067u}]?.css.gz",
+      "RelativePath": "css/header.style#[.{fingerprint=x3diof5r5y}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -220,8 +241,8 @@
       "RelatedAsset": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/header.style.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "uigr5dkmev",
-      "Integrity": "ZsU+swYFK0x9du6icZJquvcwO6mlpD7YQv/b0xVcO1M=",
+      "Fingerprint": "yas5ytc26l",
+      "Integrity": "ilRbjnq332BT0oVcVK1xW1jCcFRIVTJ3FBrdsPxyMvs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/header.style.css"
@@ -309,6 +330,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/7343jgv4ri-4bm0r3i7ml.gz",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "css/choose-item.style#[.{fingerprint=4bm0r3i7ml}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/choose-item.style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "j90bpum6rb",
+      "Integrity": "F6dfftllD9B4CFLHI+R003fXxyXkb8+SPD/GW/3waq8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/choose-item.style.css"
     },
     {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/94qwjaqf9d-fsbi9cje9m.gz",
@@ -584,12 +626,12 @@
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/cl0mks8tkc-641797xm6e.gz",
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/cl0mks8tkc-82a427u043.gz",
       "SourceId": "mario-dsa-rp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/mario-dsa-rp",
-      "RelativePath": "css/heroBanner.style#[.{fingerprint=641797xm6e}]?.css.gz",
+      "RelativePath": "css/heroBanner.style#[.{fingerprint=82a427u043}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -598,8 +640,8 @@
       "RelatedAsset": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/heroBanner.style.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "70ze7w7j3j",
-      "Integrity": "SUAGdLWmPpy7V0AvvXNqrldGp41TR1bqzaofxgdQDAU=",
+      "Fingerprint": "9ljvmpbfrv",
+      "Integrity": "7b6WJQPercZ0cDgx5rp6yBUaUVJScHrH+piv8icDUN4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/heroBanner.style.css"
@@ -668,12 +710,12 @@
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/diy9ly4oq3-8x1wds4s0b.gz",
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/diy9ly4oq3-5xc7mma84s.gz",
       "SourceId": "mario-dsa-rp",
       "SourceType": "Computed",
       "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/mario-dsa-rp",
-      "RelativePath": "mario-dsa-rp#[.{fingerprint=8x1wds4s0b}]?.styles.css.gz",
+      "RelativePath": "mario-dsa-rp#[.{fingerprint=5xc7mma84s}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -682,8 +724,8 @@
       "RelatedAsset": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/scopedcss/bundle/mario-dsa-rp.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fj4n30y0aa",
-      "Integrity": "RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM=",
+      "Fingerprint": "17ztu5lqea",
+      "Integrity": "bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/scopedcss/bundle/mario-dsa-rp.styles.css"
@@ -750,6 +792,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/fd9cepuvt5-uozryvmzpt.gz",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "css/selection.style#[.{fingerprint=uozryvmzpt}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/selection.style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "zcc3gmpg1v",
+      "Integrity": "reZvv9FcGzSNmEXpFM3B6vSLwY7f8UeQn1UvHVfzf4Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/selection.style.css"
     },
     {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/gikod023fp-0j3bgjxly4.gz",
@@ -1025,6 +1088,27 @@
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/ptsv3gu0ug-tsqz66aoqv.gz",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "css/challengeTopic.style#[.{fingerprint=tsqz66aoqv}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/challengeTopic.style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "ttq8gerc92",
+      "Integrity": "0fFXIYNc9ZwjijXLJEWA9CT1XZ90xFMEEUqX381H4Uc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/challengeTopic.style.css"
+    },
+    {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/rg55335hq0-47otxtyo56.gz",
       "SourceId": "mario-dsa-rp",
       "SourceType": "Discovered",
@@ -1277,12 +1361,12 @@
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/w5eokjlzix-2t7hsdv2pu.gz",
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/w5eokjlzix-j3ptve846y.gz",
       "SourceId": "mario-dsa-rp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/mario-dsa-rp",
-      "RelativePath": "css/topicFeature.style#[.{fingerprint=2t7hsdv2pu}]?.css.gz",
+      "RelativePath": "css/topicFeature.style#[.{fingerprint=j3ptve846y}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1291,8 +1375,8 @@
       "RelatedAsset": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/topicFeature.style.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "lmf0b5dj0i",
-      "Integrity": "Hf65dZXgPtd8KafJqRw+YHyb2S/nwU7tpSbua71R2Hk=",
+      "Fingerprint": "4l133w22zn",
+      "Integrity": "ONKyddnsGgTqOuqgqz3gDQu3cUgh71tUmUNKC9JNobw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/topicFeature.style.css"
@@ -1424,6 +1508,27 @@
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-3wyolahtyb.gz",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "css/dynamic-board.style#[.{fingerprint=3wyolahtyb}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/dynamic-board.style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "i20ub6e3ea",
+      "Integrity": "JkF9rL00dYKOjqc3idI8/szXMFntotilTWxjbzzT9Ok=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/dynamic-board.style.css"
+    },
+    {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1ui0jyhit-jj8uyg4cgr.gz",
       "SourceId": "mario-dsa-rp",
       "SourceType": "Discovered",
@@ -1480,8 +1585,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "8x1wds4s0b",
-      "Integrity": "RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg=",
+      "Fingerprint": "5xc7mma84s",
+      "Integrity": "KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/scopedcss/bundle/mario-dsa-rp.styles.css"
@@ -1501,8 +1606,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "8x1wds4s0b",
-      "Integrity": "RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg=",
+      "Fingerprint": "5xc7mma84s",
+      "Integrity": "KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/scopedcss/projectbundle/mario-dsa-rp.bundle.scp.css"
@@ -1569,6 +1674,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/boss-rmbg.png"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/castle-bg.jpg",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "assets/castle-bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aqukzpd8vi",
+      "Integrity": "blB528//YhnfxtR9tnJ54aj7tq+c03IGCzkAc173MTw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/castle-bg.jpg"
     },
     {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/donkey-rmbg.png",
@@ -1653,6 +1779,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/img-block-02.png"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-01.png",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "assets/img-chara-01#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2apujiz1ro",
+      "Integrity": "esbEF0pI7Ko2Y76jcWDZwIgCQLvF9xzmC0aDtZh1B18=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/img-chara-01.png"
     },
     {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-02_02.png",
@@ -2033,6 +2180,69 @@
       "OriginalItemSpec": "wwwroot/assets/jean-bg.png"
     },
     {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg-green.jpg",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "assets/lego-bg-green#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kehnmdy1d7",
+      "Integrity": "3EFWU6VKQ1kX3/qcXi8Fbb12rPfqaAYSpt24D+7b2YI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/lego-bg-green.jpg"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg-yellow.jpg",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "assets/lego-bg-yellow#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v9fst4kkth",
+      "Integrity": "U0mRHDm0EVgCx1dBsChreuSvFqIhbWlDDBdTorHXPCM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/lego-bg-yellow.jpg"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg.jpg",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "assets/lego-bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hn34wdr3y6",
+      "Integrity": "gzDDS8NU4nnoG9dYUVtCxStGQCaVu0UT2A3hgqLl00c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/lego-bg.jpg"
+    },
+    {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/luigi.png",
       "SourceId": "mario-dsa-rp",
       "SourceType": "Discovered",
@@ -2052,6 +2262,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/luigi.png"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario-background.png",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "assets/mario-background#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oqx2cbg6tz",
+      "Integrity": "UC9aBgrf7K94H13INwR3tMmWbfgkYaQRW0noUGE1KC8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/mario-background.png"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario-sprite.png",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "assets/mario-sprite#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "th4j09d3on",
+      "Integrity": "gfE/Ae/jzM1ecYs8O9dYMYHWXQcXYsYiPpiZ39gSTww=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/mario-sprite.png"
     },
     {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario.png",
@@ -2115,6 +2367,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/princess-rmbg.png"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/select-bg.jpg",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "assets/select-bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p6kdvj8f2j",
+      "Integrity": "j22VZODdT2qxf8qFYSft5otYXJH0mXXgUvDfaFGQAA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/select-bg.jpg"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/sky-bg.jpg",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "assets/sky-bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lfuh6j26fv",
+      "Integrity": "UUavcUJsgCcYpIWyVihDrdW30+3C2mcFVTLSorb6Hpg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/sky-bg.jpg"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/videoframe_4238.png",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "assets/videoframe_4238#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "glg5stlr1a",
+      "Integrity": "RCO8r/h4UfBSEVmp69xB19zKNZGm0OvV7JbaSL2py5w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/videoframe_4238.png"
     },
     {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/wallpaper.jpg",
@@ -2201,6 +2516,90 @@
       "OriginalItemSpec": "wwwroot/css/auth.style.css"
     },
     {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/challengeTopic.style.css",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "css/challengeTopic.style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tsqz66aoqv",
+      "Integrity": "k0861+ecLiaytA8BSxhdOcXdcVYwI5biL5cS3XmOST8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/challengeTopic.style.css"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/choose-item.style.css",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "css/choose-item.style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4bm0r3i7ml",
+      "Integrity": "EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91+c2q8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/choose-item.style.css"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/dynamic-board.style.css",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "css/dynamic-board.style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3wyolahtyb",
+      "Integrity": "o7OBkMAl10QonR+BXE3Mjd4rtbIahcMEfHdy+c03vs4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/dynamic-board.style.css"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/footer.style.css",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "css/footer.style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lwfgnoqfwj",
+      "Integrity": "exTOiS8gAbKIxXOLH7MQeUG/ms4zHpR/fi1fElBtvyE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/footer.style.css"
+    },
+    {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/header.style.css",
       "SourceId": "mario-dsa-rp",
       "SourceType": "Discovered",
@@ -2215,8 +2614,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pjyiaq067u",
-      "Integrity": "ZfGmVMvoCnYB2Ko101s4z8QB9LikgqZflk2+woBvLOU=",
+      "Fingerprint": "x3diof5r5y",
+      "Integrity": "3dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/header.style.css"
@@ -2236,8 +2635,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "641797xm6e",
-      "Integrity": "ZraufAkyf8FcGo2iEIrcDfQF5bCQpf13NP9oXRTxiRo=",
+      "Fingerprint": "82a427u043",
+      "Integrity": "8Kmk9q384NodbsyzU88/fFweQiQenXxzUig6cwvxtTY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/heroBanner.style.css"
@@ -2262,6 +2661,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/home.style.css"
+    },
+    {
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/selection.style.css",
+      "SourceId": "mario-dsa-rp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/",
+      "BasePath": "_content/mario-dsa-rp",
+      "RelativePath": "css/selection.style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uozryvmzpt",
+      "Integrity": "bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/selection.style.css"
     },
     {
       "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/site.css",
@@ -2299,8 +2719,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2t7hsdv2pu",
-      "Integrity": "xqG0mcNZlTs/q6dgDR1rC2PeCDr59Rr6zw/se74woCA=",
+      "Fingerprint": "j3ptve846y",
+      "Integrity": "TxuULIJmdjx8CICGa+gPBwhhiyaWW75GnXpvFhHx+GA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/topicFeature.style.css"
@@ -3856,6 +4276,88 @@
       ]
     },
     {
+      "Route": "assets/castle-bg.aqukzpd8vi.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/castle-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "142812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"blB528//YhnfxtR9tnJ54aj7tq+c03IGCzkAc173MTw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 07:05:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aqukzpd8vi"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/castle-bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-blB528//YhnfxtR9tnJ54aj7tq+c03IGCzkAc173MTw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/castle-bg.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/castle-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "142812"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"blB528//YhnfxtR9tnJ54aj7tq+c03IGCzkAc173MTw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 07:05:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-blB528//YhnfxtR9tnJ54aj7tq+c03IGCzkAc173MTw="
+        }
+      ]
+    },
+    {
       "Route": "assets/donkey-rmbg.png",
       "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/donkey-rmbg.png",
       "Selectors": [],
@@ -4180,6 +4682,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-xHThfHY+wi1oinjJNNaypoQ0IOuvxWftYuAM4uU/l8w="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img-chara-01.2apujiz1ro.png",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-01.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15706"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"esbEF0pI7Ko2Y76jcWDZwIgCQLvF9xzmC0aDtZh1B18=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Sep 2025 13:53:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2apujiz1ro"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img-chara-01.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-esbEF0pI7Ko2Y76jcWDZwIgCQLvF9xzmC0aDtZh1B18="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img-chara-01.png",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-chara-01.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15706"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"esbEF0pI7Ko2Y76jcWDZwIgCQLvF9xzmC0aDtZh1B18=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Sep 2025 13:53:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-esbEF0pI7Ko2Y76jcWDZwIgCQLvF9xzmC0aDtZh1B18="
         }
       ]
     },
@@ -5660,6 +6244,252 @@
       ]
     },
     {
+      "Route": "assets/lego-bg-green.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg-green.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "164631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3EFWU6VKQ1kX3/qcXi8Fbb12rPfqaAYSpt24D+7b2YI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 08:49:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3EFWU6VKQ1kX3/qcXi8Fbb12rPfqaAYSpt24D+7b2YI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/lego-bg-green.kehnmdy1d7.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg-green.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "164631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3EFWU6VKQ1kX3/qcXi8Fbb12rPfqaAYSpt24D+7b2YI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 08:49:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kehnmdy1d7"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/lego-bg-green.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3EFWU6VKQ1kX3/qcXi8Fbb12rPfqaAYSpt24D+7b2YI="
+        }
+      ]
+    },
+    {
+      "Route": "assets/lego-bg-yellow.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg-yellow.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155044"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"U0mRHDm0EVgCx1dBsChreuSvFqIhbWlDDBdTorHXPCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 08:49:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-U0mRHDm0EVgCx1dBsChreuSvFqIhbWlDDBdTorHXPCM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/lego-bg-yellow.v9fst4kkth.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg-yellow.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155044"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"U0mRHDm0EVgCx1dBsChreuSvFqIhbWlDDBdTorHXPCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 08:49:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v9fst4kkth"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/lego-bg-yellow.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-U0mRHDm0EVgCx1dBsChreuSvFqIhbWlDDBdTorHXPCM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/lego-bg.hn34wdr3y6.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "161400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gzDDS8NU4nnoG9dYUVtCxStGQCaVu0UT2A3hgqLl00c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 09:18:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hn34wdr3y6"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/lego-bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gzDDS8NU4nnoG9dYUVtCxStGQCaVu0UT2A3hgqLl00c="
+        }
+      ]
+    },
+    {
+      "Route": "assets/lego-bg.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/lego-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "161400"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gzDDS8NU4nnoG9dYUVtCxStGQCaVu0UT2A3hgqLl00c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 09:18:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gzDDS8NU4nnoG9dYUVtCxStGQCaVu0UT2A3hgqLl00c="
+        }
+      ]
+    },
+    {
       "Route": "assets/luigi.jwoa0g0bd3.png",
       "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/luigi.png",
       "Selectors": [],
@@ -5738,6 +6568,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-k5wXF4ZsMqhQqeCmOjgduKnWcuqc86nyBv4ApaZdCDA="
+        }
+      ]
+    },
+    {
+      "Route": "assets/mario-background.oqx2cbg6tz.png",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "613710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UC9aBgrf7K94H13INwR3tMmWbfgkYaQRW0noUGE1KC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 06:37:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oqx2cbg6tz"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/mario-background.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UC9aBgrf7K94H13INwR3tMmWbfgkYaQRW0noUGE1KC8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/mario-background.png",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario-background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "613710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UC9aBgrf7K94H13INwR3tMmWbfgkYaQRW0noUGE1KC8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 06:37:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UC9aBgrf7K94H13INwR3tMmWbfgkYaQRW0noUGE1KC8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/mario-sprite.png",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario-sprite.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "333074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gfE/Ae/jzM1ecYs8O9dYMYHWXQcXYsYiPpiZ39gSTww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 03:50:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gfE/Ae/jzM1ecYs8O9dYMYHWXQcXYsYiPpiZ39gSTww="
+        }
+      ]
+    },
+    {
+      "Route": "assets/mario-sprite.th4j09d3on.png",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario-sprite.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "333074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gfE/Ae/jzM1ecYs8O9dYMYHWXQcXYsYiPpiZ39gSTww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 03:50:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "th4j09d3on"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/mario-sprite.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gfE/Ae/jzM1ecYs8O9dYMYHWXQcXYsYiPpiZ39gSTww="
         }
       ]
     },
@@ -5984,6 +6978,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-LB1WeCs1Tq8XGKYENM+bz+9AQv7IZNxMErhVNK5cO+Q="
+        }
+      ]
+    },
+    {
+      "Route": "assets/select-bg.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/select-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "142194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j22VZODdT2qxf8qFYSft5otYXJH0mXXgUvDfaFGQAA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 09:21:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j22VZODdT2qxf8qFYSft5otYXJH0mXXgUvDfaFGQAA0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/select-bg.p6kdvj8f2j.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/select-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "142194"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j22VZODdT2qxf8qFYSft5otYXJH0mXXgUvDfaFGQAA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 09:21:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p6kdvj8f2j"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/select-bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j22VZODdT2qxf8qFYSft5otYXJH0mXXgUvDfaFGQAA0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/sky-bg.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/sky-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177483"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UUavcUJsgCcYpIWyVihDrdW30+3C2mcFVTLSorb6Hpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 07:15:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UUavcUJsgCcYpIWyVihDrdW30+3C2mcFVTLSorb6Hpg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/sky-bg.lfuh6j26fv.jpg",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/sky-bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177483"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UUavcUJsgCcYpIWyVihDrdW30+3C2mcFVTLSorb6Hpg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 07:15:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lfuh6j26fv"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/sky-bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UUavcUJsgCcYpIWyVihDrdW30+3C2mcFVTLSorb6Hpg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/videoframe_4238.glg5stlr1a.png",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/videoframe_4238.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "582916"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RCO8r/h4UfBSEVmp69xB19zKNZGm0OvV7JbaSL2py5w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 08:30:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "glg5stlr1a"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/videoframe_4238.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RCO8r/h4UfBSEVmp69xB19zKNZGm0OvV7JbaSL2py5w="
+        }
+      ]
+    },
+    {
+      "Route": "assets/videoframe_4238.png",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/videoframe_4238.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "582916"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RCO8r/h4UfBSEVmp69xB19zKNZGm0OvV7JbaSL2py5w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 08:30:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RCO8r/h4UfBSEVmp69xB19zKNZGm0OvV7JbaSL2py5w="
         }
       ]
     },
@@ -6532,13 +7772,13 @@
       ]
     },
     {
-      "Route": "css/header.style.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/47pgc2v0yf-pjyiaq067u.gz",
+      "Route": "css/challengeTopic.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/ptsv3gu0ug-tsqz66aoqv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001418439716"
+          "Quality": "0.001197604790"
         }
       ],
       "ResponseHeaders": [
@@ -6548,15 +7788,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "704"
+          "Value": "834"
         },
         {
           "Name": "ETag",
-          "Value": "\"ZsU+swYFK0x9du6icZJquvcwO6mlpD7YQv/b0xVcO1M=\""
+          "Value": "\"0fFXIYNc9ZwjijXLJEWA9CT1XZ90xFMEEUqX381H4Uc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:55:50 GMT"
+          "Value": "Sat, 13 Sep 2025 07:17:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6576,13 +7816,1205 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ZfGmVMvoCnYB2Ko101s4z8QB9LikgqZflk2+woBvLOU=\""
+          "Value": "W/\"k0861+ecLiaytA8BSxhdOcXdcVYwI5biL5cS3XmOST8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZfGmVMvoCnYB2Ko101s4z8QB9LikgqZflk2+woBvLOU="
+          "Value": "sha256-k0861+ecLiaytA8BSxhdOcXdcVYwI5biL5cS3XmOST8="
+        }
+      ]
+    },
+    {
+      "Route": "css/challengeTopic.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/challengeTopic.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2952"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k0861+ecLiaytA8BSxhdOcXdcVYwI5biL5cS3XmOST8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 07:17:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k0861+ecLiaytA8BSxhdOcXdcVYwI5biL5cS3XmOST8="
+        }
+      ]
+    },
+    {
+      "Route": "css/challengeTopic.style.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/ptsv3gu0ug-tsqz66aoqv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "834"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0fFXIYNc9ZwjijXLJEWA9CT1XZ90xFMEEUqX381H4Uc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 07:17:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0fFXIYNc9ZwjijXLJEWA9CT1XZ90xFMEEUqX381H4Uc="
+        }
+      ]
+    },
+    {
+      "Route": "css/challengeTopic.style.tsqz66aoqv.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/ptsv3gu0ug-tsqz66aoqv.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001197604790"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "834"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0fFXIYNc9ZwjijXLJEWA9CT1XZ90xFMEEUqX381H4Uc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 07:17:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"k0861+ecLiaytA8BSxhdOcXdcVYwI5biL5cS3XmOST8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tsqz66aoqv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/challengeTopic.style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k0861+ecLiaytA8BSxhdOcXdcVYwI5biL5cS3XmOST8="
+        }
+      ]
+    },
+    {
+      "Route": "css/challengeTopic.style.tsqz66aoqv.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/challengeTopic.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2952"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k0861+ecLiaytA8BSxhdOcXdcVYwI5biL5cS3XmOST8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 07:17:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tsqz66aoqv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/challengeTopic.style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k0861+ecLiaytA8BSxhdOcXdcVYwI5biL5cS3XmOST8="
+        }
+      ]
+    },
+    {
+      "Route": "css/challengeTopic.style.tsqz66aoqv.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/ptsv3gu0ug-tsqz66aoqv.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "834"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0fFXIYNc9ZwjijXLJEWA9CT1XZ90xFMEEUqX381H4Uc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 07:17:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tsqz66aoqv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/challengeTopic.style.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0fFXIYNc9ZwjijXLJEWA9CT1XZ90xFMEEUqX381H4Uc="
+        }
+      ]
+    },
+    {
+      "Route": "css/choose-item.style.4bm0r3i7ml.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/7343jgv4ri-4bm0r3i7ml.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000903342367"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1106"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F6dfftllD9B4CFLHI+R003fXxyXkb8+SPD/GW/3waq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 16:02:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91+c2q8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4bm0r3i7ml"
+        },
+        {
+          "Name": "label",
+          "Value": "css/choose-item.style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91+c2q8="
+        }
+      ]
+    },
+    {
+      "Route": "css/choose-item.style.4bm0r3i7ml.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/choose-item.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4272"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91+c2q8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 16:02:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4bm0r3i7ml"
+        },
+        {
+          "Name": "label",
+          "Value": "css/choose-item.style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91+c2q8="
+        }
+      ]
+    },
+    {
+      "Route": "css/choose-item.style.4bm0r3i7ml.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/7343jgv4ri-4bm0r3i7ml.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1106"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F6dfftllD9B4CFLHI+R003fXxyXkb8+SPD/GW/3waq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 16:02:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4bm0r3i7ml"
+        },
+        {
+          "Name": "label",
+          "Value": "css/choose-item.style.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F6dfftllD9B4CFLHI+R003fXxyXkb8+SPD/GW/3waq8="
+        }
+      ]
+    },
+    {
+      "Route": "css/choose-item.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/7343jgv4ri-4bm0r3i7ml.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000903342367"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1106"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F6dfftllD9B4CFLHI+R003fXxyXkb8+SPD/GW/3waq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 16:02:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91+c2q8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91+c2q8="
+        }
+      ]
+    },
+    {
+      "Route": "css/choose-item.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/choose-item.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4272"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91+c2q8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 16:02:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91+c2q8="
+        }
+      ]
+    },
+    {
+      "Route": "css/choose-item.style.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/7343jgv4ri-4bm0r3i7ml.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1106"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F6dfftllD9B4CFLHI+R003fXxyXkb8+SPD/GW/3waq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 16:02:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F6dfftllD9B4CFLHI+R003fXxyXkb8+SPD/GW/3waq8="
+        }
+      ]
+    },
+    {
+      "Route": "css/dynamic-board.style.3wyolahtyb.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-3wyolahtyb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000887311446"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JkF9rL00dYKOjqc3idI8/szXMFntotilTWxjbzzT9Ok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 15 Sep 2025 03:27:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"o7OBkMAl10QonR+BXE3Mjd4rtbIahcMEfHdy+c03vs4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3wyolahtyb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dynamic-board.style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o7OBkMAl10QonR+BXE3Mjd4rtbIahcMEfHdy+c03vs4="
+        }
+      ]
+    },
+    {
+      "Route": "css/dynamic-board.style.3wyolahtyb.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/dynamic-board.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o7OBkMAl10QonR+BXE3Mjd4rtbIahcMEfHdy+c03vs4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 15 Sep 2025 03:27:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3wyolahtyb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dynamic-board.style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o7OBkMAl10QonR+BXE3Mjd4rtbIahcMEfHdy+c03vs4="
+        }
+      ]
+    },
+    {
+      "Route": "css/dynamic-board.style.3wyolahtyb.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-3wyolahtyb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JkF9rL00dYKOjqc3idI8/szXMFntotilTWxjbzzT9Ok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 15 Sep 2025 03:27:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3wyolahtyb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dynamic-board.style.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JkF9rL00dYKOjqc3idI8/szXMFntotilTWxjbzzT9Ok="
+        }
+      ]
+    },
+    {
+      "Route": "css/dynamic-board.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-3wyolahtyb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000887311446"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JkF9rL00dYKOjqc3idI8/szXMFntotilTWxjbzzT9Ok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 15 Sep 2025 03:27:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"o7OBkMAl10QonR+BXE3Mjd4rtbIahcMEfHdy+c03vs4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o7OBkMAl10QonR+BXE3Mjd4rtbIahcMEfHdy+c03vs4="
+        }
+      ]
+    },
+    {
+      "Route": "css/dynamic-board.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/dynamic-board.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4354"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o7OBkMAl10QonR+BXE3Mjd4rtbIahcMEfHdy+c03vs4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 15 Sep 2025 03:27:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o7OBkMAl10QonR+BXE3Mjd4rtbIahcMEfHdy+c03vs4="
+        }
+      ]
+    },
+    {
+      "Route": "css/dynamic-board.style.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-3wyolahtyb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JkF9rL00dYKOjqc3idI8/szXMFntotilTWxjbzzT9Ok=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 15 Sep 2025 03:27:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JkF9rL00dYKOjqc3idI8/szXMFntotilTWxjbzzT9Ok="
+        }
+      ]
+    },
+    {
+      "Route": "css/footer.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/2rz9rxberu-lwfgnoqfwj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001400560224"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "713"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lWJkDqE3z2Le9AhE+kzl8ZlyhWbfRbXW8lRlAtkhGTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 06:53:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"exTOiS8gAbKIxXOLH7MQeUG/ms4zHpR/fi1fElBtvyE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-exTOiS8gAbKIxXOLH7MQeUG/ms4zHpR/fi1fElBtvyE="
+        }
+      ]
+    },
+    {
+      "Route": "css/footer.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/footer.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"exTOiS8gAbKIxXOLH7MQeUG/ms4zHpR/fi1fElBtvyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 06:53:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-exTOiS8gAbKIxXOLH7MQeUG/ms4zHpR/fi1fElBtvyE="
+        }
+      ]
+    },
+    {
+      "Route": "css/footer.style.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/2rz9rxberu-lwfgnoqfwj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lWJkDqE3z2Le9AhE+kzl8ZlyhWbfRbXW8lRlAtkhGTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 06:53:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lWJkDqE3z2Le9AhE+kzl8ZlyhWbfRbXW8lRlAtkhGTk="
+        }
+      ]
+    },
+    {
+      "Route": "css/footer.style.lwfgnoqfwj.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/2rz9rxberu-lwfgnoqfwj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001400560224"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "713"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lWJkDqE3z2Le9AhE+kzl8ZlyhWbfRbXW8lRlAtkhGTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 06:53:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"exTOiS8gAbKIxXOLH7MQeUG/ms4zHpR/fi1fElBtvyE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lwfgnoqfwj"
+        },
+        {
+          "Name": "label",
+          "Value": "css/footer.style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-exTOiS8gAbKIxXOLH7MQeUG/ms4zHpR/fi1fElBtvyE="
+        }
+      ]
+    },
+    {
+      "Route": "css/footer.style.lwfgnoqfwj.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/footer.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"exTOiS8gAbKIxXOLH7MQeUG/ms4zHpR/fi1fElBtvyE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 06:53:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lwfgnoqfwj"
+        },
+        {
+          "Name": "label",
+          "Value": "css/footer.style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-exTOiS8gAbKIxXOLH7MQeUG/ms4zHpR/fi1fElBtvyE="
+        }
+      ]
+    },
+    {
+      "Route": "css/footer.style.lwfgnoqfwj.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/2rz9rxberu-lwfgnoqfwj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "713"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lWJkDqE3z2Le9AhE+kzl8ZlyhWbfRbXW8lRlAtkhGTk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 13 Sep 2025 06:53:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lwfgnoqfwj"
+        },
+        {
+          "Name": "label",
+          "Value": "css/footer.style.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lWJkDqE3z2Le9AhE+kzl8ZlyhWbfRbXW8lRlAtkhGTk="
+        }
+      ]
+    },
+    {
+      "Route": "css/header.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/47pgc2v0yf-x3diof5r5y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001322751323"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "755"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ilRbjnq332BT0oVcVK1xW1jCcFRIVTJ3FBrdsPxyMvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Sep 2025 06:11:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"3dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA="
         }
       ]
     },
@@ -6597,7 +9029,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2597"
+          "Value": "2879"
         },
         {
           "Name": "Content-Type",
@@ -6605,11 +9037,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZfGmVMvoCnYB2Ko101s4z8QB9LikgqZflk2+woBvLOU=\""
+          "Value": "\"3dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:55:50 GMT"
+          "Value": "Tue, 09 Sep 2025 06:11:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6619,13 +9051,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZfGmVMvoCnYB2Ko101s4z8QB9LikgqZflk2+woBvLOU="
+          "Value": "sha256-3dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA="
         }
       ]
     },
     {
       "Route": "css/header.style.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/47pgc2v0yf-pjyiaq067u.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/47pgc2v0yf-x3diof5r5y.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6634,7 +9066,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "704"
+          "Value": "755"
         },
         {
           "Name": "Content-Type",
@@ -6642,11 +9074,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZsU+swYFK0x9du6icZJquvcwO6mlpD7YQv/b0xVcO1M=\""
+          "Value": "\"ilRbjnq332BT0oVcVK1xW1jCcFRIVTJ3FBrdsPxyMvs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:55:50 GMT"
+          "Value": "Tue, 09 Sep 2025 06:11:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6664,18 +9096,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZsU+swYFK0x9du6icZJquvcwO6mlpD7YQv/b0xVcO1M="
+          "Value": "sha256-ilRbjnq332BT0oVcVK1xW1jCcFRIVTJ3FBrdsPxyMvs="
         }
       ]
     },
     {
-      "Route": "css/header.style.pjyiaq067u.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/47pgc2v0yf-pjyiaq067u.gz",
+      "Route": "css/header.style.x3diof5r5y.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/47pgc2v0yf-x3diof5r5y.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001418439716"
+          "Quality": "0.001322751323"
         }
       ],
       "ResponseHeaders": [
@@ -6685,15 +9117,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "704"
+          "Value": "755"
         },
         {
           "Name": "ETag",
-          "Value": "\"ZsU+swYFK0x9du6icZJquvcwO6mlpD7YQv/b0xVcO1M=\""
+          "Value": "\"ilRbjnq332BT0oVcVK1xW1jCcFRIVTJ3FBrdsPxyMvs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:55:50 GMT"
+          "Value": "Tue, 09 Sep 2025 06:11:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6713,13 +9145,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ZfGmVMvoCnYB2Ko101s4z8QB9LikgqZflk2+woBvLOU=\""
+          "Value": "W/\"3dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pjyiaq067u"
+          "Value": "x3diof5r5y"
         },
         {
           "Name": "label",
@@ -6727,12 +9159,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZfGmVMvoCnYB2Ko101s4z8QB9LikgqZflk2+woBvLOU="
+          "Value": "sha256-3dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA="
         }
       ]
     },
     {
-      "Route": "css/header.style.pjyiaq067u.css",
+      "Route": "css/header.style.x3diof5r5y.css",
       "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/header.style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6742,7 +9174,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2597"
+          "Value": "2879"
         },
         {
           "Name": "Content-Type",
@@ -6750,11 +9182,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZfGmVMvoCnYB2Ko101s4z8QB9LikgqZflk2+woBvLOU=\""
+          "Value": "\"3dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:55:50 GMT"
+          "Value": "Tue, 09 Sep 2025 06:11:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6764,7 +9196,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pjyiaq067u"
+          "Value": "x3diof5r5y"
         },
         {
           "Name": "label",
@@ -6772,13 +9204,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZfGmVMvoCnYB2Ko101s4z8QB9LikgqZflk2+woBvLOU="
+          "Value": "sha256-3dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA="
         }
       ]
     },
     {
-      "Route": "css/header.style.pjyiaq067u.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/47pgc2v0yf-pjyiaq067u.gz",
+      "Route": "css/header.style.x3diof5r5y.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/47pgc2v0yf-x3diof5r5y.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6787,7 +9219,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "704"
+          "Value": "755"
         },
         {
           "Name": "Content-Type",
@@ -6795,11 +9227,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZsU+swYFK0x9du6icZJquvcwO6mlpD7YQv/b0xVcO1M=\""
+          "Value": "\"ilRbjnq332BT0oVcVK1xW1jCcFRIVTJ3FBrdsPxyMvs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:55:50 GMT"
+          "Value": "Tue, 09 Sep 2025 06:11:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6817,7 +9249,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pjyiaq067u"
+          "Value": "x3diof5r5y"
         },
         {
           "Name": "label",
@@ -6825,18 +9257,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZsU+swYFK0x9du6icZJquvcwO6mlpD7YQv/b0xVcO1M="
+          "Value": "sha256-ilRbjnq332BT0oVcVK1xW1jCcFRIVTJ3FBrdsPxyMvs="
         }
       ]
     },
     {
-      "Route": "css/heroBanner.style.641797xm6e.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/cl0mks8tkc-641797xm6e.gz",
+      "Route": "css/heroBanner.style.82a427u043.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/cl0mks8tkc-82a427u043.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001221001221"
+          "Quality": "0.001210653753"
         }
       ],
       "ResponseHeaders": [
@@ -6846,15 +9278,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "818"
+          "Value": "825"
         },
         {
           "Name": "ETag",
-          "Value": "\"SUAGdLWmPpy7V0AvvXNqrldGp41TR1bqzaofxgdQDAU=\""
+          "Value": "\"7b6WJQPercZ0cDgx5rp6yBUaUVJScHrH+piv8icDUN4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:28:43 GMT"
+          "Value": "Sat, 13 Sep 2025 00:24:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6874,13 +9306,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ZraufAkyf8FcGo2iEIrcDfQF5bCQpf13NP9oXRTxiRo=\""
+          "Value": "W/\"8Kmk9q384NodbsyzU88/fFweQiQenXxzUig6cwvxtTY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "641797xm6e"
+          "Value": "82a427u043"
         },
         {
           "Name": "label",
@@ -6888,12 +9320,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZraufAkyf8FcGo2iEIrcDfQF5bCQpf13NP9oXRTxiRo="
+          "Value": "sha256-8Kmk9q384NodbsyzU88/fFweQiQenXxzUig6cwvxtTY="
         }
       ]
     },
     {
-      "Route": "css/heroBanner.style.641797xm6e.css",
+      "Route": "css/heroBanner.style.82a427u043.css",
       "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/heroBanner.style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6903,7 +9335,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3617"
+          "Value": "3721"
         },
         {
           "Name": "Content-Type",
@@ -6911,11 +9343,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZraufAkyf8FcGo2iEIrcDfQF5bCQpf13NP9oXRTxiRo=\""
+          "Value": "\"8Kmk9q384NodbsyzU88/fFweQiQenXxzUig6cwvxtTY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:28:43 GMT"
+          "Value": "Sat, 13 Sep 2025 00:24:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6925,7 +9357,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "641797xm6e"
+          "Value": "82a427u043"
         },
         {
           "Name": "label",
@@ -6933,13 +9365,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZraufAkyf8FcGo2iEIrcDfQF5bCQpf13NP9oXRTxiRo="
+          "Value": "sha256-8Kmk9q384NodbsyzU88/fFweQiQenXxzUig6cwvxtTY="
         }
       ]
     },
     {
-      "Route": "css/heroBanner.style.641797xm6e.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/cl0mks8tkc-641797xm6e.gz",
+      "Route": "css/heroBanner.style.82a427u043.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/cl0mks8tkc-82a427u043.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6948,7 +9380,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "818"
+          "Value": "825"
         },
         {
           "Name": "Content-Type",
@@ -6956,11 +9388,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SUAGdLWmPpy7V0AvvXNqrldGp41TR1bqzaofxgdQDAU=\""
+          "Value": "\"7b6WJQPercZ0cDgx5rp6yBUaUVJScHrH+piv8icDUN4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:28:43 GMT"
+          "Value": "Sat, 13 Sep 2025 00:24:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6978,7 +9410,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "641797xm6e"
+          "Value": "82a427u043"
         },
         {
           "Name": "label",
@@ -6986,18 +9418,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SUAGdLWmPpy7V0AvvXNqrldGp41TR1bqzaofxgdQDAU="
+          "Value": "sha256-7b6WJQPercZ0cDgx5rp6yBUaUVJScHrH+piv8icDUN4="
         }
       ]
     },
     {
       "Route": "css/heroBanner.style.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/cl0mks8tkc-641797xm6e.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/cl0mks8tkc-82a427u043.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001221001221"
+          "Quality": "0.001210653753"
         }
       ],
       "ResponseHeaders": [
@@ -7007,15 +9439,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "818"
+          "Value": "825"
         },
         {
           "Name": "ETag",
-          "Value": "\"SUAGdLWmPpy7V0AvvXNqrldGp41TR1bqzaofxgdQDAU=\""
+          "Value": "\"7b6WJQPercZ0cDgx5rp6yBUaUVJScHrH+piv8icDUN4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:28:43 GMT"
+          "Value": "Sat, 13 Sep 2025 00:24:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7035,13 +9467,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"ZraufAkyf8FcGo2iEIrcDfQF5bCQpf13NP9oXRTxiRo=\""
+          "Value": "W/\"8Kmk9q384NodbsyzU88/fFweQiQenXxzUig6cwvxtTY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZraufAkyf8FcGo2iEIrcDfQF5bCQpf13NP9oXRTxiRo="
+          "Value": "sha256-8Kmk9q384NodbsyzU88/fFweQiQenXxzUig6cwvxtTY="
         }
       ]
     },
@@ -7056,7 +9488,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3617"
+          "Value": "3721"
         },
         {
           "Name": "Content-Type",
@@ -7064,11 +9496,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZraufAkyf8FcGo2iEIrcDfQF5bCQpf13NP9oXRTxiRo=\""
+          "Value": "\"8Kmk9q384NodbsyzU88/fFweQiQenXxzUig6cwvxtTY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:28:43 GMT"
+          "Value": "Sat, 13 Sep 2025 00:24:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7078,13 +9510,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZraufAkyf8FcGo2iEIrcDfQF5bCQpf13NP9oXRTxiRo="
+          "Value": "sha256-8Kmk9q384NodbsyzU88/fFweQiQenXxzUig6cwvxtTY="
         }
       ]
     },
     {
       "Route": "css/heroBanner.style.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/cl0mks8tkc-641797xm6e.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/cl0mks8tkc-82a427u043.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7093,7 +9525,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "818"
+          "Value": "825"
         },
         {
           "Name": "Content-Type",
@@ -7101,11 +9533,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SUAGdLWmPpy7V0AvvXNqrldGp41TR1bqzaofxgdQDAU=\""
+          "Value": "\"7b6WJQPercZ0cDgx5rp6yBUaUVJScHrH+piv8icDUN4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 12:28:43 GMT"
+          "Value": "Sat, 13 Sep 2025 00:24:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7123,7 +9555,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SUAGdLWmPpy7V0AvvXNqrldGp41TR1bqzaofxgdQDAU="
+          "Value": "sha256-7b6WJQPercZ0cDgx5rp6yBUaUVJScHrH+piv8icDUN4="
         }
       ]
     },
@@ -7426,6 +9858,304 @@
       ]
     },
     {
+      "Route": "css/selection.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/fd9cepuvt5-uozryvmzpt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001379310345"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "724"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"reZvv9FcGzSNmEXpFM3B6vSLwY7f8UeQn1UvHVfzf4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 08:34:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo="
+        }
+      ]
+    },
+    {
+      "Route": "css/selection.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/selection.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 08:34:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo="
+        }
+      ]
+    },
+    {
+      "Route": "css/selection.style.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/fd9cepuvt5-uozryvmzpt.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "724"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"reZvv9FcGzSNmEXpFM3B6vSLwY7f8UeQn1UvHVfzf4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 08:34:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-reZvv9FcGzSNmEXpFM3B6vSLwY7f8UeQn1UvHVfzf4Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/selection.style.uozryvmzpt.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/fd9cepuvt5-uozryvmzpt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001379310345"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "724"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"reZvv9FcGzSNmEXpFM3B6vSLwY7f8UeQn1UvHVfzf4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 08:34:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uozryvmzpt"
+        },
+        {
+          "Name": "label",
+          "Value": "css/selection.style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo="
+        }
+      ]
+    },
+    {
+      "Route": "css/selection.style.uozryvmzpt.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/selection.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 08:34:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uozryvmzpt"
+        },
+        {
+          "Name": "label",
+          "Value": "css/selection.style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo="
+        }
+      ]
+    },
+    {
+      "Route": "css/selection.style.uozryvmzpt.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/fd9cepuvt5-uozryvmzpt.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "724"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"reZvv9FcGzSNmEXpFM3B6vSLwY7f8UeQn1UvHVfzf4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 12 Sep 2025 08:34:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uozryvmzpt"
+        },
+        {
+          "Name": "label",
+          "Value": "css/selection.style.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-reZvv9FcGzSNmEXpFM3B6vSLwY7f8UeQn1UvHVfzf4Y="
+        }
+      ]
+    },
+    {
       "Route": "css/site.5zdil3cfya.css",
       "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/bj1wsq60ct-5zdil3cfya.gz",
       "Selectors": [
@@ -7724,13 +10454,13 @@
       ]
     },
     {
-      "Route": "css/topicFeature.style.2t7hsdv2pu.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/w5eokjlzix-2t7hsdv2pu.gz",
+      "Route": "css/topicFeature.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/w5eokjlzix-j3ptve846y.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000884955752"
+          "Quality": "0.000884173298"
         }
       ],
       "ResponseHeaders": [
@@ -7740,19 +10470,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1129"
+          "Value": "1130"
         },
         {
           "Name": "ETag",
-          "Value": "\"Hf65dZXgPtd8KafJqRw+YHyb2S/nwU7tpSbua71R2Hk=\""
+          "Value": "\"ONKyddnsGgTqOuqgqz3gDQu3cUgh71tUmUNKC9JNobw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 13:03:59 GMT"
+          "Value": "Thu, 11 Sep 2025 06:18:17 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -7768,26 +10498,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xqG0mcNZlTs/q6dgDR1rC2PeCDr59Rr6zw/se74woCA=\""
+          "Value": "W/\"TxuULIJmdjx8CICGa+gPBwhhiyaWW75GnXpvFhHx+GA=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "2t7hsdv2pu"
-        },
-        {
-          "Name": "label",
-          "Value": "css/topicFeature.style.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-xqG0mcNZlTs/q6dgDR1rC2PeCDr59Rr6zw/se74woCA="
+          "Value": "sha256-TxuULIJmdjx8CICGa+gPBwhhiyaWW75GnXpvFhHx+GA="
         }
       ]
     },
     {
-      "Route": "css/topicFeature.style.2t7hsdv2pu.css",
+      "Route": "css/topicFeature.style.css",
       "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/topicFeature.style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -7797,7 +10519,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4515"
+          "Value": "4500"
         },
         {
           "Name": "Content-Type",
@@ -7805,11 +10527,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xqG0mcNZlTs/q6dgDR1rC2PeCDr59Rr6zw/se74woCA=\""
+          "Value": "\"TxuULIJmdjx8CICGa+gPBwhhiyaWW75GnXpvFhHx+GA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 13:03:59 GMT"
+          "Value": "Thu, 11 Sep 2025 06:18:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TxuULIJmdjx8CICGa+gPBwhhiyaWW75GnXpvFhHx+GA="
+        }
+      ]
+    },
+    {
+      "Route": "css/topicFeature.style.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/w5eokjlzix-j3ptve846y.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1130"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ONKyddnsGgTqOuqgqz3gDQu3cUgh71tUmUNKC9JNobw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 06:18:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ONKyddnsGgTqOuqgqz3gDQu3cUgh71tUmUNKC9JNobw="
+        }
+      ]
+    },
+    {
+      "Route": "css/topicFeature.style.j3ptve846y.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/w5eokjlzix-j3ptve846y.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000884173298"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1130"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ONKyddnsGgTqOuqgqz3gDQu3cUgh71tUmUNKC9JNobw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 06:18:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"TxuULIJmdjx8CICGa+gPBwhhiyaWW75GnXpvFhHx+GA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j3ptve846y"
+        },
+        {
+          "Name": "label",
+          "Value": "css/topicFeature.style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TxuULIJmdjx8CICGa+gPBwhhiyaWW75GnXpvFhHx+GA="
+        }
+      ]
+    },
+    {
+      "Route": "css/topicFeature.style.j3ptve846y.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/topicFeature.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4500"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TxuULIJmdjx8CICGa+gPBwhhiyaWW75GnXpvFhHx+GA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Sep 2025 06:18:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7819,7 +10686,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2t7hsdv2pu"
+          "Value": "j3ptve846y"
         },
         {
           "Name": "label",
@@ -7827,13 +10694,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xqG0mcNZlTs/q6dgDR1rC2PeCDr59Rr6zw/se74woCA="
+          "Value": "sha256-TxuULIJmdjx8CICGa+gPBwhhiyaWW75GnXpvFhHx+GA="
         }
       ]
     },
     {
-      "Route": "css/topicFeature.style.2t7hsdv2pu.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/w5eokjlzix-2t7hsdv2pu.gz",
+      "Route": "css/topicFeature.style.j3ptve846y.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/w5eokjlzix-j3ptve846y.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7842,7 +10709,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1129"
+          "Value": "1130"
         },
         {
           "Name": "Content-Type",
@@ -7850,11 +10717,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Hf65dZXgPtd8KafJqRw+YHyb2S/nwU7tpSbua71R2Hk=\""
+          "Value": "\"ONKyddnsGgTqOuqgqz3gDQu3cUgh71tUmUNKC9JNobw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 13:03:59 GMT"
+          "Value": "Thu, 11 Sep 2025 06:18:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7872,7 +10739,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2t7hsdv2pu"
+          "Value": "j3ptve846y"
         },
         {
           "Name": "label",
@@ -7880,144 +10747,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Hf65dZXgPtd8KafJqRw+YHyb2S/nwU7tpSbua71R2Hk="
-        }
-      ]
-    },
-    {
-      "Route": "css/topicFeature.style.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/w5eokjlzix-2t7hsdv2pu.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000884955752"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1129"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Hf65dZXgPtd8KafJqRw+YHyb2S/nwU7tpSbua71R2Hk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 13:03:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"xqG0mcNZlTs/q6dgDR1rC2PeCDr59Rr6zw/se74woCA=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xqG0mcNZlTs/q6dgDR1rC2PeCDr59Rr6zw/se74woCA="
-        }
-      ]
-    },
-    {
-      "Route": "css/topicFeature.style.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/topicFeature.style.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4515"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xqG0mcNZlTs/q6dgDR1rC2PeCDr59Rr6zw/se74woCA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 13:03:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xqG0mcNZlTs/q6dgDR1rC2PeCDr59Rr6zw/se74woCA="
-        }
-      ]
-    },
-    {
-      "Route": "css/topicFeature.style.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/w5eokjlzix-2t7hsdv2pu.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Hf65dZXgPtd8KafJqRw+YHyb2S/nwU7tpSbua71R2Hk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 07 Sep 2025 13:03:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Hf65dZXgPtd8KafJqRw+YHyb2S/nwU7tpSbua71R2Hk="
+          "Value": "sha256-ONKyddnsGgTqOuqgqz3gDQu3cUgh71tUmUNKC9JNobw="
         }
       ]
     },
@@ -26282,13 +29012,13 @@
       ]
     },
     {
-      "Route": "mario-dsa-rp.8x1wds4s0b.bundle.scp.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0sddod3619-8x1wds4s0b.gz",
+      "Route": "mario-dsa-rp.5xc7mma84s.bundle.scp.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0sddod3619-5xc7mma84s.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.011363636364"
+          "Quality": "0.007692307692"
         }
       ],
       "ResponseHeaders": [
@@ -26298,15 +29028,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "87"
+          "Value": "129"
         },
         {
           "Name": "ETag",
-          "Value": "\"RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM=\""
+          "Value": "\"bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26326,13 +29056,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg=\""
+          "Value": "W/\"KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8x1wds4s0b"
+          "Value": "5xc7mma84s"
         },
         {
           "Name": "label",
@@ -26340,12 +29070,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg="
+          "Value": "sha256-KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI="
         }
       ]
     },
     {
-      "Route": "mario-dsa-rp.8x1wds4s0b.bundle.scp.css",
+      "Route": "mario-dsa-rp.5xc7mma84s.bundle.scp.css",
       "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/scopedcss/projectbundle/mario-dsa-rp.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -26355,7 +29085,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "67"
+          "Value": "113"
         },
         {
           "Name": "Content-Type",
@@ -26363,11 +29093,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg=\""
+          "Value": "\"KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26377,7 +29107,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8x1wds4s0b"
+          "Value": "5xc7mma84s"
         },
         {
           "Name": "label",
@@ -26385,13 +29115,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg="
+          "Value": "sha256-KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI="
         }
       ]
     },
     {
-      "Route": "mario-dsa-rp.8x1wds4s0b.bundle.scp.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0sddod3619-8x1wds4s0b.gz",
+      "Route": "mario-dsa-rp.5xc7mma84s.bundle.scp.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0sddod3619-5xc7mma84s.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -26400,7 +29130,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "87"
+          "Value": "129"
         },
         {
           "Name": "Content-Type",
@@ -26408,11 +29138,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM=\""
+          "Value": "\"bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26430,7 +29160,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8x1wds4s0b"
+          "Value": "5xc7mma84s"
         },
         {
           "Name": "label",
@@ -26438,18 +29168,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM="
+          "Value": "sha256-bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s="
         }
       ]
     },
     {
-      "Route": "mario-dsa-rp.8x1wds4s0b.styles.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/diy9ly4oq3-8x1wds4s0b.gz",
+      "Route": "mario-dsa-rp.5xc7mma84s.styles.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/diy9ly4oq3-5xc7mma84s.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.011363636364"
+          "Quality": "0.007692307692"
         }
       ],
       "ResponseHeaders": [
@@ -26459,15 +29189,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "87"
+          "Value": "129"
         },
         {
           "Name": "ETag",
-          "Value": "\"RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM=\""
+          "Value": "\"bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26487,13 +29217,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg=\""
+          "Value": "W/\"KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8x1wds4s0b"
+          "Value": "5xc7mma84s"
         },
         {
           "Name": "label",
@@ -26501,12 +29231,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg="
+          "Value": "sha256-KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI="
         }
       ]
     },
     {
-      "Route": "mario-dsa-rp.8x1wds4s0b.styles.css",
+      "Route": "mario-dsa-rp.5xc7mma84s.styles.css",
       "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/scopedcss/bundle/mario-dsa-rp.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -26516,7 +29246,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "67"
+          "Value": "113"
         },
         {
           "Name": "Content-Type",
@@ -26524,11 +29254,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg=\""
+          "Value": "\"KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26538,7 +29268,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8x1wds4s0b"
+          "Value": "5xc7mma84s"
         },
         {
           "Name": "label",
@@ -26546,13 +29276,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg="
+          "Value": "sha256-KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI="
         }
       ]
     },
     {
-      "Route": "mario-dsa-rp.8x1wds4s0b.styles.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/diy9ly4oq3-8x1wds4s0b.gz",
+      "Route": "mario-dsa-rp.5xc7mma84s.styles.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/diy9ly4oq3-5xc7mma84s.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -26561,7 +29291,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "87"
+          "Value": "129"
         },
         {
           "Name": "Content-Type",
@@ -26569,11 +29299,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM=\""
+          "Value": "\"bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26591,7 +29321,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8x1wds4s0b"
+          "Value": "5xc7mma84s"
         },
         {
           "Name": "label",
@@ -26599,18 +29329,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM="
+          "Value": "sha256-bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s="
         }
       ]
     },
     {
       "Route": "mario-dsa-rp.bundle.scp.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0sddod3619-8x1wds4s0b.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0sddod3619-5xc7mma84s.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.011363636364"
+          "Quality": "0.007692307692"
         }
       ],
       "ResponseHeaders": [
@@ -26620,15 +29350,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "87"
+          "Value": "129"
         },
         {
           "Name": "ETag",
-          "Value": "\"RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM=\""
+          "Value": "\"bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26648,13 +29378,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg=\""
+          "Value": "W/\"KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg="
+          "Value": "sha256-KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI="
         }
       ]
     },
@@ -26669,7 +29399,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "67"
+          "Value": "113"
         },
         {
           "Name": "Content-Type",
@@ -26677,11 +29407,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg=\""
+          "Value": "\"KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26691,13 +29421,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg="
+          "Value": "sha256-KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI="
         }
       ]
     },
     {
       "Route": "mario-dsa-rp.bundle.scp.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0sddod3619-8x1wds4s0b.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/0sddod3619-5xc7mma84s.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -26706,7 +29436,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "87"
+          "Value": "129"
         },
         {
           "Name": "Content-Type",
@@ -26714,11 +29444,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM=\""
+          "Value": "\"bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26736,18 +29466,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM="
+          "Value": "sha256-bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s="
         }
       ]
     },
     {
       "Route": "mario-dsa-rp.styles.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/diy9ly4oq3-8x1wds4s0b.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/diy9ly4oq3-5xc7mma84s.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.011363636364"
+          "Quality": "0.007692307692"
         }
       ],
       "ResponseHeaders": [
@@ -26757,15 +29487,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "87"
+          "Value": "129"
         },
         {
           "Name": "ETag",
-          "Value": "\"RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM=\""
+          "Value": "\"bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26785,13 +29515,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg=\""
+          "Value": "W/\"KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg="
+          "Value": "sha256-KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI="
         }
       ]
     },
@@ -26806,7 +29536,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "67"
+          "Value": "113"
         },
         {
           "Name": "Content-Type",
@@ -26814,11 +29544,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg=\""
+          "Value": "\"KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26828,13 +29558,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RNEKffE+/ird3gYcPsR4DJSfUSHwelfpt7P2kjIJ+Bg="
+          "Value": "sha256-KcuvZxV3V/Q+MjdGycI33kyonXTIvmsDLVt5j+5+IzI="
         }
       ]
     },
     {
       "Route": "mario-dsa-rp.styles.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/diy9ly4oq3-8x1wds4s0b.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/diy9ly4oq3-5xc7mma84s.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -26843,7 +29573,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "87"
+          "Value": "129"
         },
         {
           "Name": "Content-Type",
@@ -26851,11 +29581,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM=\""
+          "Value": "\"bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 06 Sep 2025 23:29:11 GMT"
+          "Value": "Thu, 11 Sep 2025 08:23:54 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -26873,7 +29603,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RYYwqtjb9Br8quyw2h4KLeSTgaupTCuwy+OqnZY0bvM="
+          "Value": "sha256-bTlgprn4rIBGhicwk8S2E6eYx4X9blzmkAwFJjzbq5s="
         }
       ]
     }

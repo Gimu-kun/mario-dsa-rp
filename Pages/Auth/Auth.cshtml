@@ -1,42 +1,75 @@
 ﻿@page "/auth"
-@using MyApp.Namespace
-@model MyApp.Namespace.AuthModel
+@model mario_dsa_rp.Namespace.AuthModel
 @{
     Layout = "_AuthLayout";
-    ViewData["Title"] = "Error";
+    ViewData["Title"] = "Authentication";
     var isLogin = Model.View == "login";
 }
 <link rel="stylesheet" href="~/css/auth.style.css">
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <div class="modal" id="messageModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" onclick="()=>Model.Message=null" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>@Model.Message</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 <div class="auth-page @(isLogin ? "theme__mario" : "theme__luigi")">
     <img class="auth-logo" src="~/assets/white-logo.png" alt="">
     <div class="wallpaper"></div>
     <div class="clip-mask">
-        <img class="@(isLogin ? "character__mario" : "character__luigi")" src="~/assets/@(isLogin ? "mario.png" : "luigi.png")" alt="loading fault">
+        <img class="@(isLogin ? "character__mario" : "character__luigi")"
+            src="~/assets/@(isLogin ? "mario.png" : "luigi.png")" alt="loading fault" />
     </div>
     @if (isLogin)
     {
-        <form class="form" action="">
+        <form method="post" asp-page-handler="Login" class="form">
             <h2 class="form__title">ログイン</h2>
             <div class="form__fields">
-                <input class="form__field" id="username_si" type="text" placeholder="アカウント">
-                <input class="form__field" id="passwords_si" type="passwords" placeholder="パスワード">
-                <button class="form__btn @(isLogin ? "theme__mario" : "theme__luigi")">行くぞ!</button>
-                <p class="form__article">アカウントがないか? <a asp-area="" asp-page="/Auth/auth" asp-route-view="register">即刻アカウント登録する</a></p>
+                <input asp-for="Username" class="form__field" id="username_si" type="text" placeholder="アカウント" />
+                <input asp-for="Passwords" class="form__field" id="passwords_si" type="password" placeholder="パスワード" />
+                <button type="submit" class="form__btn theme__mario">行くぞ!</button>
+                <p class="form__article">アカウントがないか? <a asp-page="/auth" asp-route-view="register">即刻アカウント登録する</a></p>
                 <a class="form__article" href="">パスワードが忘れの場合? </a>
             </div>
         </form>
     }
     else
     {
-        <form class="form" action="">
+        <form method="post" asp-page-handler="Register" class="form">
             <h2 class="form__title">アカウント登録</h2>
             <div class="form__fields">
-                <input class="form__field" id="fullname_su" type="text" placeholder="名前">
-                <input class="form__field" id="username_su" type="text" placeholder="アカウント">
-                <input class="form__field" id="passwords_su" type="passwords" placeholder="パスワード">
-                <button class="form__btn @(isLogin ? "theme__mario" : "theme__luigi")">注冊し!</button>
-                <p>アカウントがあった? <a asp-area="" asp-page="/Auth/auth" asp-route-view="login">行くぞ！</a></p>
+                <input asp-for="FullName" class="form__field" id="fullname_su" type="text" placeholder="名前" />
+                <input asp-for="Username" class="form__field" id="username_su" type="text" placeholder="アカウント" />
+                <input asp-for="Passwords" class="form__field" id="passwords_su" type="password" placeholder="パスワード" />
+                <button type="submit" class="form__btn theme__luigi">注冊し!</button>
+                <p>アカウントがあった? <a asp-page="/auth" asp-route-view="login">行くぞ！</a></p>
             </div>
         </form>
     }
 </div>
+
+
+@section Scripts {
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const hasMessage = '@(string.IsNullOrEmpty(Model.Message) ? "false" : "true")';
+            if (hasMessage === "true") {
+                const modal = new bootstrap.Modal(document.getElementById('messageModal'));
+                modal.show();
+            }
+        });
+    </script>
+}

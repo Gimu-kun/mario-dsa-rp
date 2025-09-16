@@ -1,0 +1,245 @@
+.play-page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    min-height: 90vh;
+    background-image: repeating-linear-gradient(-45deg,
+            #ffffff,
+            #ffffff 10px,
+            #ebebeb 10px,
+            #ebebeb 20px);
+}
+
+#countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#start-dialog {
+    display: none;
+}
+
+#game-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding: 50px 0;
+    width: 100%;
+    height: 100%;
+}
+
+#game-container .playing-container {
+    flex: 1;
+    width: 90%;
+}
+
+.question {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    border: none;
+    width: 500px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: var(--btn-primary-color);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.question_decor::before,
+.question_decor::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #f08200;
+    box-shadow: 1px 1px 0 rgba(7, 1, 2, 0.16) inset;
+    z-index: 5;
+}
+
+.question_decor.left::before {
+    top: 5px;
+    left: 5px;
+}
+
+.question_decor.left::after {
+    bottom: 5px;
+    left: 5px;
+}
+
+.question_decor.right::before {
+    top: 5px;
+    right: 5px;
+}
+
+.question_decor.right::after {
+    bottom: 5px;
+    right: 5px;
+}
+
+.question_txt {
+    color: var(--btn-primary-txt-color);
+}
+
+.question_txt.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.item-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.item-table th,
+.item-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+}
+
+.item-table thead {
+    background-color: #444;
+    color: #fff;
+}
+
+.item-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.item-table tbody tr:hover {
+    background-color: #e0f0ff;
+    transition: 0.3s;
+}
+
+.dp-table-wrapper{
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.dp-table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: white;
+    font-size: 18px;
+}
+
+.dp-table th,
+.dp-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 50px;
+    height: 50px;
+}
+
+.dp-table th {
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+}
+
+.dp-table tbody tr:hover {
+    background-color: #e0f0ff;
+    transition: 0.3s;
+}
+
+.dp-input-field {
+    padding: 0 5px;
+    width: 100%;
+    min-width: 100px;
+}
+
+#game-container .btn-container {
+    width: 100%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.btn-container button {
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    z-index: 0;
+}
+
+.btn-container button.complete{
+    border: 1px solid var(--luigi-color);
+    background-color: var(--luigi-color);
+    color: #ffffff;
+}
+
+.btn-container button.clean{
+    border: 1px solid var(--mario-color);
+    background-color: var(--mario-color);
+    color: #ffffff;
+}
+
+.btn-container button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -7em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+}
+
+.btn-container button.clean:hover {
+    border: 1px solid rgb(255, 240, 240);
+}
+
+.btn-container button.clean:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(255, 60, 60);
+}
+
+.btn-container button.complete:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(60, 129, 60);
+}
+
+.btn-container button span {
+    margin: 10px;
+}

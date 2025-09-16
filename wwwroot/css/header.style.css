@@ -39,6 +39,7 @@
     cursor: pointer;
     transition: color .3s ease-in;
     text-align: center;
+    text-decoration: none;
   }
   
   .links__item:hover,
@@ -104,6 +105,22 @@
     right: 5px;
   }
   
+  .navbar__btn-container__box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .drop-down__container{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
+    z-index: 2;
+  }
+
   .navbar__btn{
     position: relative;
     display: block;

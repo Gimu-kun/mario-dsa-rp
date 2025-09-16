@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mario-dsa-rp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4ea8975f116efcc7455e0a55fc30578fc75e19c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8874ecb503f27d17eb3fff88f2b6db61f32d05a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("mario-dsa-rp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mario-dsa-rp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

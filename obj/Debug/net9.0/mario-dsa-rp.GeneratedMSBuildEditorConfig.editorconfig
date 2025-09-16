@@ -28,6 +28,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9fQXV0aExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/lehieunghiem/Desktop/mario-dsa-rp/Pages/Challenge/Knap-sack/Play/Choose-items.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhbGxlbmdlL0tuYXAtc2Fjay9QbGF5L0Nob29zZS1pdGVtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lehieunghiem/Desktop/mario-dsa-rp/Pages/Challenge/Knap-sack/Play/Dynamic-board.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhbGxlbmdlL0tuYXAtc2Fjay9QbGF5L0R5bmFtaWMtYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lehieunghiem/Desktop/mario-dsa-rp/Pages/Challenge/Selecting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhbGxlbmdlL1NlbGVjdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/lehieunghiem/Desktop/mario-dsa-rp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -52,12 +64,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/lehieunghiem/Desktop/mario-dsa-rp/Views/Shared/Components/ChallengeTopic/ChallengeTopic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvQ2hhbGxlbmdlVG9waWMvQ2hhbGxlbmdlVG9waWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/lehieunghiem/Desktop/mario-dsa-rp/Views/Shared/Components/Footer/Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvRm9vdGVyL0Zvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lehieunghiem/Desktop/mario-dsa-rp/Views/Shared/Components/Header/Header.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvSGVhZGVyL0hlYWRlci5jc2h0bWw=
+[/Users/lehieunghiem/Desktop/mario-dsa-rp/Views/Shared/Components/Header/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvSGVhZGVyL0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/lehieunghiem/Desktop/mario-dsa-rp/Views/Shared/Components/HeroBanner/HeroBanner.cshtml]

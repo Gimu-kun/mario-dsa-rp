@@ -1,52 +1,54 @@
 <link rel="stylesheet" href="~/css/heroBanner.style.css">
 
-<div class="hero">
-    <div class="hero-pattern">
-        <div id="txt-scroll" class="hero-txt-scroll">
-            <p class="scroll-txt">マリオと一緒にデータ構造とアルゴリズムのエキサイティングな世界を探検しましょう</p>
+<div class="c-hero">
+    <div class="c-hero-pattern">
+        <div id="txt-scroll" class="c-hero-txt-scroll">
+            <p class="c-scroll-txt-infi">
+                マリオと一緒にデータ構造とアルゴリズムのエキサイティングな世界を探検しましょう
+            </p>
         </div>
-        <img class="hero-img block01 sc1" src="~/assets/img-block-01.png" alt="">
-        <img class="hero-img block02 sc1" src="~/assets/img-block-02.png" alt="">
-        <img class="hero-img chara03 sc1" src="~/assets/img-chara-03.png" alt="">
-        <img class="hero-img chara04 sc1" src="~/assets/img-chara-04.png" alt="">
-        <img class="hero-img chara05 sc2" src="~/assets/img-chara-05.png" alt="">
-        <img class="hero-img chara06 sc4" src="~/assets/img-chara-06_02.png" alt="">
-        <img class="hero-img chara07 sc4" src="~/assets/img-chara-07.png" alt="">
-        <img class="hero-img chara08 sc1" src="~/assets/img-chara-08.png" alt="">
-        <img class="hero-img chara09 sc1" src="~/assets/img-chara-09.png" alt="">
-        <img class="hero-img chara10 sc1" src="~/assets/img-chara-10.png" alt="">
-        <img class="hero-img chara12 sc3" src="~/assets/img-chara-12.png" alt="">
-        <img class="hero-img chara13 sc3" src="~/assets/img-chara-13.png" alt="">
-        <img class="hero-img chara15 sc2" src="~/assets/img-chara-15.png" alt="">
-        <img class="hero-img chara19 sc2" src="~/assets/img-chara-19.png" alt="">
-        <img class="hero-img chara20 sc2" src="~/assets/img-chara-20.png" alt="">
-        <img class="hero-img chara21 sc3" src="~/assets/img-chara-21.png" alt="">
-        <img class="hero-img mario04 sc5" src="~/assets/img-mario-04.png" alt="">
-        <img class="hero-img luigi sc5" src="~/assets/luigi.png" alt="">
+        <img class="c-hero-img c-block01 c-sc1" src="~/assets/img-block-01.png" alt="">
+        <img class="c-hero-img c-block02 c-sc1" src="~/assets/img-block-02.png" alt="">
+        <img class="c-hero-img c-chara03 c-sc1" src="~/assets/img-chara-03.png" alt="">
+        <img class="c-hero-img c-chara04 c-sc1" src="~/assets/img-chara-04.png" alt="">
+        <img class="c-hero-img c-chara05 c-sc2" src="~/assets/img-chara-05.png" alt="">
+        <img class="c-hero-img c-chara06 c-sc4" src="~/assets/img-chara-06_02.png" alt="">
+        <img class="c-hero-img c-chara07 c-sc4" src="~/assets/img-chara-07.png" alt="">
+        <img class="c-hero-img c-chara08 c-sc1" src="~/assets/img-chara-08.png" alt="">
+        <img class="c-hero-img c-chara09 c-sc1" src="~/assets/img-chara-09.png" alt="">
+        <img class="c-hero-img c-chara10 c-sc1" src="~/assets/img-chara-10.png" alt="">
+        <img class="c-hero-img c-chara12 c-sc3" src="~/assets/img-chara-12.png" alt="">
+        <img class="c-hero-img c-chara13 c-sc3" src="~/assets/img-chara-13.png" alt="">
+        <img class="c-hero-img c-chara15 c-sc2" src="~/assets/img-chara-15.png" alt="">
+        <img class="c-hero-img c-chara19 c-sc2" src="~/assets/img-chara-19.png" alt="">
+        <img class="c-hero-img c-chara20 c-sc2" src="~/assets/img-chara-20.png" alt="">
+        <img class="c-hero-img c-chara21 c-sc3" src="~/assets/img-chara-21.png" alt="">
+        <img class="c-hero-img c-mario04 c-sc5" src="~/assets/img-mario-04.png" alt="">
+        <img class="c-hero-img c-luigi c-sc5" src="~/assets/luigi.png" alt="">
     </div>
 </div>
 
 <script>
-    const delayTime = 6000
+    const delayTime = 10000
     function showScene(scNo) {
-        const scEls = document.querySelectorAll(`.sc${scNo}`);
+        const scEls = document.querySelectorAll(`.c-sc${scNo}`);
 
-        // Thêm class 'show'
-        scEls.forEach(el => el.classList.add("show"));
+        // Thêm class 'c-showup'
+        scEls.forEach(el => el.classList.add("c-showup"));
 
-        // 4s sau: thêm class 'hide'
+        // 10s sau: thêm class 'c-hide-in'
         setTimeout(() => {
-            scEls.forEach(el => el.classList.add("hide"));
+            scEls.forEach(el => el.classList.add("c-hide-in"));
         }, delayTime);
 
-        // 5s sau: xóa class 'show'
+        // 10.5s sau: xóa class 'c-showup'
         setTimeout(() => {
-            scEls.forEach(el => el.classList.remove("show"));
+            scEls.forEach(el => el.classList.remove("c-showup"));
         }, delayTime + 500);
 
-        // 6s sau: xóa class 'hide'
+        // 11s sau: xóa class 'c-hide-in'
         setTimeout(() => {
-            scEls.forEach(el => el.classList.remove("hide"));
+            scEls.forEach(el => el.classList.remove("c-hide-in"));
         }, delayTime + 1000);
     }
 
@@ -58,7 +60,7 @@
             showScene(i);
             i++;
 
-            // Cứ mỗi 4s, gọi scene tiếp theo
+            // Cứ mỗi 10s, gọi scene tiếp theo
             setInterval(() => {
                 showScene(i);
                 i = (i % 5) + 1; // Nếu i > 5 thì quay về 1

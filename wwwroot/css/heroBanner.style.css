@@ -1,4 +1,4 @@
-.hero {
+.c-hero {
     position: relative;
     width: 100%;
     height: 650px;
@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 
-.hero-pattern {
+.c-hero-pattern {
     position: relative;
     width: 100%;
     height: 100%;
@@ -14,11 +14,11 @@
     background-size: 25%;
 }
 
-.hero-img {
+.c-hero-img {
     width: 100px;
 }
 
-.block01 {
+.c-block01 {
     position: absolute;
     height: 100px;
     width: auto;
@@ -28,7 +28,7 @@
     transition: all .5s ease-in-out;
 }
 
-.block02 {
+.c-block02 {
     position: absolute;
     height: 100px;
     width: auto;
@@ -37,7 +37,7 @@
     transform: translateY(-100%);
 }
 
-.chara03 {
+.c-chara03 {
     position: absolute;
     height: 250px;
     width: auto;
@@ -46,7 +46,7 @@
     transform: translateX(150%);
 }
 
-.chara04 {
+.c-chara04 {
     position: absolute;
     height: 250px;
     width: auto;
@@ -55,7 +55,7 @@
     transform: translateX(-500%);
 }
 
-.chara05 {
+.c-chara05 {
     position: absolute;
     height: 60%;
     width: auto;
@@ -64,7 +64,7 @@
     transform: scaleX(-1) translateX(-500%);
 }
 
-.chara08 {
+.c-chara08 {
     position: absolute;
     height: 150px;
     width: auto;
@@ -73,7 +73,7 @@
     transform: translateX(-300%);
 }
 
-.chara09 {
+.c-chara09 {
     position: absolute;
     height: 150px;
     width: auto;
@@ -82,7 +82,7 @@
     transform: translateX(300%);
 }
 
-.chara10 {
+.c-chara10 {
     position: absolute;
     height: 150px;
     width: auto;
@@ -91,7 +91,7 @@
     transform: translateX(-400%);
 }
 
-.chara15 {
+.c-chara15 {
     position: absolute;
     height: 40%;
     width: auto;
@@ -101,7 +101,7 @@
     transform: translateY(100%);
 }
 
-.chara19 {
+.c-chara19 {
     position: absolute;
     height: 45%;
     width: auto;
@@ -110,7 +110,7 @@
     transform: translateY(100%);
 }
 
-.chara20 {
+.c-chara20 {
     position: absolute;
     height: 35%;
     width: auto;
@@ -119,7 +119,7 @@
     transform: translate(250%, 250%);
 }
 
-.chara07 {
+.c-chara07 {
     position: absolute;
     height: 50%;
     width: auto;
@@ -128,7 +128,7 @@
     transform: translateX(-200%);
 }
 
-.chara06 {
+.c-chara06 {
     position: absolute;
     height: 160%;
     width: auto;
@@ -137,7 +137,7 @@
     transform: translateX(100%);
 }
 
-.chara12 {
+.c-chara12 {
     position: absolute;
     height: 60%;
     width: auto;
@@ -146,7 +146,7 @@
     transform: translateY(100%);
 }
 
-.chara21 {
+.c-chara21 {
     position: absolute;
     height: 80%;
     width: auto;
@@ -155,7 +155,7 @@
     transform: translateX(-200%);
 }
 
-.chara13 {
+.c-chara13 {
     position: absolute;
     height: 30%;
     width: auto;
@@ -164,7 +164,7 @@
     transform: translateY(100%);
 }
 
-.mario04 {
+.c-mario04 {
     position: absolute;
     right: 0;
     top: -5%;
@@ -173,7 +173,7 @@
     transform: rotateX(90deg);
 }
 
-.luigi {
+.c-luigi {
     position: absolute;
     left: 5%;
     top: -5%;
@@ -182,31 +182,31 @@
     transform: rotateX(90deg);
 }
 
-.sc1,
-.sc2,
-.sc3,
-.sc4,
-.sc5 {
+.c-sc1,
+.c-sc2,
+.c-sc3,
+.c-sc4,
+.c-sc5 {
     transition: all 1s ease-in-out;
 }
 
-.sc1.show,
-.sc2.show,
-.sc3.show,
-.sc4.show,
-.sc5.show {
+.c-sc1.c-showup,
+.c-sc2.c-showup,
+.c-sc3.c-showup,
+.c-sc4.c-showup,
+.c-sc5.c-showup {
     transform: translate(0, 0) rotateX(0);
 }
 
-.sc2.show.chara05 {
+.c-sc2.c-showup.c-chara05 {
     transform: scaleX(-1) translate(0, 0);
 }
 
-.hide {
+.c-hide-in {
     opacity: 0;
 }
 
-.hero-txt-scroll {
+.c-hero-txt-scroll {
     display: flex;
     align-items: center;
     column-gap: 200px;
@@ -216,7 +216,7 @@
     position: relative;
 }
 
-.scroll-txt {
+.c-scroll-txt-infi {
     display: inline-block;
     white-space: nowrap;
     font-size: 260px;
@@ -229,7 +229,6 @@
     0% {
         transform: translateX(20%);
     }
-
     100% {
         transform: translateX(-110%);
     }
