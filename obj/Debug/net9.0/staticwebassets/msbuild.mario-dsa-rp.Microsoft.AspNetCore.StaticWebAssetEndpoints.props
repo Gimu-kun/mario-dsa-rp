@@ -624,17 +624,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91\u002Bc2q8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4272"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91\u002Bc2q8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 12 Sep 2025 16:02:32 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/dynamic-board.style.45cpedkh9u.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dynamic-board.style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"45cpedkh9u"},{"Name":"integrity","Value":"sha256-uKtDQ8EuJo4LPHc3IephsGL\u002BtToWpIusEHTGbYxt4m0="},{"Name":"label","Value":"_content/mario-dsa-rp/css/dynamic-board.style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9863"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022uKtDQ8EuJo4LPHc3IephsGL\u002BtToWpIusEHTGbYxt4m0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 23 Sep 2025 12:31:48 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/dynamic-board.style.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dynamic-board.style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL\u002BLz50/u0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9862"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL\u002BLz50/u0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 23 Sep 2025 04:05:03 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/dynamic-board.style.qovdydocc0.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dynamic-board.style.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qovdydocc0"},{"Name":"integrity","Value":"sha256-VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL\u002BLz50/u0="},{"Name":"label","Value":"_content/mario-dsa-rp/css/dynamic-board.style.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9862"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL\u002BLz50/u0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 23 Sep 2025 04:05:03 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uKtDQ8EuJo4LPHc3IephsGL\u002BtToWpIusEHTGbYxt4m0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9863"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022uKtDQ8EuJo4LPHc3IephsGL\u002BtToWpIusEHTGbYxt4m0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 23 Sep 2025 12:31:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/footer.style.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\footer.style.css'))</AssetFile>

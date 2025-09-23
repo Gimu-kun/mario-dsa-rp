@@ -17,6 +17,10 @@ var ss = Model.challengeTimer % 60;
 </style>
 
 <div class="play-page">
+    <div id="countdown-container" class="hidden">
+        <div id="countdown-dialog">3</div>
+        <div id="start-dialog" class="hidden">Chiến thôi nào!</div>
+    </div>
     <!-- ROOM -->
     <div id="room_container" class="@(Model.Mode == "single" ? "hidden" : "")">
         <div class="container py-5">
@@ -37,11 +41,12 @@ var ss = Model.challengeTimer % 60;
     </div>
 
     <!-- GAME -->
-    <div id="game-container" class="@(Model.Mode == "single" ? "" : "hidden")">
+    <div id="game-container" class="hidden">
         <!-- (phần game như bạn đã có) -->
         <div class="score-box">
-            <p class="text-xl font-bold text-success">Số điểm hiện tại: <span id="live-score">1000</span> điểm</p>
-        </div>
+            <p class="text-xl font-bold text-success">Số điểm hiện tại: <span id="live-score"></span> điểm</p>
+            <p class="text-xl font-bold text-primary">ID đề: <span id="challenge-id"></span></p>
+            </div>
 
         <div id="congrats-message" class="congrats-overlay">
             <h2 class="congrats-text">🎉 Chúc mừng！ 🎉</h2>
@@ -99,7 +104,7 @@ var ss = Model.challengeTimer % 60;
             </div>
         </div>
 
-        <div id="choose-item-game" class="playing-container container">
+        <div id="choose-item-game" class="playing-container container hidden">
             <div class="row gy-5 m-5"></div>
             <div class="knapsack-container mt-5 text-center">
                 <div id="knapsack" class="knapsack-img" ondrop="dropItem(event)" ondragover="allowDrop(event)">
@@ -122,7 +127,9 @@ var ss = Model.challengeTimer % 60;
 </div>
 
 @section Scripts {
-<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
 <script>
     // sử dụng JsonSerializer để nhúng string an toàn vào JS
     const mode = @Html.Raw(JsonSerializer.Serialize(Model.Mode));
@@ -134,8 +141,77 @@ var ss = Model.challengeTimer % 60;
     let isFinished = false;
     let stage = "dp";
     let answer;
+    let maxTime = 6000;
     let dpBoard;
     let dpBoardWithMiss;
+    let gameMaxScore = 0;
+    let gameTimer;
+    let currentScore;
+    let takens;
+    let removedItems = [];
+    let bagWeight = 0;
+    let bagValue = 0;
+    let maxCapacity;
+    let resultItemsList;
+
+    function updateTimerUI(seconds) {
+        const hourEl = document.getElementById("timer-hour");
+        const minuteEl = document.getElementById("timer-minute");
+        const secondEl = document.getElementById("timer-second");
+        const hh = Math.floor(seconds / 3600);
+        const mm = Math.floor((seconds % 3600) / 60);
+        const ss = seconds % 60;
+
+        hourEl.textContent = hh;
+        hourEl.setAttribute('aria-label', hh);
+        hourEl.style.setProperty('--value', hh);
+
+        minuteEl.textContent = mm;
+        minuteEl.setAttribute('aria-label', mm);
+        minuteEl.style.setProperty('--value', mm);
+
+        secondEl.textContent = ss;
+        secondEl.setAttribute('aria-label', ss);
+        secondEl.style.setProperty('--value', ss);
+    }
+    
+    function startTimer(){
+        const countDownContainer = document.getElementById("countdown-container");
+        const countDownDialog = document.getElementById("countdown-dialog");
+        const startDialog = document.getElementById("start-dialog");
+        const gameContainer = document.getElementById("game-container");
+        let countdown = 3;
+        //Hiện khung đếm ngược
+        countDownContainer.classList.remove("hidden");
+        const timer = setInterval(() => {
+            countdown--;
+            if (countdown >= 0) {
+                countDownDialog.textContent = countdown;
+            } else {
+                //Huỷ timer
+                clearInterval(timer);
+                //Ẩn đếm ngược
+                countDownDialog.classList.add("hidden");
+                //Hiện câu nói bắt đầu
+                startDialog.classList.remove("hidden");
+                //Delay 1s
+                setTimeout(() => {
+                    //Ẩn khối đếm ngược
+                    countDownContainer.classList.add("hidden");
+                    //Hiện khối trò chơi
+                    gameContainer.classList.remove("hidden");
+                    challengeTimer = 0;
+                    updateTimerUI(challengeTimer);
+                    gameTimer = setInterval(() => {
+                        challengeTimer++;
+                        currentScore = Math.max(0, Math.floor(gameMaxScore * (1 - challengeTimer / maxTime)));
+                        document.getElementById("live-score").textContent = currentScore;
+                        updateTimerUI(challengeTimer);
+                    }, 1000);
+                }, 1000);
+            }
+        }, 1000);
+    }
     
     // fallback nếu roomId không có ở server (lấy từ querystring)
     let roomId = roomIdFromServer || (new URLSearchParams(window.location.search)).get("roomId") || "";
@@ -186,8 +262,7 @@ var ss = Model.challengeTimer % 60;
             localStorage.setItem("players", JSON.stringify(players));
             
             document.getElementById("room_container").classList.add("hidden");
-            document.getElementById("game-container").classList.remove("hidden");
-
+            startTimer()
             // host sẽ generate và chia sẻ challenge; non-host sẽ chờ event ChallengeGenerated
             const host = players.find(p => p.userId === currentHostId);
             if (host && host.userId === userId) {
@@ -196,15 +271,19 @@ var ss = Model.challengeTimer % 60;
         });
 
         // Khi host share challenge tới các client
-        connection.on("ChallengeGenerated", (challengeResponse) => {
+        connection.on("ChallengeGenerated", (challengeResponse,maxScore) => {
             console.log("📥 Nhận đề bài từ host (SignalR):", challengeResponse);
-            answer = initAnswerList(challengeResponse.dpBoardWithMiss);
-            dpBoard = challengeResponse.dpBoard;
-            dpBoardWithMiss = challengeResponse.dpBoardWithMiss;
-            localStorage.setItem("challenge", JSON.stringify(challengeResponse));
+            answer = initAnswerList(challengeResponse.challenge.dpBoardWithMiss);
+            dpBoard = challengeResponse.challenge.dpBoard;
+            dpBoardWithMiss = challengeResponse.challenge.dpBoardWithMiss;
+            gameMaxScore = maxScore;
+            maxCapacity = challengeResponse.challenge.maxCapacity;
+            resultItemsList =challengeResponse. challenge.resultItems;
+            takens = challengeResponse.taken;
+            document.getElementById("challenge-id").innerHTML = challengeResponse.challenge.id;
+            localStorage.setItem("challenge", JSON.stringify(challengeResponse.challenge));
             // tùy structure response: nếu bạn trả { challenge: { ... } } thì dùng .challenge
-            console.log(challengeResponse);
-            const payload = challengeResponse.challenge ?? challengeResponse;
+            const payload = challengeResponse.challenge;
             buildTemplate(payload);
         });
 
@@ -212,6 +291,23 @@ var ss = Model.challengeTimer % 60;
         connection.on("CellAnswered", (payload) => {
             console.log("📥 CellAnswered từ player khác:", payload);
             applyCellAnswer(payload.x, payload.y, payload.v);
+        });
+
+        connection.on("ItemDropped", (payload) => {
+            console.log("📥 ItemDropped từ player khác:", payload);
+            applyDroppedItem(payload);
+        });
+
+        connection.on("ReturnLastItem", (payload) => {
+            if (payload.userId === userId) return; // bỏ qua của mình
+            console.log("📥 ReturnLastItem từ player khác:",payload);
+            applyReturnLastItem(payload.elementId);
+        });
+
+        connection.on("ReturnAllItems", (payload) => {
+            if (payload.userId === userId) return;
+            console.log("📥 ReturnAllItems từ player khác:",payload);
+            applyReturnAllItems(payload.items);
         });
 
         await connection.start();
@@ -229,7 +325,7 @@ var ss = Model.challengeTimer % 60;
         startRoom();
     } else if (mode === "single") {
         document.getElementById("room_container")?.classList.add("hidden");
-        document.getElementById("game-container")?.classList.remove("hidden");
+        startTimer()
         // nếu bạn muốn lấy challenge từ server theo challengeId
         getChallenge();
     }
@@ -281,13 +377,19 @@ var ss = Model.challengeTimer % 60;
 
             const challengeResponse = await response.json();
             console.log("📥 Challenge nhận được (API):", challengeResponse);
-
+            answer = initAnswerList(challengeResponse.challenge.dpBoardWithMiss);
+            dpBoard = challengeResponse.challenge.dpBoard;
+            dpBoardWithMiss = challengeResponse.challenge.dpBoardWithMiss;
+            gameMaxScore = challengeResponse.taken[0].maxScore;
+            takens = challengeResponse.taken;
             localStorage.setItem("challenge", JSON.stringify(challengeResponse));
-
+            maxCapacity = challengeResponse.challenge.maxCapacity;
+            resultItemsList = challengeResponse.challenge.resultItems;
+            document.getElementById("challenge-id").innerHTML = challengeResponse.challenge.id;
             // Host chia sẻ cho player khác (qua roomId)
             if (mode === "multiplay" && connection) {
                 console.log("challengeResponse multiple",challengeResponse);
-                await connection.invoke("ShareChallenge", roomId, challengeResponse.challenge);
+                await connection.invoke("ShareChallenge", roomId, challengeResponse, gameMaxScore);
             }
 
             // Lấy payload thực tế (tùy structure API)
@@ -385,6 +487,8 @@ var ss = Model.challengeTimer % 60;
         if (isFinished || stage !== "dp") return;
         const val = parseInt(e.target.value, 10) || 0;
         const existing = answer.find(a => a.x === x && a.y === y);
+        console.log(existing);
+        console.log(answer);
         if (existing) existing.v = val;
         else answer.push({ x, y, v: val });
 
@@ -415,12 +519,26 @@ var ss = Model.challengeTimer % 60;
     function applyCellAnswer(x, y, val) {
         // nếu ô chưa có thì tìm và điền
         const cell = document.getElementById(`dp-${x}-${y}`);
+        console.log("cell",cell);
         if (!cell) return;
-
+        
+        const existing = answer.find(a => a.x === x && a.y === y);
+        if (existing) existing.v = val;
+        console.log("existing",existing);
+        
         // nếu giá trị đúng
         if (val === dpBoard[x][y]) {
             cell.innerHTML = `<span class="dp-input-field correct">${val} ✅</span>`;
             revealAllHiddenCellsWithValue(val);
+        }
+        
+        // 🔑 check xem tất cả đã đúng chưa
+        console.log("answer",answer);
+        console.log("resultList",dpBoard);
+        const allCorrect = answer.every(a => a.v === dpBoard[a.x][a.y]);
+        console.log("allCorrect",allCorrect);
+        if (allCorrect) {
+            unlockItemStage();
         }
     }
 
@@ -459,7 +577,326 @@ var ss = Model.challengeTimer % 60;
     function unlockItemStage() {
         stage = "items";
         revealAllHiddenCells();
-        document.getElementById("choose-item-game").style.display = "block";
+        document.getElementById("choose-item-game").classList.remove("hidden");
+    }
+    
+    // ====== ITEM GAME (knapsack) ======
+    function allowDrop(ev) { ev.preventDefault(); }
+    
+    function dragItem(ev) {
+        const cube = ev.target.closest('.cube') || ev.target;
+        if (!cube) return;
+        ev.dataTransfer.setData("text/plain", JSON.stringify({
+            weight: cube.dataset.weight,
+            value: cube.dataset.value,
+            elementId: cube.id
+        }));
+    }
+
+    function dropItem(ev) {
+        if (stage !== "items") return;
+        ev.preventDefault();
+        const data = JSON.parse(ev.dataTransfer.getData("text/plain"));
+        const w = parseInt(data.weight, 10);
+        const v = parseInt(data.value, 10);
+
+        if (bagWeight + w > maxCapacity) {
+            document.getElementById("bag-warning").innerText = "⚠️ Túi đã đầy!";
+            return;
+        }
+
+        const originalCube = document.getElementById(data.elementId);
+        if (!originalCube) return;
+        const parentWrapper = originalCube.closest('.col-2');
+        if (!parentWrapper) return;
+
+        const parentContainer = parentWrapper.parentElement;
+        const index = Array.from(parentContainer.children).indexOf(parentWrapper);
+
+        const itemBadge = document.createElement("div");
+        itemBadge.className = "badge bg-success m-1";
+        itemBadge.innerText = `💰${v} | ⚖️${w}`;
+        document.getElementById("knapsack").appendChild(itemBadge);
+
+        removedItems.push({
+            id: data.elementId,
+            node: parentWrapper,
+            weight: w,
+            value: v,
+            badge: itemBadge,
+            originalParent: parentContainer,
+            originalIndex: index
+        });
+
+        parentWrapper.remove();
+
+        bagWeight += w;
+        bagValue += v;
+        document.getElementById("bag-weight").innerText = bagWeight;
+        document.getElementById("bag-value").innerText = bagValue;
+        
+        if (mode === "multiplay" && connection) {
+            connection.invoke("SendItemDropped", roomId, {
+                operateUserId: userId,
+                elementId: data.elementId,
+                weight: w,
+                value: v
+            });
+        }
+
+        checkFinalResult();
+    }
+
+    function applyDroppedItem(payload) {
+        const { elementId, weight, value, OperateUserId } = payload;
+        console.log("elementId",elementId)
+        console.log("weight",weight)
+        console.log("value",value)
+        console.log("userId",userId)
+        // Nếu chính mình đã drop thì bỏ qua (tránh lặp)
+        if (OperateUserId === userId) return;
+
+        const w = parseInt(weight, 10);
+        const v = parseInt(value, 10);
+        
+        const originalCube = document.getElementById(elementId);
+        console.log(originalCube)
+        if (!originalCube) return;
+        const parentWrapper = originalCube.closest('.col-2');
+        console.log(parentWrapper)
+        if (!parentWrapper) return;
+
+        const parentContainer = parentWrapper.parentElement;
+        const index = Array.from(parentContainer.children).indexOf(parentWrapper);
+
+        const itemBadge = document.createElement("div");
+        itemBadge.className = "badge bg-info m-1"; // khác màu cho dễ phân biệt
+        itemBadge.innerText = `💰${v} | ⚖️${w}`;
+        document.getElementById("knapsack").appendChild(itemBadge);
+
+        removedItems.push({
+            id: elementId,
+            node: parentWrapper,
+            weight: w,
+            value: v,
+            badge: itemBadge,
+            originalParent: parentContainer,
+            originalIndex: index
+        });
+
+        parentWrapper.remove();
+
+        bagWeight += w;
+        bagValue += v;
+        document.getElementById("bag-weight").innerText = bagWeight;
+        document.getElementById("bag-value").innerText = bagValue;
+
+        checkFinalResult();
+    }
+
+
+
+    function checkFinalResult() {
+        const currentIds = removedItems.map((item) => item.id.replace("cube-", ""));
+        const correctIds = resultItemsList;
+        let ok = true;
+        for (const i of correctIds) {
+            if (!currentIds.includes(i)) {
+                ok = false;
+                break;
+            }
+        }
+        if (ok) {
+            finishGame();
+        }
+}
+
+    // ====== Kết thúc game: gọi API ======
+    async function finishGame() {
+        if (isFinished) return;
+        isFinished = true;
+        clearInterval(gameTimer);
+
+        document.getElementById("congrats-message").style.display = "block";
+        setTimeout(() => { document.getElementById("congrats-message").style.display = "none"; }, 2000);
+        startConfetti();
+        
+        const btnContainer = document.getElementById("result-buttons");
+        btnContainer.innerHTML = '';
+        const rankingBtn = document.createElement("button");
+        rankingBtn.textContent = "Xem bảng xếp hạng";
+        rankingBtn.classList.add("btn-ranking");
+        rankingBtn.onclick = () => window.location.href = "/ranking?view=dp-board";
+        btnContainer.appendChild(rankingBtn);
+
+        const payload = {
+            SpendTime: challengeTimer,
+            TakenScore: Number(document.getElementById("live-score").textContent),
+            UserAnswer: JSON.stringify({ dp: answer, items: removedItems.map(r => r.id) })
+        };
+
+        try {
+            console.log(takens);
+            const takenId = takens.find(i => i.userId === userId);
+            console.log(takenId);
+            if(!takenId) return;
+            const res = await fetch(`http://localhost:5119/api/take-challenge/save?id=${takenId.id}`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            });
+            if (res.ok) {
+                
+            }
+        } catch (err) {
+            console.error("Fetch error:", err);
+            alert("❌ Có lỗi xảy ra khi gửi dữ liệu.");
+        }
+}
+
+    // ====== Confetti ======
+    function startConfetti() {
+        var end = Date.now() + (8 * 1000);
+        var colors = ['#bb0000', '#ffffff'];
+        (function frame() {
+            confetti({ particleCount: 2, angle: 60, spread: 55, origin: { x: 0 }, colors: colors });
+            confetti({ particleCount: 2, angle: 120, spread: 55, origin: { x: 1 }, colors: colors });
+            if (Date.now() < end) requestAnimationFrame(frame);
+        })();
+    }
+
+    // ====== Trả 1 món gần nhất ======
+    function returnLastItem() {
+        if (removedItems.length === 0) return;
+        const last = removedItems.pop();
+
+        if (last.badge && last.badge.parentElement) {
+            last.badge.remove();
+        }
+
+        // Luôn trả về cuối danh sách gốc
+        animateFlyBack(last.node, last.originalParent);
+
+        bagWeight -= last.weight;
+        bagValue -= last.value;
+        document.getElementById("bag-weight").innerText = bagWeight;
+        document.getElementById("bag-value").innerText = bagValue;
+        document.getElementById("bag-warning").innerText = "";
+        
+        // 🔹 phát sự kiện
+        if (mode === "multiplay" && connection) {
+            connection.invoke("SendReturnLastItem", roomId, {
+                userId: userId,
+                elementId: last.id
+            });
+        }
+    }
+
+
+
+    // ====== Trả tất cả ======
+    function returnAllItems() {
+        const returnItems = [...removedItems];
+        while (removedItems.length > 0) {
+            const item = removedItems.pop();
+            if (item.badge && item.badge.parentElement) {
+                item.badge.remove();
+            }
+            animateFlyBack(item.node, item.originalParent);
+        }
+
+        bagWeight = 0;
+        bagValue = 0;
+        document.getElementById("bag-weight").innerText = bagWeight;
+        document.getElementById("bag-value").innerText = bagValue;
+        document.getElementById("bag-warning").innerText = "";
+
+        // 🔹 phát sự kiện
+        if (mode === "multiplay" && connection) {
+            console.log("phat su kien")
+            console.log("removedItems",removedItems)
+            connection.invoke("SendReturnAllItems", roomId, {
+                userId: userId,
+                items: returnItems.map(i => i.id)
+            });
+        }
+    }
+
+
+
+    function animateFlyBack(itemNode, targetParent) {
+        const bag = document.getElementById("knapsack");
+        const bagRect = bag.getBoundingClientRect();
+        const parentRect = targetParent.getBoundingClientRect();
+
+        // Lấy vị trí "cuối danh sách" = bottom-right của container
+        const dx = parentRect.right - bagRect.left - 60; // 60 = width cube
+        const dy = parentRect.bottom - bagRect.top - 60; // 60 = height cube
+
+        // Clone node để bay
+        const clone = itemNode.cloneNode(true);
+        clone.classList.add("fly-back");
+        document.body.appendChild(clone);
+
+        // Đặt vị trí ban đầu
+        clone.style.left = bagRect.left + "px";
+        clone.style.top = bagRect.top + "px";
+
+        // Gán biến transform
+        clone.style.setProperty("--dx", dx + "px");
+        clone.style.setProperty("--dy", dy + "px");
+
+        // Khi animation xong → xóa clone + append node thật về cuối danh sách
+        clone.addEventListener("animationend", () => {
+            clone.remove();
+            targetParent.appendChild(itemNode);
+        });
+    }
+
+    function applyReturnLastItem(elementId) {
+        const idx = removedItems.findIndex(i => i.id === elementId);
+        if (idx === -1) return;
+        const item = removedItems.splice(idx, 1)[0];
+
+        if (item.badge && item.badge.parentElement) {
+            item.badge.remove();
+        }
+        animateFlyBack(item.node, item.originalParent);
+
+        bagWeight -= item.weight;
+        bagValue -= item.value;
+        document.getElementById("bag-weight").innerText = bagWeight;
+        document.getElementById("bag-value").innerText = bagValue;
+    }
+
+    function applyReturnAllItems(itemIds) {
+        try {
+            console.log("🟢 applyReturnAllItems được gọi với:", itemIds);
+            console.log("📦 removedItems trước:", removedItems);
+
+            removedItems = removedItems.filter(item => {
+                if (itemIds.includes(item.id)) {
+                    console.log("↩️ Trả lại item:", item);
+                    if (item.badge && item.badge.parentElement) {
+                        item.badge.remove();
+                    }
+                    animateFlyBack(item.node, item.originalParent);
+                    return false;
+                }
+                return true;
+            });
+
+            bagWeight = 0;
+            bagValue = 0;
+            document.getElementById("bag-weight").innerText = bagWeight;
+            document.getElementById("bag-value").innerText = bagValue;
+            document.getElementById("bag-warning").innerText = "";
+
+            console.log("📦 removedItems sau:", removedItems);
+            console.log("⚖️ bagWeight:", bagWeight, "💰 bagValue:", bagValue);
+        } catch (err) {
+            console.error("❌ applyReturnAllItems bị lỗi:", err);
+        }
     }
 </script>
 }

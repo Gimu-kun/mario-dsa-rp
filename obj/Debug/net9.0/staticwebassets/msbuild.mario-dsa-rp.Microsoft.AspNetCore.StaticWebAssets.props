@@ -948,8 +948,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qovdydocc0</Fingerprint>
-      <Integrity>VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL+Lz50/u0=</Integrity>
+      <Fingerprint>45cpedkh9u</Fingerprint>
+      <Integrity>uKtDQ8EuJo4LPHc3IephsGL+tToWpIusEHTGbYxt4m0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dynamic-board.style.css'))</OriginalItemSpec>

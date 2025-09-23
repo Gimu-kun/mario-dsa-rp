@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MDxF9/ajEQZlF2vAaSghz5v6ZY/9F9yxV0cQ5siTYvg=",
+  "Hash": "26+15+C9vzhMdTFbu8rGFY1ixXsp4s39Nrk5DfegXHc=",
   "Source": "mario-dsa-rp",
   "BasePath": "_content/mario-dsa-rp",
   "Mode": "Default",
@@ -1529,12 +1529,12 @@
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-qovdydocc0.gz",
+      "Identity": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-45cpedkh9u.gz",
       "SourceId": "mario-dsa-rp",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/mario-dsa-rp",
-      "RelativePath": "css/dynamic-board.style#[.{fingerprint=qovdydocc0}]?.css.gz",
+      "RelativePath": "css/dynamic-board.style#[.{fingerprint=45cpedkh9u}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1543,8 +1543,8 @@
       "RelatedAsset": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/dynamic-board.style.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "yrwko8fhm9",
-      "Integrity": "7krpgZgScBkuStofm9jv32JgUqJYldinYlad2HEERDY=",
+      "Fingerprint": "eo1vbm2g40",
+      "Integrity": "wsJvJ++d1oqWjQAq9gRil08YMfx7w4is7qD860VuuAY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/dynamic-board.style.css"
@@ -2740,8 +2740,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qovdydocc0",
-      "Integrity": "VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL+Lz50/u0=",
+      "Fingerprint": "45cpedkh9u",
+      "Integrity": "uKtDQ8EuJo4LPHc3IephsGL+tToWpIusEHTGbYxt4m0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/dynamic-board.style.css"
@@ -9131,13 +9131,13 @@
       ]
     },
     {
-      "Route": "css/dynamic-board.style.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-qovdydocc0.gz",
+      "Route": "css/dynamic-board.style.45cpedkh9u.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-45cpedkh9u.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000383877159"
+          "Quality": "0.000384911470"
         }
       ],
       "ResponseHeaders": [
@@ -9147,19 +9147,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2604"
+          "Value": "2597"
         },
         {
           "Name": "ETag",
-          "Value": "\"7krpgZgScBkuStofm9jv32JgUqJYldinYlad2HEERDY=\""
+          "Value": "\"wsJvJ++d1oqWjQAq9gRil08YMfx7w4is7qD860VuuAY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 23 Sep 2025 04:05:03 GMT"
+          "Value": "Tue, 23 Sep 2025 12:31:48 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -9175,18 +9175,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL+Lz50/u0=\""
+          "Value": "W/\"uKtDQ8EuJo4LPHc3IephsGL+tToWpIusEHTGbYxt4m0=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "45cpedkh9u"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dynamic-board.style.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL+Lz50/u0="
+          "Value": "sha256-uKtDQ8EuJo4LPHc3IephsGL+tToWpIusEHTGbYxt4m0="
         }
       ]
     },
     {
-      "Route": "css/dynamic-board.style.css",
+      "Route": "css/dynamic-board.style.45cpedkh9u.css",
       "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/dynamic-board.style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -9196,7 +9204,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9862"
+          "Value": "9863"
         },
         {
           "Name": "Content-Type",
@@ -9204,121 +9212,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL+Lz50/u0=\""
+          "Value": "\"uKtDQ8EuJo4LPHc3IephsGL+tToWpIusEHTGbYxt4m0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 23 Sep 2025 04:05:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL+Lz50/u0="
-        }
-      ]
-    },
-    {
-      "Route": "css/dynamic-board.style.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-qovdydocc0.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2604"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7krpgZgScBkuStofm9jv32JgUqJYldinYlad2HEERDY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 23 Sep 2025 04:05:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-7krpgZgScBkuStofm9jv32JgUqJYldinYlad2HEERDY="
-        }
-      ]
-    },
-    {
-      "Route": "css/dynamic-board.style.qovdydocc0.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-qovdydocc0.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000383877159"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2604"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7krpgZgScBkuStofm9jv32JgUqJYldinYlad2HEERDY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 23 Sep 2025 04:05:03 GMT"
+          "Value": "Tue, 23 Sep 2025 12:31:48 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL+Lz50/u0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qovdydocc0"
+          "Value": "45cpedkh9u"
         },
         {
           "Name": "label",
@@ -9326,13 +9234,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL+Lz50/u0="
+          "Value": "sha256-uKtDQ8EuJo4LPHc3IephsGL+tToWpIusEHTGbYxt4m0="
         }
       ]
     },
     {
-      "Route": "css/dynamic-board.style.qovdydocc0.css",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/dynamic-board.style.css",
+      "Route": "css/dynamic-board.style.45cpedkh9u.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-45cpedkh9u.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9341,7 +9249,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9862"
+          "Value": "2597"
         },
         {
           "Name": "Content-Type",
@@ -9349,56 +9257,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL+Lz50/u0=\""
+          "Value": "\"wsJvJ++d1oqWjQAq9gRil08YMfx7w4is7qD860VuuAY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 23 Sep 2025 04:05:03 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qovdydocc0"
-        },
-        {
-          "Name": "label",
-          "Value": "css/dynamic-board.style.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL+Lz50/u0="
-        }
-      ]
-    },
-    {
-      "Route": "css/dynamic-board.style.qovdydocc0.css.gz",
-      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-qovdydocc0.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2604"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"7krpgZgScBkuStofm9jv32JgUqJYldinYlad2HEERDY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 23 Sep 2025 04:05:03 GMT"
+          "Value": "Tue, 23 Sep 2025 12:31:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9416,7 +9279,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qovdydocc0"
+          "Value": "45cpedkh9u"
         },
         {
           "Name": "label",
@@ -9424,7 +9287,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7krpgZgScBkuStofm9jv32JgUqJYldinYlad2HEERDY="
+          "Value": "sha256-wsJvJ++d1oqWjQAq9gRil08YMfx7w4is7qD860VuuAY="
+        }
+      ]
+    },
+    {
+      "Route": "css/dynamic-board.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-45cpedkh9u.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000384911470"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2597"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wsJvJ++d1oqWjQAq9gRil08YMfx7w4is7qD860VuuAY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 23 Sep 2025 12:31:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"uKtDQ8EuJo4LPHc3IephsGL+tToWpIusEHTGbYxt4m0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uKtDQ8EuJo4LPHc3IephsGL+tToWpIusEHTGbYxt4m0="
+        }
+      ]
+    },
+    {
+      "Route": "css/dynamic-board.style.css",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/css/dynamic-board.style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9863"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uKtDQ8EuJo4LPHc3IephsGL+tToWpIusEHTGbYxt4m0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 23 Sep 2025 12:31:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uKtDQ8EuJo4LPHc3IephsGL+tToWpIusEHTGbYxt4m0="
+        }
+      ]
+    },
+    {
+      "Route": "css/dynamic-board.style.css.gz",
+      "AssetFile": "/Users/lehieunghiem/Desktop/mario-dsa-rp/obj/Debug/net9.0/compressed/z1duk7zl8q-45cpedkh9u.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wsJvJ++d1oqWjQAq9gRil08YMfx7w4is7qD860VuuAY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 23 Sep 2025 12:31:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wsJvJ++d1oqWjQAq9gRil08YMfx7w4is7qD860VuuAY="
         }
       ]
     },

@@ -18,7 +18,7 @@
 }
 
 #countdown-container {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
@@ -29,7 +29,7 @@
 }
 
 #start-dialog {
-    display: none;
+    display: block;
 }
 
 #game-container {
