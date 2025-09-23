@@ -1,0 +1,238 @@
+@page "/ranking"
+@model mario_dsa_rp.Pages.Ranking.RankingModel
+@{
+    Layout = "_Layout";
+    string[] badgeSrc = [
+        "assets/gold-badge.png",
+        "assets/silver-badge.png",
+        "assets/brown-badge.png",
+        "assets/normal-badge-v1.png",
+        "assets/normal-badge-v2.png",
+        "assets/normal-badge-v3.png"
+    ];
+}
+
+<div class="min-h-screen flex flex-col items-center py-8 bg-gray-50 p-5">
+    <div class="flex items-center gap-4 mb-6">
+        <img src="~/assets/ranking-cup.png" alt="Cúp" class="w-16 h-16"> 
+        <h1 class="text-3xl font-bold text-gray-800 m-0">Bảng xếp hạng</h1>
+    </div>
+    <ul class="nav nav-tabs overflow-auto flex-nowrap w-full max-w-4xl" id="myTab" role="tablist" style="white-space: nowrap;">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(Model.Mode == "level" ? "active" : "")" id="level-tab" data-bs-toggle="tab" data-bs-target="#level" type="button" role="tab" aria-controls="level" aria-selected=@(Model.Mode == "level" ? "true" : "false")>
+                 <a class="text-decoration-none" href="/ranking?Mode=level">Xếp hạng cá nhân (Exp)</a>
+            </button>
+        </li> 
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(Model.Mode == "score" ? "active" : "")" id="score-tab" data-bs-toggle="tab" data-bs-target="#score" type="button" role="tab" aria-controls="score" aria-selected=@(Model.Mode == "score" ? "true" : "false")>
+                 <a class="text-decoration-none" href="/ranking?Mode=score">Xếp hạng cá nhân (Score)</a>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(Model.Mode == "knapsack" && Model.Diff == "easy" ? "active" : "")">
+                <a class="text-decoration-none" href="/ranking?Mode=knapsack&Diff=easy&Playmode=single">
+                    Knap-sack 0/1 (Dễ)
+                </a>
+            </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(Model.Mode == "knapsack" && Model.Diff == "medium" ? "active" : "")">
+                <a class="text-decoration-none" href="/ranking?Mode=knapsack&Diff=medium&Playmode=single">
+                    Knap-sack 0/1 (Thường)
+                </a>
+            </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(Model.Mode == "knapsack" && Model.Diff == "hard" ? "active" : "")">
+                <a class="text-decoration-none" href="/ranking?Mode=knapsack&Diff=hard&Playmode=single">
+                    Knap-sack 0/1 (Khó)
+                </a>
+            </button>
+        </li>
+    </ul>
+
+    <div class="w-full max-w-5xl rounded-lg relative flex justify-content-center">
+        <!-- Scrollable container -->
+        <div id="ranking-container" class="overflow-y-auto max-h-[500px] relative">
+            <!-- Table chính -->
+            <table class="table table-striped table-bordered table-hover w-auto text-md-center">
+                <colgroup>
+                    @if (Model.Mode == "level" || Model.Mode == "score")
+                    {
+                        <col style="width: auto;">
+                        <col style="width: auto;">
+                        <col style="width: auto;">
+                        <col style="width: auto;">
+                        <col style="width: auto;">
+                    }
+                    else
+                    {
+                        <col style="width: auto;">
+                        <col style="width: auto;">
+                        <col style="width: auto;">
+                        <col style="width: auto;">
+                        <col style="width: auto;">
+                        <col style="width: auto;">
+                        <col style="width: auto;">
+                    }
+                </colgroup>
+                <thead class="table-primary text-uppercase text-lg sticky-top">
+                <tr>
+                    <th class="px-4 py-3 text-left">#</th>
+                    @if (Model.Mode == "knapsack")
+                    {
+                        <th class="px-4 py-3 text-left">Match ID</th>
+                        <th class="px-4 py-3 text-left">Take At</th>
+                        <th class="px-4 py-3 text-left">Spend Time</th>
+                    }
+                    <th class="px-4 py-3 text-left">ID</th>
+                    <th class="px-4 py-3 text-left">Badge</th>
+                    <th class="px-4 py-3 text-left">Name</th>
+                    <th class="px-4 py-3 text-left">@(Model.Mode == "level" ? "Exp" : "Score")</th>
+                </tr>
+                </thead>
+                <tbody>
+                @for (int i = 0; i < @Model.RankingList.Length; i++)
+                {
+                    var isCurrentUser = (i + 1) == (@Model.currentUserRank?.Ranking ?? 0);
+                    <tr class="@(isCurrentUser ? "table-warning" : "")" data-rank="@(i+1)">
+                        <th class="px-4 py-3 text-left">@(i+1)</th>
+                        @if (Model.Mode == "knapsack")
+                        {
+                            <td class="px-4 py-3 text-left">@Model.RankingList[i].ChallengeId</td>
+                            <td class="px-4 py-3 text-left">@Model.RankingList[i].TakenAt</td>
+                            <td class="px-4 py-3 text-left">@FormatSpendTime(Model.RankingList[i].SpendTime)</td>
+                        }
+                        <td class="px-4 py-3 text-left">@Model.RankingList[i].UserId</td>
+                        <td class="px-4 py-3 text-left flex justify-content-center">
+                            @if (i == 0)
+                            {
+                                <img src="assets/gold-badge.png" alt="Badge" class="w-10 h-full object-fit-cover">
+                            }else if (i == 1)
+                            {
+                                <img src="assets/silver-badge.png" alt="Badge" class="w-10 h-full object-fit-cover">
+                            }else if (i == 2)
+                            {
+                                <img src="assets/brown-badge.png" alt="Badge" class="w-10 h-full object-fit-cover">
+                            }else
+                            {
+                                <img src="assets/badge-@(Model.RankingList[i].BadgeId).png" alt="Badge" class="w-10 h-full object-fit-cover">
+                            }
+                        </td>
+                        <td class="px-4 py-3 text-left">@Model.RankingList[i].Username</td>
+                        <td class="px-4 py-3 text-left">@(Model.Mode == "level" ? Model.RankingList[i].Exp : Model.RankingList[i].Score)</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+
+            <!-- Dòng highlight "Bạn" -->
+            @if (@Model.currentUserRank != null)
+            {
+                <div id="player-highlight" class="position-absolute start-0 w-100 bg-warning border-top z-20">
+                    <table class="table table-striped table-bordered table-hover w-auto text-md-center">
+                        <colgroup>
+                            <col style="width: auto;">
+                            <col style="width: auto;">
+                            <col style="width: auto;">
+                            <col style="width: auto;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tbody>
+                        <tr class="table-warning text-white text-md-center">
+                            <th class="px-4 py-3 fw-bold text-left">@Model.currentUserRank.Ranking</th>
+                            @if (Model.Mode == "knapsack")
+                            {
+                                <td class="px-4 py-3 text-left">@Model.currentUserRank.ChallengeId</td>
+                                <td class="px-4 py-3 text-left">@Model.currentUserRank.TakenAt</td>
+                                <td class="px-4 py-3 text-left">@FormatSpendTime(Model.currentUserRank.SpendTime)</td>
+                            }
+                            <td class="px-4 py-3 text-left">@Model.currentUserRank.UserId</td>
+                            <td class="px-4 py-3 h-full text-left flex justify-content-center">
+                                @if (Model.currentUserRank.Ranking == 1)
+                                {
+                                    <img src="assets/gold-badge.png" alt="Badge" class="w-10 h-full object-fit-cover">
+                                }else if (Model.currentUserRank.Ranking == 2)
+                                {
+                                    <img src="assets/silver-badge.png" alt="Badge" class="w-10 h-full object-fit-cover">
+                                }else if (Model.currentUserRank.Ranking == 3)
+                                {
+                                    <img src="assets/brown-badge.png" alt="Badge" class="w-10 h-full object-fit-cover">
+                                }else
+                                {
+                                    <img src="assets/badge-@(Model.currentUserRank.BadgeId).png" alt="Badge" class="w-10 h-full object-fit-cover">
+                                }
+                            </td>
+                            <td class="px-4 py-3 text-left">@Model.currentUserRank.Username</td>
+                            <td class="px-4 py-3 text-left">@(Model.Mode == "level" ? Model.currentUserRank.Exp : Model.currentUserRank.Score)</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+    const rankingList = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.currentUserRank));
+    console.log("RankingList:", rankingList);
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const container = document.getElementById('ranking-container');
+        const highlight = document.getElementById('player-highlight');
+        const playerRank = @Model.currentUserRank?.Ranking ?? 0;
+
+        if (!container || !highlight || playerRank === 0) {
+            console.warn("Không tìm thấy dữ liệu highlight.");
+            return;
+        }
+
+        const playerRow = container.querySelector(`tr[data-rank="${playerRank}"]`);
+        if (!playerRow) {
+            console.warn("Không tìm thấy hàng ứng với rank của user.");
+            return;
+        }
+
+        const containerHeight = container.clientHeight;
+        const rowOffsetTop = playerRow.offsetTop;
+
+        function updateHighlight() {
+            const scrollTop = container.scrollTop;
+
+            if (scrollTop + containerHeight < rowOffsetTop + playerRow.offsetHeight) {
+                // Chưa tới hạng: highlight bám đáy
+                highlight.classList.remove('transition-all');
+                highlight.style.top = (scrollTop + containerHeight - highlight.offsetHeight) + "px";
+            } else {
+                // Đã tới hạng: highlight nằm đúng chỗ
+                highlight.classList.add('transition-all');
+                highlight.style.top = rowOffsetTop + "px";
+            }
+        }
+
+        container.addEventListener('scroll', updateHighlight);
+        updateHighlight();
+    });
+
+    @functions {
+    public string FormatSpendTime(int time)
+    {
+        int h = time / 3600;
+        int m = (time % 3600) / 60;
+        int s = time % 60;
+
+        string result = "";
+        if (h > 0) result += $"{h}giờ ";
+        if (m > 0) result += $"{m}phút ";
+        result += $"{s}giây";
+        return result.Trim();
+        }
+    }
+
+    </script>
+}
+}

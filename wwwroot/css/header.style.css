@@ -1,6 +1,7 @@
 .navbar{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100px;
     width: 100%;
     background-color: #ffffff;
@@ -24,6 +25,7 @@
   .links{
     position: relative;
     display: flex;
+      width: fit-content;
     list-style-type: none;
     margin: 0;
   }
@@ -31,6 +33,7 @@
   .links__item{
     position: relative;
     display: block;
+      white-space: nowrap;
     flex: 1;
     padding: 0 20px;
     font-size: 20px;

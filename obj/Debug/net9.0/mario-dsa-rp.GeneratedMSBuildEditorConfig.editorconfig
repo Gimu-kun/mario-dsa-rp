@@ -28,10 +28,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aC9fQXV0aExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/lehieunghiem/Desktop/mario-dsa-rp/Pages/Challenge/Knap-sack/Play/Choose-items.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhbGxlbmdlL0tuYXAtc2Fjay9QbGF5L0Nob29zZS1pdGVtcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/lehieunghiem/Desktop/mario-dsa-rp/Pages/Challenge/Knap-sack/Play/Dynamic-board.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2hhbGxlbmdlL0tuYXAtc2Fjay9QbGF5L0R5bmFtaWMtYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/lehieunghiem/Desktop/mario-dsa-rp/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/lehieunghiem/Desktop/mario-dsa-rp/Pages/Ranking/Ranking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmFua2luZy9SYW5raW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/lehieunghiem/Desktop/mario-dsa-rp/Pages/Shared/_ValidationScriptsPartial.cshtml]

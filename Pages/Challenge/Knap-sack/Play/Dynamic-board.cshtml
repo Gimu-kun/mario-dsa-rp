@@ -3,298 +3,463 @@
 @using System.Text.Json
 
 @{
-    Layout = "_Layout";
-    ViewData["Title"] = "Authentication";
-    var challenge = @Html.Raw(JsonSerializer.Serialize(Model.Challenge));
-    var hh = Math.Floor((decimal)Model.challengeTimer / 3600);
-    var mm = Math.Floor((decimal)(Model.challengeTimer % 3600) / 60);
-    var ss = Model.challengeTimer % 60;
-    var dpBoardJson = JsonSerializer.Serialize(Model.Challenge.DpBoard);
+Layout = "_Layout";
+ViewData["Title"] = "Dynamic Board";
+var hh = Math.Floor((decimal)Model.challengeTimer / 3600);
+var mm = Math.Floor((decimal)(Model.challengeTimer % 3600) / 60);
+var ss = Model.challengeTimer % 60;
 }
 
 <link rel="stylesheet" href="~/css/dynamic-board.style.css">
 
+<style>
+    .hidden { display: none !important; }
+</style>
+
 <div class="play-page">
-    <div id="countdown-container">
-        <div id="countdown-dialog">@Model.countDown</div>
-        <div id="start-dialog">始めます!</div>
+    <!-- ROOM -->
+    <div id="room_container" class="@(Model.Mode == "single" ? "hidden" : "")">
+        <div class="container py-5">
+            <h2 class="mb-4 text-center">Phòng chơi 2 người</h2>
+            <div class="card shadow-sm p-4">
+                <p><strong>Mã phòng:</strong> <span id="roomIdDisplay">@Model.roomId ?? "-"</span></p>
+                <p><strong>Độ khó:</strong> <span>@Model.Difficult</span></p>
+
+                <h5>Danh sách người chơi</h5>
+                <ul id="playerList" class="list-group mb-3"></ul>
+
+                <div class="d-flex gap-2">
+                    <button id="copyLinkBtn" type="button" class="btn btn-outline-primary">📋 Copy Link Mời</button>
+                    <button id="startGameBtn" type="button" class="btn btn-success" disabled>Bắt đầu trò chơi</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="game-container">
+
+    <!-- GAME -->
+    <div id="game-container" class="@(Model.Mode == "single" ? "" : "hidden")">
+        <!-- (phần game như bạn đã có) -->
+        <div class="score-box">
+            <p class="text-xl font-bold text-success">Số điểm hiện tại: <span id="live-score">1000</span> điểm</p>
+        </div>
+
+        <div id="congrats-message" class="congrats-overlay">
+            <h2 class="congrats-text">🎉 Chúc mừng！ 🎉</h2>
+            <p class="congrats-sub">Bạn đã hoàn thành thử thách thành công!</p>
+        </div>
+
         <div class="question">
             <div class="question_decor left"></div>
-            <p class="question_txt title">マスタープランを作りましょう</p>
+            <p class="question_txt title">Cùng nhau lập bảng quy hoạch động nhé !</p>
             <div class="question_decor right"></div>
         </div>
-        <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
-  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-    <span class="countdown font-mono text-5xl">
-      <span id="timer-hour" style="--value:@hh;" aria-live="polite" aria-label="@hh">@hh</span>
-    </span>
-    時
-  </div>
-  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-    <span class="countdown font-mono text-5xl">
-      <span id="timer-minute" style="--value:@mm;" aria-live="polite" aria-label="@mm">@mm</span>
-    </span>
-    分
-  </div>
-  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-    <span class="countdown font-mono text-5xl">
-      <span id="timer-second" style="--value:@ss;" aria-live="polite" aria-label="@ss">@ss</span>
-    </span>
-    秒
-  </div>
-</div>
 
-        <div class="question-content">
+        <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-5xl">
+                    <span id="timer-hour" style="--value:@hh;" aria-live="polite">@hh</span>
+                </span>
+                Giờ
+            </div>
+            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-5xl">
+                    <span id="timer-minute" style="--value:@mm;" aria-live="polite">@mm</span>
+                </span>
+                Phút
+            </div>
+            <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+                <span class="countdown font-mono text-5xl">
+                    <span id="timer-second" style="--value:@ss;" aria-live="polite">@ss</span>
+                </span>
+                Giây
+            </div>
+        </div>
+
+        <div class="question-content position-sticky top-5 left-5 z-3">
             <table class="item-table horizontal">
                 <thead>
-                    <tr>
-                        <th>品物</th>
-                        @for (int i = 1; i <= Model.Challenge.QuesData.Count; i++)
-                        {
-                            <th>@i</th>
-                        }
-                    </tr>
+                <tr id="item-header"><th>Vật phẩm</th></tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>重量 (w)</td>
-                        @foreach (var item in Model.Challenge.QuesData)
-                        {
-                            <td>@item.Weight</td>
-                        }
-                    </tr>
-                    <tr>
-                        <td>価値 (v)</td>
-                        @foreach (var item in Model.Challenge.QuesData)
-                        {
-                            <td>@item.Value</td>
-                        }
-                    </tr>
+                <tr id="item-weight-row"><td>Trọng lượng (w)</td></tr>
+                <tr id="item-value-row"><td>Giá trị (v)</td></tr>
                 </tbody>
+                <tfoot>
+                <tr><td id="capacity-cell" colspan="1"></td></tr>
+                </tfoot>
             </table>
         </div>
-        <div class="playing-container">
+
+        <div id="dp-board-game" class="playing-container z-1">
             <div class="dp-table-wrapper">
-                <table class="dp-table">
-                    <thead>
-                    <tr>
-                        <th>品物\容量</th>
-                        @for (int w = 0; w <= Model.Challenge.MaxCapacity; w++)
-                        {
-                            <th>@w</th>
-                        }
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @for (int i = 0; i <= Model.Challenge.QuesData.Count; i++)
-                    {
-                        <tr>
-                            <td>@i</td>
-                            @for (int w = 0; w <= Model.Challenge.MaxCapacity; w++)
-                            {
-                                @if (i == 0 || w == 0)
-                                {
-                                    <td>0</td>
-                                }
-                                else
-                                {
-                                    @if (Model.Challenge.DpBoardWithMiss[i][w] == -1)
-                                    {
-                                        <td>
-                                            <input onchange="answerChange(@i, @w, event)" value="0" class="dp-input-field" type="number">
-                                        </td>
-                                    }
-                                    else
-                                    {
-                                        <td>
-                                            <span class="dp-input-field">@Model.Challenge.DpBoardWithMiss[i][w]</span>
-                                        </td>
-                                    }
-                                }
-                            }
-                        </tr>
-                    }
-                    </tbody>
+                <table id="dp-table" class="dp-table" style="--col-count: 20">
+                    <thead><tr id="dp-header"><th style="min-width:200px">Vật Phẩm\Sức chứa</th></tr></thead>
+                    <tbody id="dp-body"></tbody>
                 </table>
             </div>
-            
         </div>
-        <div class="btn-container">
-            <button class="clean" onclick="cleanAnswer()">
-                <span>クリア</span>
-            </button>
-            <button class="complete" onclick="sendAnswer()">
-                <span>完了します</span>
-            </button>
+
+        <div id="choose-item-game" class="playing-container container">
+            <div class="row gy-5 m-5"></div>
+            <div class="knapsack-container mt-5 text-center">
+                <div id="knapsack" class="knapsack-img" ondrop="dropItem(event)" ondragover="allowDrop(event)">
+                    <img src="~/assets/mario_hat.png" alt="Bag" id="bag-image"/>
+                </div>
+                <p class="mt-3">
+                    ⚖️ Trọng lượng hiện tại: <span id="bag-weight">0</span><br/>
+                    💰 Giá trị hiện tại: <span id="bag-value">0</span>
+                </p>
+                <div id="bag-warning" class="text-danger fw-bold"></div>
+                <div class="mt-2">
+                    <button id="return-last-btn" class="btn btn-sm btn-warning" onclick="returnLastItem()">↩ Trả 1 món</button>
+                    <button id="return-all-btn" class="btn btn-sm btn-danger" onclick="returnAllItems()">🗑 Trả tất cả</button>
+                </div>
+            </div>
         </div>
+
+        <div class="btn-container" id="result-buttons"></div>
     </div>
 </div>
 
 @section Scripts {
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
 <script>
-    let countdown = @Model.countDown;
-    let challengeTimer = 0;
-    let answer = [];
-    const dpBoard = @Html.Raw(dpBoardJson);
+    // sử dụng JsonSerializer để nhúng string an toàn vào JS
+    const mode = @Html.Raw(JsonSerializer.Serialize(Model.Mode));
+    const roomIdFromServer = @Html.Raw(JsonSerializer.Serialize(Model.roomId)); // có thể null
+    const challengeId = @Html.Raw(JsonSerializer.Serialize(Model.Id));       // đây là challenge id (đề)
+    const difficult = @Html.Raw(JsonSerializer.Serialize(Model.Difficult));
+    let userId = @Html.Raw(JsonSerializer.Serialize(Model.UserId));
+    let username = @Html.Raw(JsonSerializer.Serialize(Model.FullName));
+    let isFinished = false;
+    let stage = "dp";
+    let answer;
+    let dpBoard;
+    let dpBoardWithMiss;
+    
+    // fallback nếu roomId không có ở server (lấy từ querystring)
+    let roomId = roomIdFromServer || (new URLSearchParams(window.location.search)).get("roomId") || "";
+    let currentHostId;
+    
+    if (!userId) userId = "guest-" + Math.floor(Math.random() * 10000);
+    if (!username) username = "Khách " + Math.floor(Math.random() * 1000);
 
-    const countdownEl = document.getElementById("countdown-dialog");
-    const startDialog = document.getElementById("start-dialog");
-    const gameContainer = document.getElementById("game-container");
-    const countdownContainer = document.getElementById("countdown-container");
+    let connection = null;
 
-    const hourEl = document.getElementById("timer-hour");
-    const minuteEl = document.getElementById("timer-minute");
-    const secondEl = document.getElementById("timer-second");
-
-    function updateTimerUI(seconds) {
-        const hh = Math.floor(seconds / 3600);
-        const mm = Math.floor((seconds % 3600) / 60);
-        const ss = seconds % 60;
-
-        hourEl.textContent = hh;
-        hourEl.setAttribute('aria-label', hh);
-        hourEl.style.setProperty('--value', hh);
-
-        minuteEl.textContent = mm;
-        minuteEl.setAttribute('aria-label', mm);
-        minuteEl.style.setProperty('--value', mm);
-
-        secondEl.textContent = ss;
-        secondEl.setAttribute('aria-label', ss);
-        secondEl.style.setProperty('--value', ss);
+    // ====== Khởi tạo danh sách answer DP ======
+    function initAnswerList(dp){
+        let answer = [];
+        for (let i = 0; i < dp.length; i++) {
+            for (let j = 0; j < dp[i].length; j++) {
+                if (dp[i][j] === -1){
+                    answer.push({ x:i, y:j, v:0 });
+                }
+            }
+        }
+        return answer;
     }
 
-    // ⏳ Countdown logic
-    const timer = setInterval(() => {
-        countdown--;
-        if (countdown >= 0) {
-            countdownEl.textContent = countdown;
-        } else {
-            clearInterval(timer);
-            countdownEl.style.display = "none";
-            startDialog.style.display = "block";
+    // ----- SignalR + room logic -----
+    async function startRoom() {
+        connection = new signalR.HubConnectionBuilder()
+            .withUrl("http://localhost:5119/roomhub")
+            .build();
 
-            setTimeout(() => {
-                countdownContainer.style.display = 'none';
-                gameContainer.style.display = 'flex';
-                challengeTimer = 0;
-                updateTimerUI(challengeTimer);
+        // Player list update
+        connection.on("PlayerListUpdated", (players, hostId) => {
+            currentHostId = hostId;
+            const list = document.getElementById("playerList");
+            list.innerHTML = "";
+            players.forEach(p => addUserToList(p.userId, p.username));
+            console.log(players);
+            const startBtn = document.getElementById("startGameBtn");
+            if (userId === hostId) {
+                startBtn.disabled = players.length < 2;
+                startBtn.style.display = "inline-block";
+            } else {
+                startBtn.style.display = "none";
+            }
+        });
 
-                setInterval(() => {
-                    challengeTimer++;
-                    updateTimerUI(challengeTimer);
-                }, 1000);
-            }, 1000);
+        // When server starts game -> show game UI
+        connection.on("GameStarted", (players) => {
+            localStorage.setItem("players", JSON.stringify(players));
+            
+            document.getElementById("room_container").classList.add("hidden");
+            document.getElementById("game-container").classList.remove("hidden");
+
+            // host sẽ generate và chia sẻ challenge; non-host sẽ chờ event ChallengeGenerated
+            const host = players.find(p => p.userId === currentHostId);
+            if (host && host.userId === userId) {
+                getChallenge();
+            }
+        });
+
+        // Khi host share challenge tới các client
+        connection.on("ChallengeGenerated", (challengeResponse) => {
+            console.log("📥 Nhận đề bài từ host (SignalR):", challengeResponse);
+            answer = initAnswerList(challengeResponse.dpBoardWithMiss);
+            dpBoard = challengeResponse.dpBoard;
+            dpBoardWithMiss = challengeResponse.dpBoardWithMiss;
+            localStorage.setItem("challenge", JSON.stringify(challengeResponse));
+            // tùy structure response: nếu bạn trả { challenge: { ... } } thì dùng .challenge
+            console.log(challengeResponse);
+            const payload = challengeResponse.challenge ?? challengeResponse;
+            buildTemplate(payload);
+        });
+
+        //Khi thay đổi đáp án thì đồng bộ với những người trong phòng
+        connection.on("CellAnswered", (payload) => {
+            console.log("📥 CellAnswered từ player khác:", payload);
+            applyCellAnswer(payload.x, payload.y, payload.v);
+        });
+
+        await connection.start();
+        console.log("✅ SignalR connected");
+
+        // Gọi JoinRoom với roomId (phải có roomId cho multiplay)
+        if (!roomId) {
+            console.warn("roomId trống khi JoinRoom; kiểm tra querystring hoặc server truyền roomId.");
         }
-    }, 1000);
+        await connection.invoke("JoinRoom", roomId, userId, username);
+    }
 
+    // nếu là multiplay thì startRoom(); single thì hiện thẳng game và gọi getChallenge
+    if (mode === "multiplay") {
+        startRoom();
+    } else if (mode === "single") {
+        document.getElementById("room_container")?.classList.add("hidden");
+        document.getElementById("game-container")?.classList.remove("hidden");
+        // nếu bạn muốn lấy challenge từ server theo challengeId
+        getChallenge();
+    }
+
+    document.getElementById("copyLinkBtn")?.addEventListener("click", () => {
+        const link = `${location.origin}/challenge/knap-sack/play/dynamic-board?roomId=${roomId}&difficult=${difficult}&mode=multiplay`;
+        navigator.clipboard.writeText(link).then(() => alert("Đã copy link mời!"));
+    });
+
+    document.getElementById("startGameBtn")?.addEventListener("click", async (e) => {
+        e.preventDefault();
+        if (!connection) return alert("Chưa kết nối room.");
+        await connection.invoke("StartGame", roomId, userId);
+    });
+
+    function addUserToList(uId, uName) {
+        const list = document.getElementById("playerList");
+        const li = document.createElement("li");
+        li.classList.add("list-group-item");
+        li.textContent = `${uName} (${uId})`;
+        list.appendChild(li);
+    }
+
+    // ===== Challenge generation / build =====
+    let challenge = null;
+
+    async function getChallenge() {
+        try {
+            // playerList cho server (single: chỉ mình; multiplay: lấy từ localStorage players)
+            let playerList = [];
+            if (mode === "single") {
+                playerList = [userId];
+            } else {
+                const storedPlayers = localStorage.getItem("players");
+                playerList = storedPlayers ? JSON.parse(storedPlayers).map(p => p.userId) : [];
+            }
+
+            // IMPORTANT: id query param = challengeId (đề). Không dùng roomId ở đây.
+            const response = await fetch(
+                `http://localhost:5119/api/challenge/generate?type=dp_board&difficulty=${encodeURIComponent(difficult)}&mode=${encodeURIComponent(mode)}&id=${encodeURIComponent(challengeId)}`,
+                {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(playerList)
+                }
+            );
+
+            if (!response.ok) throw new Error("❌ Lỗi khi gọi API: " + response.statusText);
+
+            const challengeResponse = await response.json();
+            console.log("📥 Challenge nhận được (API):", challengeResponse);
+
+            localStorage.setItem("challenge", JSON.stringify(challengeResponse));
+
+            // Host chia sẻ cho player khác (qua roomId)
+            if (mode === "multiplay" && connection) {
+                console.log("challengeResponse multiple",challengeResponse);
+                await connection.invoke("ShareChallenge", roomId, challengeResponse.challenge);
+            }
+
+            // Lấy payload thực tế (tùy structure API)
+            challenge = challengeResponse.challenge ?? challengeResponse;
+            buildTemplate(challenge);
+
+        } catch (err) {
+            console.error("🚨 Lỗi khi getChallenge:", err);
+        }
+    }
+
+    // build DOM từ challenge (items, dp board, cubes)
+    function buildTemplate(ch) {
+        if (!ch) return;
+        const headerRow = document.getElementById("item-header");
+        const weightRow = document.getElementById("item-weight-row");
+        const valueRow = document.getElementById("item-value-row");
+        const capacityCell = document.getElementById("capacity-cell");
+
+        headerRow.innerHTML = "<th>Vật phẩm</th>";
+        weightRow.innerHTML = "<td>Trọng lượng (w)</td>";
+        valueRow.innerHTML = "<td>Giá trị (v)</td>";
+
+        (ch.quesData || []).forEach((item, idx) => {
+            headerRow.innerHTML += `<th>${idx + 1}</th>`;
+            weightRow.innerHTML += `<td>${item.weight}</td>`;
+            valueRow.innerHTML += `<td>${item.value}</td>`;
+        });
+
+        capacityCell.setAttribute("colspan", (ch.quesData?.length || 0) + 1);
+        capacityCell.innerText = "Sức chứa : " + (ch.maxCapacity ?? "-");
+
+        // DP header & body
+        const dpHeader = document.getElementById("dp-header");
+        const dpBody = document.getElementById("dp-body");
+        dpHeader.innerHTML = `<th style="min-width:200px">Vật phẩm \\ Sức chứa</th>`;
+        for (let w = 0; w <= (ch.maxCapacity || 0); w++) {
+            dpHeader.innerHTML += `<th>${w}</th>`;
+        }
+
+        dpBody.innerHTML = "";
+        for (let i = 0; i <= (ch.quesData?.length || 0); i++) {
+            let rowHtml = `<tr><td>${i}</td>`;
+            for (let w = 0; w <= (ch.maxCapacity || 0); w++) {
+                const isMissing = (ch.dpBoardWithMiss && ch.dpBoardWithMiss[i] && ch.dpBoardWithMiss[i][w] === -1);
+                const trueValue = ch.dpBoard && ch.dpBoard[i] ? ch.dpBoard[i][w] : "";
+                const cellId = `dp-${i}-${w}`;
+
+                if (isMissing) {
+                    rowHtml += `
+                        <td id="${cellId}" class="dp-cell">
+                            <input type="number" class="dp-input-field" onchange="answerChange(${i}, ${w}, event)"/>
+                        </td>`;
+                } else {
+                    rowHtml += `
+                        <td id="${cellId}" class="dp-cell hidden-cell" data-value="${trueValue}">
+                            ${trueValue}
+                        </td>`;
+                }
+            }
+            rowHtml += "</tr>";
+            dpBody.innerHTML += rowHtml;
+        }
+
+        // Cube items
+        const cubeContainer = document.querySelector("#choose-item-game .row");
+        cubeContainer.innerHTML = "";
+        (ch.quesData || []).forEach(item => {
+            cubeContainer.innerHTML += `
+                <div class="col-2 d-flex justify-content-center">
+                    <div class="cube"
+                         id="cube-${item.id}"
+                         draggable="true"
+                         ondragstart="dragItem(event)"
+                         data-weight="${item.weight}"
+                         data-value="${item.value}">
+                        <div class="face front">
+                            <div class="item-info text-center">
+                                <span class="item-value">💰 ${item.value}</span>
+                                <span class="item-weight">⚖️ ${item.weight}</span>
+                            </div>
+                        </div>
+                        <div class="face back"></div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>`;
+        });
+    }
+
+    // ====== DP BOARD ======
     function answerChange(x, y, e) {
+        if (isFinished || stage !== "dp") return;
         const val = parseInt(e.target.value, 10) || 0;
         const existing = answer.find(a => a.x === x && a.y === y);
+        if (existing) existing.v = val;
+        else answer.push({ x, y, v: val });
 
-        if (existing) {
-            existing.v = val;
-        } else {
-            answer.push({ x, y, v: val });
+        if (val === dpBoard[x][y]) {
+            const cell = document.getElementById(`dp-${x}-${y}`);
+            cell.innerHTML = `<span class="dp-input-field correct">${val} ✅</span>`;
+            revealAllHiddenCellsWithValue(val);
         }
-    }
 
-    function cleanAnswer() {
-        const answers = document.querySelectorAll('.dp-input-field');
-        answers.forEach(el => {
-            el.value = '0';
-        });
-        // Reset answer array
-        for (let i = 0; i < answer.length; i++) {
-            for (let j = 0; j < answer[i].length; j++) {
-                answer[i][j] = 0;
-            }
+        // 🔑 check xem tất cả đã đúng chưa
+        const allCorrect = answer.every(a => a.v === dpBoard[a.x][a.y]);
+        if (allCorrect) {
+            unlockItemStage();
         }
-    }
 
-    async function sendAnswer() {
-        const diff = @Model.Challenge.Difficulty;
-        let maxScore;
-        let scorePerNum;
-        let standardCount;
-        if (diff === 0) {
-            maxScore = @Model.Taken[0].MaxScore - 50;
-            standardCount = 5;
-            
-        }else if(diff === 1){
-            maxScore = @Model.Taken[0].MaxScore - 100;
-            standardCount = 10;
-        }else{
-            maxScore = @Model.Taken[0].MaxScore - 200;
-            standardCount = 15;
-        }
-        scorePerNum = Math.floor(maxScore/standardCount);
-        
-        let correctCount = 0;
-
-        //Kiểm tra câu trả lời
-        answer.map(a => {
-            const x = a.x;
-            const y = a.y;
-            console.log("y",y);
-            console.log("x",x);
-            console.log("a.v",a.v);
-            console.log("dpBoard[x.y]",dpBoard[x][y]);
-            console.log("a.v === dpBoard[x.y]",a.v === dpBoard[x][y])
-            if (a.v === dpBoard[x][y]){
-                correctCount ++;
-                return {
-                    ...a,
-                    isCorrect: true
-                }
-            }
-            else{
-                return {
-                    ...a,
-                    isCorrect: false
-                }
-            }
-        })
-        
-        let finalScore;
-        if (diff === 0) {
-            finalScore = correctCount === standardCount ? maxScore + 50 : scorePerNum * correctCount;
-        }else if(diff === 1){
-            finalScore = correctCount === standardCount ? maxScore + 100 : scorePerNum * correctCount;
-        }else{
-            finalScore = correctCount === standardCount ? maxScore + 200 : scorePerNum * correctCount;
-        }
-        
-
-        const payload = {
-            SpendTime: challengeTimer,
-            TakenScore: finalScore,
-            UserAnswer: JSON.stringify(answer)
-        };
-
-        try {
-            const res = await fetch(`http://localhost:5119/api/take-challenge/save?id=@Model.Taken[0].Id`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(payload)
+        // 🔹 Gửi SignalR cho các player khác
+        if (mode === "multiplay" && connection) {
+            connection.invoke("SendCellAnswer", roomId, {
+                x: x,
+                y: y,
+                v: val,
+                userId: userId
             });
-
-            const data = await res.json();
-
-            if (res.ok) {
-                alert("🎉 Bài làm đã được lưu thành công!");
-            } else {
-                alert("❌ Lỗi khi lưu bài: " + data.message);
-            }
-        } catch (err) {
-            console.error("Fetch error:", err);
-            alert("❌ Có lỗi xảy ra khi gửi dữ liệu.");
         }
+    }
+
+    //Hàm cập nhật câu trả lời từ người chơi khác
+    function applyCellAnswer(x, y, val) {
+        // nếu ô chưa có thì tìm và điền
+        const cell = document.getElementById(`dp-${x}-${y}`);
+        if (!cell) return;
+
+        // nếu giá trị đúng
+        if (val === dpBoard[x][y]) {
+            cell.innerHTML = `<span class="dp-input-field correct">${val} ✅</span>`;
+            revealAllHiddenCellsWithValue(val);
+        }
+    }
+
+
+    function revealAllHiddenCellsWithValue(value) {
+        for (let i = 0; i < dpBoard.length; i++) {
+            for (let j = 0; j < dpBoard[i].length; j++) {
+                if (dpBoard[i][j] === value && dpBoardWithMiss[i][j] !== -1) {
+                    const cell = document.getElementById(`dp-${i}-${j}`);
+                    if (cell && cell.classList.contains("hidden-cell")) {
+                        cell.classList.remove("hidden-cell");
+                        cell.classList.add("revealed");
+                        cell.textContent = value;
+                    }
+                }
+            }
+        }
+    }
+    
+    function revealAllHiddenCells() {
+        for (let i = 0; i < dpBoard.length; i++) {
+            for (let j = 0; j < dpBoard[i].length; j++) {
+                if (dpBoardWithMiss[i][j] !== -1) {
+                    const cell = document.getElementById(`dp-${i}-${j}`);
+                    if (cell && cell.classList.contains("hidden-cell")) {
+                        cell.classList.remove("hidden-cell");
+                        cell.classList.add("revealed");
+                        cell.textContent = dpBoard[i][j];
+                    }
+                }
+            }
+        }
+    }
+
+    // ====== Khi DP xong → mở item game ======
+    function unlockItemStage() {
+        stage = "items";
+        revealAllHiddenCells();
+        document.getElementById("choose-item-game").style.display = "block";
     }
 </script>
 }
-

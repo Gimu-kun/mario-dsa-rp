@@ -13,8 +13,12 @@
             #ebebeb 20px);
 }
 
+#room_container{
+    display: block;
+}
+
 #countdown-container {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
@@ -29,7 +33,7 @@
 }
 
 #game-container {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -131,30 +135,55 @@
     transition: 0.3s;
 }
 
-.dp-table-wrapper{
-    max-width: 100%;
-    overflow-x: auto;
+.dp-table-wrapper {
+    overflow: auto;          /* Cho phép scroll ngang và dọc */
+    max-height: 600px;       /* Chiều cao tối đa của bảng */
+    max-width: 100%;         /* Không vượt màn hình */
+    border: 1px solid #ccc;
 }
 
 .dp-table {
     border-collapse: collapse;
-    width: 100%;
-    height: 100%;
+    width: 100%;             /* Khi ít cột: bảng căng full */
+    /*table-layout: fixed;*/ /* chia đều các cột */
     text-align: center;
     background: white;
     font-size: 18px;
+    min-width: 80px;         /* giữ tối thiểu mỗi cột */
 }
 
 .dp-table th,
 .dp-table td {
     border: 1px solid #ccc;
     padding: 8px;
-    width: 50px;
+    min-width: 80px;         /* mỗi cột >= 80px */
     height: 50px;
+    word-wrap: break-word;
 }
 
-.dp-table th {
-    background-color: #444;
+/* Freeze header ngang */
+.dp-table thead th {
+    position: sticky;
+    top: 0;
+    background: #444;   /* nền header */
+    color: #fff;
+    font-weight: bold;
+    z-index: 10;
+}
+
+/* Freeze cột đầu tiên */
+.dp-table td:first-child,
+.dp-table th:first-child {
+    position: sticky;
+    left: 0;
+    background: #f1f3f5; /* nền khác cho cột đầu */
+    z-index: 11;
+}
+
+/* Ô [0,0] nổi bật hơn */
+.dp-table thead th:first-child {
+    z-index: 12;
+    background: #333;
     color: #fff;
     font-weight: bold;
 }
@@ -165,9 +194,36 @@
 }
 
 .dp-input-field {
-    padding: 0 5px;
-    width: 100%;
-    min-width: 100px;
+    text-align: center;
+    width: 100%;             /* fit đúng chiều rộng ô */
+    box-sizing: border-box;  /* tránh tràn ra ngoài */
+    display: block;          /* input chiếm hết chiều rộng ô */
+}
+
+.hidden-cell {
+    background-color: #f5f5f5;
+    color: transparent;
+    transition: all 0.3s ease;
+}
+
+.hidden-cell.revealed {
+    color: black;
+    font-weight: bold;
+    background-color: #e6ffe6;
+}
+
+.dp-input-field.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.dp-input-field.revealed {
+    background-color: #e0f7fa;
+    color: #00796b;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 #game-container .btn-container {
@@ -213,7 +269,6 @@
 .btn-container button::before {
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
@@ -243,3 +298,190 @@
 .btn-container button span {
     margin: 10px;
 }
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Căn giữa toàn màn hình */
+.congrats-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Chữ lớn và hiệu ứng shake */
+.congrats-text {
+    font-size: 3rem;
+    color: #00C851;
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+.congrats-sub {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #444;
+}
+
+/* Keyframes hiệu ứng shake */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.btn-ranking {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    background-color: #00C851;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ranking:hover {
+    background-color: #007e39;
+}
+
+
+.cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-15deg) rotateY(-15deg);
+}
+
+.face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.front  { transform: translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
+.back   { transform: rotateY(180deg) translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
+.right  { transform: rotateY(90deg) translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
+.left   { transform: rotateY(-90deg) translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
+.top    { transform: rotateX(90deg) translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
+
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.item-value {
+    color: #22c55e; /* xanh lá = lợi ích */
+    font-size: 1.2rem;
+}
+
+.item-weight {
+    color: #f97316; /* cam = gánh nặng */
+    font-size: 1rem;
+}
+
+.knapsack-img {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+}
+
+.knapsack-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scaleY(-1);
+}
+
+.fly-to-bag {
+    position: fixed; /* quan trọng: dùng fixed để tính theo viewport */
+    z-index: 9999;
+    pointer-events: none;
+    width: 60px; /* thu nhỏ lại chút để bay đẹp hơn */
+    height: 60px;
+    animation: flyToBag 0.6s ease forwards;
+}
+
+.fly-to-bag {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    width: 60px;
+    height: 60px;
+    --dx: 0px; /* mặc định */
+    --dy: 0px; /* mặc định */
+    animation: flyToBag 0.6s ease forwards;
+}
+
+@keyframes flyToBag {
+    from {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translate(var(--dx, 0), var(--dy, 0)) scale(0.2);
+        opacity: 0;
+    }
+}
+
+.fly-back {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    width: 60px;
+    height: 60px;
+    --dx: 0px;
+    --dy: 0px;
+    animation: flyBack 0.6s ease forwards;
+}
+
+@keyframes flyBack {
+    from {
+        transform: translate(0, 0) scale(0.2);
+        opacity: 0.8;
+    }
+    to {
+        transform: translate(var(--dx, 0), var(--dy, 0)) scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
+

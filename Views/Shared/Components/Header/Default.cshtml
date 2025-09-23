@@ -2,16 +2,17 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <link rel="stylesheet" href="~/css/header.style.css">
+
 <nav class="navbar">
     <div class="logo-container">
         <img class="logo" src="~/assets/black-logo.png" alt="">
     </div>
     <ul class="links">
         <div class="navbar__links__decor left"></div>
-        <a class="links__item" asp-page="/Index">主頁</a>
-        <a class="links__item">概要</a>
-        <a class="links__item">連絡</a>
-        <a class="links__item">支待</a>
+        <a class="links__item" asp-page="/Index">Trang chủ</a>
+        <a class="links__item">Về MarioDSA</a>
+        <a class="links__item">Liên lạc</a>
+        <a class="links__item">Hỗ trợ</a>
         <div class="navbar__links__decor right"></div>
     </ul>
     @if(@Model.IsLogin){
@@ -26,9 +27,9 @@
                     <span class="navbar__welcome">@Model.FullName</span>
                 </div>
                 <!--
-                    <form method="post" asp-page="/Index" asp-page-handler="Logout" asp-antiforgery="true">
-                        <button type="submit" class="navbar__btn logout">ログアウト</button>
-                    </form>
+                <form method="post" asp-page="/Index" asp-page-handler="Logout" asp-antiforgery="true">
+                    <button type="submit" class="navbar__btn logout">ログアウト</button>
+                </form>
                 -->
                 <div class="navbar__btn-container__decor right"></div>
             </div>
@@ -37,10 +38,10 @@
         <div class="navbar__btn-container">
             <div class="navbar__btn-container__decor left"></div>
             <a class="navbar__btn register" asp-area="" asp-page="/Auth/auth" asp-route-view="register">
-                登録
+                Đăng ký
             </a>
             <a class="navbar__btn login" asp-page="/Auth/auth" asp-route-view="login">
-                ログイン
+                Đăng nhập
             </a>
             <div class="navbar__btn-container__decor right"></div>
         </div>

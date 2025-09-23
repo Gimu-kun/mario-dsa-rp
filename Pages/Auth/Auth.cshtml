@@ -36,26 +36,26 @@
     @if (isLogin)
     {
         <form method="post" asp-page-handler="Login" class="form">
-            <h2 class="form__title">ログイン</h2>
+            <h2 class="form__title">Đăng nhập</h2>
             <div class="form__fields">
-                <input asp-for="Username" class="form__field" id="username_si" type="text" placeholder="アカウント" />
-                <input asp-for="Passwords" class="form__field" id="passwords_si" type="password" placeholder="パスワード" />
-                <button type="submit" class="form__btn theme__mario">行くぞ!</button>
-                <p class="form__article">アカウントがないか? <a asp-page="/auth" asp-route-view="register">即刻アカウント登録する</a></p>
-                <a class="form__article" href="">パスワードが忘れの場合? </a>
+                <input asp-for="Username" class="form__field" id="username_si" type="text" placeholder="Tên tài khoản" />
+                <input asp-for="Passwords" class="form__field" id="passwords_si" type="password" placeholder="Mật khẩu" />
+                <button type="submit" class="form__btn theme__mario">Vào ngay thôi!</button>
+                <p class="form__article">Bạn không có tài khoản sao? <a asp-page="/auth" asp-route-view="register">Đăng ký ngay nhé!</a></p>
+                <a class="form__article" href="">Bạn quên mật khẩu? </a>
             </div>
         </form>
     }
     else
     {
         <form method="post" asp-page-handler="Register" class="form">
-            <h2 class="form__title">アカウント登録</h2>
+            <h2 class="form__title">Đăng ký</h2>
             <div class="form__fields">
-                <input asp-for="FullName" class="form__field" id="fullname_su" type="text" placeholder="名前" />
-                <input asp-for="Username" class="form__field" id="username_su" type="text" placeholder="アカウント" />
-                <input asp-for="Passwords" class="form__field" id="passwords_su" type="password" placeholder="パスワード" />
-                <button type="submit" class="form__btn theme__luigi">注冊し!</button>
-                <p>アカウントがあった? <a asp-page="/auth" asp-route-view="login">行くぞ！</a></p>
+                <input asp-for="FullName" class="form__field" id="fullname_su" type="text" placeholder="Họ và Tên" />
+                <input asp-for="Username" class="form__field" id="username_su" type="text" placeholder="Tên tài khoản" />
+                <input asp-for="Passwords" class="form__field" id="passwords_su" type="password" placeholder="Mật khẩu" />
+                <button type="submit" class="form__btn theme__luigi">Đăng ký!</button>
+                <p>Đã có tài khoản? <a asp-page="/auth" asp-route-view="login">Bắt đầu ngay thôi！</a></p>
             </div>
         </form>
     }

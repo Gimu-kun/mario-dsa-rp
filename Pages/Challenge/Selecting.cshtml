@@ -8,86 +8,61 @@
 <link rel="stylesheet" href="~/css/selection.style.css">
 
 <div class="selecting-page">
-    <!-- Mode 1 -->
+    <!-- Mode 1: Single Player -->
     <div class="mode-container">
         <div class="mode-title-container">
             <div class="mode-title">
-                1人でプレイ <br> (マスタープランを作る)
+                Chơi đơn <br> Lập bảng quy hoạch động
             </div>
         </div>
         <div class="level-container">
             <a class="level-button easy" href="/challenge/knap-sack/play/dynamic-board?difficult=easy&mode=single&id=@id">
-                易しい
+                Dễ
             </a>
             <a class="level-button advance" href="/challenge/knap-sack/play/dynamic-board?difficult=medium&mode=single&id=@id">
-                普通
+                Trung Bình
             </a>
             <a class="level-button hard" href="/challenge/knap-sack/play/dynamic-board?difficult=hard&mode=single&id=@id">
-                難しい
+                Khó
             </a>
         </div>
     </div>
 
-    <!-- Mode 2 -->
+    <!-- Mode 2: Multiplayer -->
     <div class="mode-container">
         <div class="mode-title-container">
             <div class="mode-title">
-                1人でプレイ<br>(ものを選べる)
+                Chơi 2 người<br>Lập bảng quy hoạch động
             </div>
         </div>
         <div class="level-container">
-            <a class="level-button easy" href="/challenge/knap-sack/play/choose-items?difficult=easy&mode=single&id=@id">
-                易しい
-            </a>
-            <a class="level-button advance" href="/challenge/knap-sack/play/choose-items?difficult=medium&mode=single&id=@id">
-                普通
-            </a>
-            <a class="level-button hard" href="/challenge/knap-sack/play/choose-items?difficult=hard&mode=single&id=@id">
-                難しい
-            </a>
-        </div>
-    </div>
-
-    <!-- Mode 3 -->
-    <div class="mode-container">
-        <div class="mode-title-container">
-            <div class="mode-title">
-                対人戦<br>(マスタープランを作る)
-            </div>
-        </div>
-        <div class="level-container">
-            <a class="level-button easy" href="/challenge/knap-sack/play/dynamic-board?difficult=easy&mode=duel">
-                易しい
-            </a>
-            <a class="level-button advance" href="/challenge/knap-sack/play/dynamic-board?difficult=medium&mode=duel">
-                普通
-            </a>
-            <a class="level-button hard" href="/challenge/knap-sack/play/dynamic-board?difficult=hard&mode=duel">
-                難しい
-            </a>
-        </div>
-    </div>
-
-    <!-- Mode 4 -->
-    <div class="mode-container">
-        <div class="mode-title-container">
-            <div class="mode-title">
-                対人戦 <br> (ものを選べる)
-            </div>
-        </div>
-        <div class="level-container">
-            <a class="level-button easy" href="/challenge/knap-sack/play/choose-items?difficult=easy&mode=duel">
-                易しい
-            </a>
-            <a class="level-button advance" href="/challenge/knap-sack/play/choose-items?difficult=medium&mode=duel">
-                普通
-            </a>
-            <a class="level-button hard" href="/challenge/knap-sack/play/choose-items?difficult=hard&mode=duel">
-                難しい
-            </a>
+            <button type="button" class="level-button easy" onclick="createRoom('easy')">Dễ</button>
+            <button type="button" class="level-button advance" onclick="createRoom('medium')">Trung Bình</button>
+            <button type="button" class="level-button hard" onclick="createRoom('hard')">Khó</button>
         </div>
     </div>
 
     <!-- Sprite Mario -->
     <div class="sprite"></div>
 </div>
+
+@section Scripts{
+<script>
+    // Tạo GUID cho Room
+    function guidv4() {
+        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+            const r = Math.random() * 16 | 0,
+                  v = c === 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+    }
+    
+    // Khi host tạo phòng multiplayer
+    function createRoom(difficult) {
+        const roomId = guidv4();
+        const Id = guidv4();
+        // Điều hướng đến trang dynamic-board, mode = multiplay
+        window.location.href = `/challenge/knap-sack/play/dynamic-board?id=${Id}&mode=multiplay&roomId=${roomId}&difficult=${difficult}`;
+    }
+</script>
+}

@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets/mario-dsa-rp.5xc7mma84s.bundle.scp.css"
     },
     {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/badge-B-001.png",
+      "PackagePath": "staticwebassets/assets/badge-B-001.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/badge-B-002.png",
+      "PackagePath": "staticwebassets/assets/badge-B-002.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/badge-B-003.png",
+      "PackagePath": "staticwebassets/assets/badge-B-003.png"
+    },
+    {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/bg-01.png",
       "PackagePath": "staticwebassets/assets/bg-01.png"
     },
@@ -17,6 +29,10 @@
       "PackagePath": "staticwebassets/assets/boss-rmbg.png"
     },
     {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/brown-badge.png",
+      "PackagePath": "staticwebassets/assets/brown-badge.png"
+    },
+    {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/castle-bg.jpg",
       "PackagePath": "staticwebassets/assets/castle-bg.jpg"
     },
@@ -27,6 +43,10 @@
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/download.png",
       "PackagePath": "staticwebassets/assets/download.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/gold-badge.png",
+      "PackagePath": "staticwebassets/assets/gold-badge.png"
     },
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/img-block-01.png",
@@ -141,6 +161,10 @@
       "PackagePath": "staticwebassets/assets/mario.png"
     },
     {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mario_hat.png",
+      "PackagePath": "staticwebassets/assets/mario_hat.png"
+    },
+    {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mask-jag.png",
       "PackagePath": "staticwebassets/assets/mask-jag.png"
     },
@@ -149,16 +173,20 @@
       "PackagePath": "staticwebassets/assets/princess-rmbg.png"
     },
     {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/ranking-cup.png",
+      "PackagePath": "staticwebassets/assets/ranking-cup.png"
+    },
+    {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/select-bg.jpg",
       "PackagePath": "staticwebassets/assets/select-bg.jpg"
     },
     {
-      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/sky-bg.jpg",
-      "PackagePath": "staticwebassets/assets/sky-bg.jpg"
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/silver-badge.png",
+      "PackagePath": "staticwebassets/assets/silver-badge.png"
     },
     {
-      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/videoframe_4238.png",
-      "PackagePath": "staticwebassets/assets/videoframe_4238.png"
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/sky-bg.jpg",
+      "PackagePath": "staticwebassets/assets/sky-bg.jpg"
     },
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/wallpaper.jpg",
@@ -219,6 +247,10 @@
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/js/room.js",
+      "PackagePath": "staticwebassets/js/room.js"
     },
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/js/site.js",

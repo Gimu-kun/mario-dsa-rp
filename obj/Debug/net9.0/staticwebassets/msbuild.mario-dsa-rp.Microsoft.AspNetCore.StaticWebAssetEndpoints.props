@@ -1,5 +1,41 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/badge-B-001.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\badge-B-001.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mC9vijLD91I7RsveK6H4EaFBHWay9eB2wcVg2Kc22lM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"26014"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022mC9vijLD91I7RsveK6H4EaFBHWay9eB2wcVg2Kc22lM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 04:05:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/badge-B-001.s3ljinri06.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\badge-B-001.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"s3ljinri06"},{"Name":"integrity","Value":"sha256-mC9vijLD91I7RsveK6H4EaFBHWay9eB2wcVg2Kc22lM="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/badge-B-001.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"26014"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022mC9vijLD91I7RsveK6H4EaFBHWay9eB2wcVg2Kc22lM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 04:05:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/badge-B-002.3x9gsc5dbm.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\badge-B-002.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3x9gsc5dbm"},{"Name":"integrity","Value":"sha256-N3Iw4IeHf9JNlY4yjKwmZGse6JmiXklatvfvLSQd6gk="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/badge-B-002.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"32065"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022N3Iw4IeHf9JNlY4yjKwmZGse6JmiXklatvfvLSQd6gk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 04:05:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/badge-B-002.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\badge-B-002.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-N3Iw4IeHf9JNlY4yjKwmZGse6JmiXklatvfvLSQd6gk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"32065"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022N3Iw4IeHf9JNlY4yjKwmZGse6JmiXklatvfvLSQd6gk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 04:05:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/badge-B-003.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\badge-B-003.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fDHsLi8Mnm4GVEhzrEAugI807ut5pAzK8cLZBZ/UZ1k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"33765"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022fDHsLi8Mnm4GVEhzrEAugI807ut5pAzK8cLZBZ/UZ1k=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 04:05:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/badge-B-003.wnuxo4no2g.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\badge-B-003.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wnuxo4no2g"},{"Name":"integrity","Value":"sha256-fDHsLi8Mnm4GVEhzrEAugI807ut5pAzK8cLZBZ/UZ1k="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/badge-B-003.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"33765"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022fDHsLi8Mnm4GVEhzrEAugI807ut5pAzK8cLZBZ/UZ1k=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 04:05:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/bg-01.8qzdkwph86.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\bg-01.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -36,6 +72,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"snk91icqnu"},{"Name":"integrity","Value":"sha256-2DnGwFg3M\u002BEyjzoQDF9oYFhfwBCoB9z\u002BrIcHCX7rOis="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/boss-rmbg.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"384984"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00222DnGwFg3M\u002BEyjzoQDF9oYFhfwBCoB9z\u002BrIcHCX7rOis=\u0022"},{"Name":"Last-Modified","Value":"Sun, 07 Sep 2025 09:36:54 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/brown-badge.dmzgol4v60.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\brown-badge.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dmzgol4v60"},{"Name":"integrity","Value":"sha256-VaRuAW54Cth5TWUjaLcXwZLEyQD\u002BOhKnSekIT4Lr3DM="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/brown-badge.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"83961"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022VaRuAW54Cth5TWUjaLcXwZLEyQD\u002BOhKnSekIT4Lr3DM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 03:37:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/brown-badge.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\brown-badge.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VaRuAW54Cth5TWUjaLcXwZLEyQD\u002BOhKnSekIT4Lr3DM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"83961"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022VaRuAW54Cth5TWUjaLcXwZLEyQD\u002BOhKnSekIT4Lr3DM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 03:37:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/castle-bg.aqukzpd8vi.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\castle-bg.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -71,6 +119,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OzOfoe936l3wGL8owZtFw0SWlzHFM6Kotv/jDM0M/YQ="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"13981"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022OzOfoe936l3wGL8owZtFw0SWlzHFM6Kotv/jDM0M/YQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 06 Sep 2025 14:25:47 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/gold-badge.g9g0a4q5pz.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\gold-badge.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"g9g0a4q5pz"},{"Name":"integrity","Value":"sha256-VAzP/2dsJo99FZmYUcDeaODmdugx2yTopvfBiFsurlQ="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/gold-badge.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"99328"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022VAzP/2dsJo99FZmYUcDeaODmdugx2yTopvfBiFsurlQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 03:37:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/gold-badge.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\gold-badge.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VAzP/2dsJo99FZmYUcDeaODmdugx2yTopvfBiFsurlQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"99328"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022VAzP/2dsJo99FZmYUcDeaODmdugx2yTopvfBiFsurlQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 03:37:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/img-block-01.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img-block-01.png'))</AssetFile>
@@ -408,6 +468,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x837vob3j1"},{"Name":"integrity","Value":"sha256-z6QpbBdaKJOWGcnQpC6mSDx62tvMVLS7f8WAqkGLJd4="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/mario.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2568737"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022z6QpbBdaKJOWGcnQpC6mSDx62tvMVLS7f8WAqkGLJd4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 06 Sep 2025 14:25:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/mario_hat.fensh2u9f8.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\mario_hat.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fensh2u9f8"},{"Name":"integrity","Value":"sha256-d34w3/gfk/9L\u002BzevM\u002BSY2OC2gFpLV9bm9OS2LZWTfcU="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/mario_hat.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"167381"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022d34w3/gfk/9L\u002BzevM\u002BSY2OC2gFpLV9bm9OS2LZWTfcU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 17 Sep 2025 06:16:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/mario_hat.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\mario_hat.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-d34w3/gfk/9L\u002BzevM\u002BSY2OC2gFpLV9bm9OS2LZWTfcU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"167381"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022d34w3/gfk/9L\u002BzevM\u002BSY2OC2gFpLV9bm9OS2LZWTfcU=\u0022"},{"Name":"Last-Modified","Value":"Wed, 17 Sep 2025 06:16:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/mask-jag.i3degl9zte.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\mask-jag.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -432,6 +504,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LB1WeCs1Tq8XGKYENM\u002Bbz\u002B9AQv7IZNxMErhVNK5cO\u002BQ="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"193929"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022LB1WeCs1Tq8XGKYENM\u002Bbz\u002B9AQv7IZNxMErhVNK5cO\u002BQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 07 Sep 2025 09:38:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/ranking-cup.fvnh8m3vc4.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\ranking-cup.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fvnh8m3vc4"},{"Name":"integrity","Value":"sha256-G6MWOh67rOVRwnZe4TEQD21Q93LrGqblZhlzDiciH5g="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/ranking-cup.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"170183"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022G6MWOh67rOVRwnZe4TEQD21Q93LrGqblZhlzDiciH5g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 03:41:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/ranking-cup.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\ranking-cup.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-G6MWOh67rOVRwnZe4TEQD21Q93LrGqblZhlzDiciH5g="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"170183"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022G6MWOh67rOVRwnZe4TEQD21Q93LrGqblZhlzDiciH5g=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 03:41:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/select-bg.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\select-bg.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -444,6 +528,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"p6kdvj8f2j"},{"Name":"integrity","Value":"sha256-j22VZODdT2qxf8qFYSft5otYXJH0mXXgUvDfaFGQAA0="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/select-bg.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"142194"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022j22VZODdT2qxf8qFYSft5otYXJH0mXXgUvDfaFGQAA0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 11 Sep 2025 09:21:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/silver-badge.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\silver-badge.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IBNXqamr/ezfj5xaLU\u002BvAddUnVABS5Y1cJvadsH\u002BplU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"77155"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022IBNXqamr/ezfj5xaLU\u002BvAddUnVABS5Y1cJvadsH\u002BplU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 03:37:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/silver-badge.s98ka35s04.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\silver-badge.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"s98ka35s04"},{"Name":"integrity","Value":"sha256-IBNXqamr/ezfj5xaLU\u002BvAddUnVABS5Y1cJvadsH\u002BplU="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/silver-badge.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"77155"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022IBNXqamr/ezfj5xaLU\u002BvAddUnVABS5Y1cJvadsH\u002BplU=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 03:37:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/sky-bg.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\sky-bg.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -455,18 +551,6 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lfuh6j26fv"},{"Name":"integrity","Value":"sha256-UUavcUJsgCcYpIWyVihDrdW30\u002B3C2mcFVTLSorb6Hpg="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/sky-bg.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"177483"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022UUavcUJsgCcYpIWyVihDrdW30\u002B3C2mcFVTLSorb6Hpg=\u0022"},{"Name":"Last-Modified","Value":"Sat, 13 Sep 2025 07:15:34 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/videoframe_4238.glg5stlr1a.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videoframe_4238.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"glg5stlr1a"},{"Name":"integrity","Value":"sha256-RCO8r/h4UfBSEVmp69xB19zKNZGm0OvV7JbaSL2py5w="},{"Name":"label","Value":"_content/mario-dsa-rp/assets/videoframe_4238.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"582916"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022RCO8r/h4UfBSEVmp69xB19zKNZGm0OvV7JbaSL2py5w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 11 Sep 2025 08:30:37 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/videoframe_4238.png">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\videoframe_4238.png'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RCO8r/h4UfBSEVmp69xB19zKNZGm0OvV7JbaSL2py5w="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"582916"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022RCO8r/h4UfBSEVmp69xB19zKNZGm0OvV7JbaSL2py5w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 11 Sep 2025 08:30:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/assets/wallpaper.1um9es8pai.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\wallpaper.jpg'))</AssetFile>
@@ -540,17 +624,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91\u002Bc2q8="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4272"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022EMjeYpwXEdrEO4wNsPCpIw190Dr5Uz8DqLlx91\u002Bc2q8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 12 Sep 2025 16:02:32 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/dynamic-board.style.3wyolahtyb.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dynamic-board.style.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3wyolahtyb"},{"Name":"integrity","Value":"sha256-o7OBkMAl10QonR\u002BBXE3Mjd4rtbIahcMEfHdy\u002Bc03vs4="},{"Name":"label","Value":"_content/mario-dsa-rp/css/dynamic-board.style.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4354"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022o7OBkMAl10QonR\u002BBXE3Mjd4rtbIahcMEfHdy\u002Bc03vs4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 15 Sep 2025 03:27:04 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/dynamic-board.style.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dynamic-board.style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-o7OBkMAl10QonR\u002BBXE3Mjd4rtbIahcMEfHdy\u002Bc03vs4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4354"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022o7OBkMAl10QonR\u002BBXE3Mjd4rtbIahcMEfHdy\u002Bc03vs4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 15 Sep 2025 03:27:04 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL\u002BLz50/u0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"9862"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL\u002BLz50/u0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 23 Sep 2025 04:05:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/dynamic-board.style.qovdydocc0.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dynamic-board.style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qovdydocc0"},{"Name":"integrity","Value":"sha256-VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL\u002BLz50/u0="},{"Name":"label","Value":"_content/mario-dsa-rp/css/dynamic-board.style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9862"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VujTFEA4ymf8IQanQcps0x3WALGAERWVZqL\u002BLz50/u0=\u0022"},{"Name":"Last-Modified","Value":"Tue, 23 Sep 2025 04:05:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/footer.style.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\footer.style.css'))</AssetFile>
@@ -567,14 +651,14 @@
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/header.style.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\header.style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2879"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 09 Sep 2025 06:11:19 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9SRa4SZOvU3f7nM6DI6O\u002BviYRnSUVMYYr2PQNhmKCgI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2968"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229SRa4SZOvU3f7nM6DI6O\u002BviYRnSUVMYYr2PQNhmKCgI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 00:16:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/header.style.x3diof5r5y.css">
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/header.style.f7kr8tm56q.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\header.style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x3diof5r5y"},{"Name":"integrity","Value":"sha256-3dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA="},{"Name":"label","Value":"_content/mario-dsa-rp/css/header.style.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2879"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223dbcxp/VmaEk56B8GIVFjBxzF5WuldgyfukFQXJcnPA=\u0022"},{"Name":"Last-Modified","Value":"Tue, 09 Sep 2025 06:11:19 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"f7kr8tm56q"},{"Name":"integrity","Value":"sha256-9SRa4SZOvU3f7nM6DI6O\u002BviYRnSUVMYYr2PQNhmKCgI="},{"Name":"label","Value":"_content/mario-dsa-rp/css/header.style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2968"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229SRa4SZOvU3f7nM6DI6O\u002BviYRnSUVMYYr2PQNhmKCgI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 00:16:48 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/heroBanner.style.82a427u043.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\heroBanner.style.css'))</AssetFile>
@@ -603,14 +687,14 @@
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/selection.style.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\selection.style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2144"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 12 Sep 2025 08:34:05 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DlrYapToIJSgLNU7UbSyE7kWz/J6UQawwsnREeUxq9Q="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2152"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DlrYapToIJSgLNU7UbSyE7kWz/J6UQawwsnREeUxq9Q=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 06:48:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/selection.style.uozryvmzpt.css">
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/selection.style.y0pxtra6d0.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\selection.style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uozryvmzpt"},{"Name":"integrity","Value":"sha256-bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo="},{"Name":"label","Value":"_content/mario-dsa-rp/css/selection.style.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2144"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022bkuwNTYJM6ghHrqS3ooLAepzopH1kEsx0fpCyIpMqGo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 12 Sep 2025 08:34:05 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y0pxtra6d0"},{"Name":"integrity","Value":"sha256-DlrYapToIJSgLNU7UbSyE7kWz/J6UQawwsnREeUxq9Q="},{"Name":"label","Value":"_content/mario-dsa-rp/css/selection.style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2152"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DlrYapToIJSgLNU7UbSyE7kWz/J6UQawwsnREeUxq9Q=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 06:48:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/css/site.5zdil3cfya.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
@@ -647,6 +731,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Sat, 06 Sep 2025 14:18:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/js/room.h6qzgs8zk2.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\room.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"h6qzgs8zk2"},{"Name":"integrity","Value":"sha256-Sa9kByglAttUCEvSaakghJdn6IndEm2Wu3FM2OsDQYY="},{"Name":"label","Value":"_content/mario-dsa-rp/js/room.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1531"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Sa9kByglAttUCEvSaakghJdn6IndEm2Wu3FM2OsDQYY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 21 Sep 2025 15:16:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/js/room.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\room.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Sa9kByglAttUCEvSaakghJdn6IndEm2Wu3FM2OsDQYY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1531"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Sa9kByglAttUCEvSaakghJdn6IndEm2Wu3FM2OsDQYY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 21 Sep 2025 15:16:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/mario-dsa-rp/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

@@ -1,69 +1,74 @@
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Text.Json;     // Cho JsonSerializer
-using System.Text;          // Cho Encoding.UTF8
-using System.Net.Http;      // Cho StringContent
-using mario_dsa_rp.Models;
 
 namespace mario_dsa_rp.Namespace
 {
-    public class DynamicBoardModel(IHttpClientFactory httpClientFactory) : PageModel
+    public class DynamicBoardModel : PageModel
     {
-        private readonly IHttpClientFactory _httpClientFactory = httpClientFactory;
-
-        public ChallengeDto Challenge { get; set; }
-        
-        public List<TakenDto> Taken { get; set; }
-
-        [BindProperty(SupportsGet = true)]
-        public string Difficult { get; set; }
-        [BindProperty(SupportsGet = true)]
-        public string Mode { get; set; }
-        [BindProperty(SupportsGet = true)]
-        public string Id { get; set; }
-
-        [BindProperty]
-        public int countDown { get; set; } = 3;
-
+        private readonly IHttpClientFactory _httpClientFactory;
+        public string? UserId { get; set; }
+        public string? FullName { get; set; }
+        public string? HostId { get; set; }
+        public string? Mode { get; set; }
+        public string? Difficult { get; set; }
+        public string? Id { get; set; }         // <-- challenge id (đề)
+        public string? roomId { get; set; }     // <-- room id (phòng multiplayer)
         public int challengeTimer { get; set; } = 0;
 
-        public string userId;
-        
-        public async Task OnGet()
+        public DynamicBoardModel(IHttpClientFactory httpClientFactory)
         {
-            userId = HttpContext.Session.GetString("uid");
-            await getChallenge();
+            _httpClientFactory = httpClientFactory;
         }
-        public async Task getChallenge()
+
+        // NOTE: đổi về Task (không dùng async void). Nhận cả id (challenge id) và roomId (phòng) từ querystring
+        public async Task OnGetAsync(string? mode, string? difficult, string? id, string? roomId = null)
         {
-            var client = _httpClientFactory.CreateClient();
-            var userIds = new string[] { userId };
-            var jsonContent = JsonSerializer.Serialize(userIds);
-            var json = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+            Mode = mode;
+            Difficult = difficult;
+            Id = id;             // đây là challenge id (đề) từ querystring ?id=...
+            this.roomId = roomId; // đây là room id (nếu có) từ querystring ?roomId=...
+
+            // session info (nếu có)
+            HostId = HttpContext.Session.GetString("hostId");
+            UserId = HttpContext.Session.GetString("uid");
+
+            await GetUserInfo(); // lấy thêm từ token nếu có
+        }
+
+        private async Task GetUserInfo()
+        {
+            var token = HttpContext.Session.GetString("JwtToken");
+            if (string.IsNullOrEmpty(token)) return;
+
             try
             {
-                var response = await client.PostAsync($"http://localhost:5119/api/challenge/generate?type=dp_board&difficulty={Difficult}&mode={Mode}&id={Id}", json);
-                if (response.IsSuccessStatusCode)
+                var client = _httpClientFactory.CreateClient();
+                var response = await client.GetAsync($"http://localhost:5119/api/users/token-verify/{token}");
+                if (!response.IsSuccessStatusCode) return;
+
+                var json = await response.Content.ReadAsStringAsync();
+                var result = JsonSerializer.Deserialize<VerifyTokenResult>(json, new JsonSerializerOptions
                 {
-                    var jsonString = await response.Content.ReadAsStringAsync();
-                    var options = new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true // <-- đây là chìa khóa
-                    };
-                    var challengeResponse = JsonSerializer.Deserialize<ChallengeResponseDto>(jsonString, options);
-                    Challenge = challengeResponse?.Challenge;
-                    Taken =  challengeResponse?.Taken;
-                    Console.WriteLine("Calling getChallenge with userId = " + userId);
-                    Console.WriteLine("Response status: " + response.StatusCode);
-                    Console.WriteLine("Response content: " + jsonString);
+                    PropertyNameCaseInsensitive = true
+                });
+
+                if (result?.Success == true)
+                {
+                    FullName = result.FullName;
+                    UserId = result.UserId;
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                Console.WriteLine("Failed----------------------------");
-                Console.WriteLine("lỗi : " + ex);
+                // swallow or log - không block page render
             }
+        }
+
+        public class VerifyTokenResult
+        {
+            public bool Success { get; set; }
+            public string UserId { get; set; } = "";
+            public string FullName { get; set; } = "";
         }
     }
 }
