@@ -1,0 +1,107 @@
+@page "/challenge_history"
+@model HistoryModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Lịch sử thử thách";
+}
+
+<div class="w-100 h-100 min-vh-100 p-5 bg-white">
+    <h2 class="mb-4 text-center text-uppercase fw-bold">Lịch sử thử thách</h2>
+    <ul class="nav nav-tabs overflow-auto flex-nowrap w-full" id="myTab" role="tablist" style="white-space: nowrap;">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(Model.Mode == "single" && Model.Difficulty == "easy" ? "active" : "")">
+                <a class="text-decoration-none" href="/challenge_history?difficulty=easy&mode=single">
+                    Knap-sack 0/1 (Đơn - Dễ)
+                </a>
+            </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(Model.Mode == "single" && Model.Difficulty == "medium" ? "active" : "")">
+                <a class="text-decoration-none" href="/challenge_history?difficulty=medium&mode=single">
+                    Knap-sack 0/1 (Đơn - Trung bình)
+                </a>
+            </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(Model.Mode == "knapsack" && Model.Difficulty == "hard" ? "active" : "")">
+                <a class="text-decoration-none" href="/challenge_history?difficulty=hard&mode=single">
+                    Knap-sack 0/1 (Đơn - Khó)
+                </a>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(Model.Mode == "multiplay" && Model.Difficulty == "easy" ? "active" : "")">
+                <a class="text-decoration-none" href="/challenge_history?difficulty=easy&mode=multiplay">
+                    Knap-sack 0/1 (Đôi - Dễ)
+                </a>
+            </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(Model.Mode == "single" && Model.Difficulty == "medium" ? "active" : "")">
+                <a class="text-decoration-none" href="/challenge_history?difficulty=medium&mode=multiplay">
+                    Knap-sack 0/1 (Đôi - Trung bình)
+                </a>
+            </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link @(Model.Mode == "knapsack" && Model.Difficulty == "hard" ? "active" : "")">
+                <a class="text-decoration-none" href="/challenge_history?difficulty=hard&mode=multiplay">
+                    Knap-sack 0/1 (Đôi - Khó)
+                </a>
+            </button>
+        </li>
+    </ul>
+    <table class="table table-striped table-bordered shadow-sm">
+        <thead class="table-dark">
+        <tr>
+            <th>Thứ tự</th>
+            <th>Độ khó</th>
+            <th>Thời gian hoàn thành</th>
+            <th>Số điểm đạt được</th>
+            <th>Ngày chơi</th>
+            @if (Model.Mode == "single")
+            {
+                <th>Chơi lại</th>
+            }
+        </tr>
+        </thead>
+        <tbody>
+        @if (Model.HistoryItems.Any())
+        {
+            int index = 1;
+            foreach (var item in Model.HistoryItems)
+            {
+                <tr>
+                    <td>@index</td>
+                    <td>@Model.Difficulty</td>
+                    <td>@item.SpendTime giây</td>
+                    <td>@item.TakenScore / @item.MaxScore</td>
+                    <td>@item.TakenAt.ToString("dd/MM/yyyy HH:mm")</td>
+                    @if (Model.Mode == "single")
+                    {
+                        <td>
+                            <form method="get" asp-page="/challenge/knap-sack/play/dynamic-board">
+                                <input type="hidden" name="difficult" value="@Model.Difficulty" />
+                                <input type="hidden" name="mode" value="@Model.Mode" />
+                                <input type="hidden" name="id" value="@item.ChallengeId" />
+                                <button type="submit" class="btn btn-primary btn-sm">Chơi lại</button>
+                            </form>
+                        </td>
+                    }
+                </tr>
+                index++;
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6" class="text-center text-muted">Chưa có lịch sử thử thách nào.</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

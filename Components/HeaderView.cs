@@ -1,61 +1,69 @@
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 
-public class HeaderViewComponent : ViewComponent
+namespace mario_dsa_rp.Views.Shared.Components.Header
 {
-    private readonly IHttpClientFactory _httpClientFactory;
-
-    public HeaderViewComponent(IHttpClientFactory httpClientFactory)
+    public class HeaderViewComponent : ViewComponent
     {
-        _httpClientFactory = httpClientFactory;
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public HeaderViewComponent(IHttpClientFactory httpClientFactory)
+        {
+            _httpClientFactory = httpClientFactory;
+        }
+
+        public async Task<IViewComponentResult> InvokeAsync()
+        {
+            var model = new HeaderViewModel(_httpClientFactory);
+            await model.LoadAsync(HttpContext);
+            return View("Header", model);
+        }
     }
 
-    public async Task<IViewComponentResult> InvokeAsync()
+    public class HeaderViewModel
     {
-        var isLogin = false;
-        string? fullName = null;
+        public bool IsLogin { get; set; } = false;
+        public string? FullName { get; set; } = null;
 
-        var token = HttpContext.Session.GetString("JwtToken");
-        if (!string.IsNullOrEmpty(token))
+        private readonly IHttpClientFactory _httpClientFactory;
+
+        public HeaderViewModel(IHttpClientFactory httpClientFactory)
         {
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync($"http://localhost:5119/api/users/token-verify/{token}");
+            _httpClientFactory = httpClientFactory;
+        }
 
-            if (response.IsSuccessStatusCode)
+        public async Task LoadAsync(Microsoft.AspNetCore.Http.HttpContext httpContext)
+        {
+            string? token = httpContext.Session.GetString("JwtToken");
+            if (!string.IsNullOrEmpty(token))
             {
-                var json = await response.Content.ReadAsStringAsync();
-                var result = JsonSerializer.Deserialize<VerifyTokenResult>(json, new JsonSerializerOptions
+                var client = _httpClientFactory.CreateClient();
+                var response = await client.GetAsync($"http://localhost:5119/api/users/token-verify/{token}");
+                if (response.IsSuccessStatusCode)
                 {
-                    PropertyNameCaseInsensitive = true
-                });
+                    var json = await response.Content.ReadAsStringAsync();
+                    var result = JsonSerializer.Deserialize<VerifyTokenResult>(json, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
 
-                if (result?.Success == true)
-                {
-                    isLogin = true;
-                    fullName = result.FullName;
-                    HttpContext.Session.SetString("uid",result.UserId);
+                    if (result?.Success == true)
+                    {
+                        IsLogin = true;
+                        FullName = result.FullName;
+                        httpContext.Session.SetString("uid", result.UserId);
+                    }
                 }
             }
         }
-
-        return View(new HeaderViewModel
-        {
-            IsLogin = isLogin,
-            FullName = fullName
-        });
     }
-}
-public class HeaderViewModel
-{
-    public bool IsLogin { get; set; }
-    public string? FullName { get; set; }
-}
 
-public class VerifyTokenResult
-{
-    public bool Success { get; set; }
-    public string UserId { get; set; }
-    public string? Username { get; set; }
-    public string? FullName { get; set; }
-    public string? Message { get; set; }
+    public class VerifyTokenResult
+    {
+        public bool Success { get; set; }
+        public string UserId { get; set; } = null!;
+        public string? Username { get; set; }
+        public string? FullName { get; set; }
+        public string? Message { get; set; }
+    }
 }

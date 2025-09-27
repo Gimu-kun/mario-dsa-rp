@@ -1,17 +1,16 @@
-@model HeaderViewModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-
+@model mario_dsa_rp.Views.Shared.Components.Header.HeaderViewModel
 <link rel="stylesheet" href="~/css/header.style.css">
 
-<nav class="navbar">
+<nav class="navbar sticky-top">
     <div class="logo-container">
         <img class="logo" src="~/assets/black-logo.png" alt="">
     </div>
     <ul class="links">
         <div class="navbar__links__decor left"></div>
-        <a class="links__item" asp-page="/Index">Trang chủ</a>
-        <a class="links__item">Về MarioDSA</a>
-        <a class="links__item">Liên lạc</a>
+        <a class="links__item" asp-area="" asp-page="/Index">Trang chủ</a>
+        <a class="links__item" asp-area="" asp-page="/Challenge/Selecting">Thử thách Knapsack</a>
+        <a class="links__item" asp-page="/Ranking/ranking" asp-route-mode="level">Bảng xếp hạng</a>
         <a class="links__item">Hỗ trợ</a>
         <div class="navbar__links__decor right"></div>
     </ul>
@@ -23,14 +22,13 @@
             -->
             <div class="navbar__btn-container__box">
                 <div class="navbar__btn-container__decor left"></div>
-                <div class="navbar__btn register">
+                <div class="navbar__btn register" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="navbar__welcome">@Model.FullName</span>
                 </div>
-                <!--
-                <form method="post" asp-page="/Index" asp-page-handler="Logout" asp-antiforgery="true">
-                    <button type="submit" class="navbar__btn logout">ログアウト</button>
-                </form>
-                -->
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="/challenge_history?difficulty=easy&mode=single">Lịch sử thử thách</a></li>
+                    <li><a class="dropdown-item" href="/Auth/logout" onclick="return confirm('Bạn có chắc chắn muốn đăng xuất không?');">Đăng xuất</a></li>
+                </ul>
                 <div class="navbar__btn-container__decor right"></div>
             </div>
         </div>

@@ -4,7 +4,7 @@
 
 @{
 Layout = "_Layout";
-ViewData["Title"] = "Dynamic Board";
+ViewData["Title"] = "Knapsack";
 var hh = Math.Floor((decimal)Model.challengeTimer / 3600);
 var mm = Math.Floor((decimal)(Model.challengeTimer % 3600) / 60);
 var ss = Model.challengeTimer % 60;
@@ -24,10 +24,10 @@ var ss = Model.challengeTimer % 60;
     <!-- ROOM -->
     <div id="room_container" class="@(Model.Mode == "single" ? "hidden" : "")">
         <div class="container py-5">
-            <h2 class="mb-4 text-center">Phòng chơi 2 người</h2>
+            <h2 class="mb-4 text-center text-uppercase">Phòng chơi 2 người</h2>
             <div class="card shadow-sm p-4">
-                <p><strong>Mã phòng:</strong> <span id="roomIdDisplay">@Model.roomId ?? "-"</span></p>
-                <p><strong>Độ khó:</strong> <span>@Model.Difficult</span></p>
+                <p><strong>Mã phòng:</strong> <span id="roomIdDisplay">@Model.roomId</span></p>
+                <p><strong>Độ khó:</strong> <span class="text-capitalize">@Model.Difficult</span></p>
 
                 <h5>Danh sách người chơi</h5>
                 <ul id="playerList" class="list-group mb-3"></ul>
@@ -46,11 +46,16 @@ var ss = Model.challengeTimer % 60;
         <div class="score-box">
             <p class="text-xl font-bold text-success">Số điểm hiện tại: <span id="live-score"></span> điểm</p>
             <p class="text-xl font-bold text-primary">ID đề: <span id="challenge-id"></span></p>
-            </div>
+        </div>
 
         <div id="congrats-message" class="congrats-overlay">
             <h2 class="congrats-text">🎉 Chúc mừng！ 🎉</h2>
             <p class="congrats-sub">Bạn đã hoàn thành thử thách thành công!</p>
+        </div>
+
+        <div id="gameover-message" class="congrats-overlay">
+            <h2 class="congrats-text">🔥 Thử thách thất bại！ 🔥</h2>
+            <p class="congrats-sub">Bạn đã gục ngã lần này... nhưng đừng lo, chiến binh thực thụ sẽ quay lại mạnh mẽ hơn!</p>
         </div>
 
         <div class="question">
@@ -127,8 +132,8 @@ var ss = Model.challengeTimer % 60;
 </div>
 
 @section Scripts {
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
 <script>
     // sử dụng JsonSerializer để nhúng string an toàn vào JS
@@ -139,15 +144,17 @@ var ss = Model.challengeTimer % 60;
     let userId = @Html.Raw(JsonSerializer.Serialize(Model.UserId));
     let username = @Html.Raw(JsonSerializer.Serialize(Model.FullName));
     let isFinished = false;
+    let challengeStartAt;
     let stage = "dp";
     let answer;
-    let maxTime = 6000;
+    let maxTime = 99999;
     let dpBoard;
     let dpBoardWithMiss;
     let gameMaxScore = 0;
     let gameTimer;
-    let currentScore;
+    let currentScore = 99999;
     let takens;
+    let spendedTime;
     let removedItems = [];
     let bagWeight = 0;
     let bagValue = 0;
@@ -174,7 +181,7 @@ var ss = Model.challengeTimer % 60;
         secondEl.setAttribute('aria-label', ss);
         secondEl.style.setProperty('--value', ss);
     }
-    
+
     function startTimer(){
         const countDownContainer = document.getElementById("countdown-container");
         const countDownDialog = document.getElementById("countdown-dialog");
@@ -200,23 +207,30 @@ var ss = Model.challengeTimer % 60;
                     countDownContainer.classList.add("hidden");
                     //Hiện khối trò chơi
                     gameContainer.classList.remove("hidden");
-                    challengeTimer = 0;
-                    updateTimerUI(challengeTimer);
-                    gameTimer = setInterval(() => {
-                        challengeTimer++;
-                        currentScore = Math.max(0, Math.floor(gameMaxScore * (1 - challengeTimer / maxTime)));
-                        document.getElementById("live-score").textContent = currentScore;
-                        updateTimerUI(challengeTimer);
+                    challengeStartAt = new Date().toISOString();
+                    updateTimerUI(0);
+                    gameTimer = setInterval(async () => {
+                        let res = await fetch(`http://localhost:5119/api/challenge/timer?startTime=${challengeStartAt}`)
+                        if (res.status === 200) {
+                            let data = await res.json();
+                            spendedTime = data.elapsed;
+                            currentScore = Math.max(0, Math.floor(gameMaxScore * (1 - data.elapsed / maxTime)));
+                            document.getElementById("live-score").textContent = currentScore;
+                            updateTimerUI(data.elapsed);
+                            if (currentScore === 0){
+                                finishGame();
+                            }
+                        }
                     }, 1000);
                 }, 1000);
             }
         }, 1000);
     }
-    
+
     // fallback nếu roomId không có ở server (lấy từ querystring)
     let roomId = roomIdFromServer || (new URLSearchParams(window.location.search)).get("roomId") || "";
     let currentHostId;
-    
+
     if (!userId) userId = "guest-" + Math.floor(Math.random() * 10000);
     if (!username) username = "Khách " + Math.floor(Math.random() * 1000);
 
@@ -260,7 +274,7 @@ var ss = Model.challengeTimer % 60;
         // When server starts game -> show game UI
         connection.on("GameStarted", (players) => {
             localStorage.setItem("players", JSON.stringify(players));
-            
+
             document.getElementById("room_container").classList.add("hidden");
             startTimer()
             // host sẽ generate và chia sẻ challenge; non-host sẽ chờ event ChallengeGenerated
@@ -278,8 +292,9 @@ var ss = Model.challengeTimer % 60;
             dpBoardWithMiss = challengeResponse.challenge.dpBoardWithMiss;
             gameMaxScore = maxScore;
             maxCapacity = challengeResponse.challenge.maxCapacity;
-            resultItemsList =challengeResponse. challenge.resultItems;
+            resultItemsList =challengeResponse.challenge.resultItems;
             takens = challengeResponse.taken;
+            maxTime = challengeResponse.challenge.maxDuration;
             document.getElementById("challenge-id").innerHTML = challengeResponse.challenge.id;
             localStorage.setItem("challenge", JSON.stringify(challengeResponse.challenge));
             // tùy structure response: nếu bạn trả { challenge: { ... } } thì dùng .challenge
@@ -362,8 +377,7 @@ var ss = Model.challengeTimer % 60;
                 const storedPlayers = localStorage.getItem("players");
                 playerList = storedPlayers ? JSON.parse(storedPlayers).map(p => p.userId) : [];
             }
-
-            // IMPORTANT: id query param = challengeId (đề). Không dùng roomId ở đây.
+            console.log(`http://localhost:5119/api/challenge/generate?type=dp_board&difficulty=${encodeURIComponent(difficult)}&mode=${encodeURIComponent(mode)}&id=${encodeURIComponent(challengeId)}`);
             const response = await fetch(
                 `http://localhost:5119/api/challenge/generate?type=dp_board&difficulty=${encodeURIComponent(difficult)}&mode=${encodeURIComponent(mode)}&id=${encodeURIComponent(challengeId)}`,
                 {
@@ -384,6 +398,7 @@ var ss = Model.challengeTimer % 60;
             takens = challengeResponse.taken;
             localStorage.setItem("challenge", JSON.stringify(challengeResponse));
             maxCapacity = challengeResponse.challenge.maxCapacity;
+            maxTime = challengeResponse.challenge.maxDuration;
             resultItemsList = challengeResponse.challenge.resultItems;
             document.getElementById("challenge-id").innerHTML = challengeResponse.challenge.id;
             // Host chia sẻ cho player khác (qua roomId)
@@ -521,17 +536,17 @@ var ss = Model.challengeTimer % 60;
         const cell = document.getElementById(`dp-${x}-${y}`);
         console.log("cell",cell);
         if (!cell) return;
-        
+
         const existing = answer.find(a => a.x === x && a.y === y);
         if (existing) existing.v = val;
         console.log("existing",existing);
-        
+
         // nếu giá trị đúng
         if (val === dpBoard[x][y]) {
             cell.innerHTML = `<span class="dp-input-field correct">${val} ✅</span>`;
             revealAllHiddenCellsWithValue(val);
         }
-        
+
         // 🔑 check xem tất cả đã đúng chưa
         console.log("answer",answer);
         console.log("resultList",dpBoard);
@@ -557,7 +572,7 @@ var ss = Model.challengeTimer % 60;
             }
         }
     }
-    
+
     function revealAllHiddenCells() {
         for (let i = 0; i < dpBoard.length; i++) {
             for (let j = 0; j < dpBoard[i].length; j++) {
@@ -579,10 +594,10 @@ var ss = Model.challengeTimer % 60;
         revealAllHiddenCells();
         document.getElementById("choose-item-game").classList.remove("hidden");
     }
-    
+
     // ====== ITEM GAME (knapsack) ======
     function allowDrop(ev) { ev.preventDefault(); }
-    
+
     function dragItem(ev) {
         const cube = ev.target.closest('.cube') || ev.target;
         if (!cube) return;
@@ -634,7 +649,7 @@ var ss = Model.challengeTimer % 60;
         bagValue += v;
         document.getElementById("bag-weight").innerText = bagWeight;
         document.getElementById("bag-value").innerText = bagValue;
-        
+
         if (mode === "multiplay" && connection) {
             connection.invoke("SendItemDropped", roomId, {
                 operateUserId: userId,
@@ -658,7 +673,7 @@ var ss = Model.challengeTimer % 60;
 
         const w = parseInt(weight, 10);
         const v = parseInt(value, 10);
-        
+
         const originalCube = document.getElementById(elementId);
         console.log(originalCube)
         if (!originalCube) return;
@@ -710,17 +725,22 @@ var ss = Model.challengeTimer % 60;
             finishGame();
         }
 }
-
     // ====== Kết thúc game: gọi API ======
     async function finishGame() {
         if (isFinished) return;
         isFinished = true;
         clearInterval(gameTimer);
+        document.getElementById("return-last-btn").disabled = true;
+        document.getElementById("return-all-btn").disabled = true;
 
-        document.getElementById("congrats-message").style.display = "block";
-        setTimeout(() => { document.getElementById("congrats-message").style.display = "none"; }, 2000);
-        startConfetti();
-        
+        if (currentScore === 0){
+            document.getElementById("gameover-message").style.display = "block";
+            setTimeout(() => { document.getElementById("gameover-message").style.display = "none"; }, 3000);
+        }else{
+            document.getElementById("congrats-message").style.display = "block";
+            setTimeout(() => { document.getElementById("congrats-message").style.display = "none"; }, 2000);
+            startConfetti();
+        }
         const btnContainer = document.getElementById("result-buttons");
         btnContainer.innerHTML = '';
         const rankingBtn = document.createElement("button");
@@ -730,7 +750,7 @@ var ss = Model.challengeTimer % 60;
         btnContainer.appendChild(rankingBtn);
 
         const payload = {
-            SpendTime: challengeTimer,
+            SpendTime: spendedTime,
             TakenScore: Number(document.getElementById("live-score").textContent),
             UserAnswer: JSON.stringify({ dp: answer, items: removedItems.map(r => r.id) })
         };
@@ -746,7 +766,7 @@ var ss = Model.challengeTimer % 60;
                 body: JSON.stringify(payload)
             });
             if (res.ok) {
-                
+
             }
         } catch (err) {
             console.error("Fetch error:", err);
@@ -782,7 +802,7 @@ var ss = Model.challengeTimer % 60;
         document.getElementById("bag-weight").innerText = bagWeight;
         document.getElementById("bag-value").innerText = bagValue;
         document.getElementById("bag-warning").innerText = "";
-        
+
         // 🔹 phát sự kiện
         if (mode === "multiplay" && connection) {
             connection.invoke("SendReturnLastItem", roomId, {
