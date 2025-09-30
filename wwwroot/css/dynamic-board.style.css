@@ -389,12 +389,12 @@
     background-repeat: no-repeat;
 }
 
-.front  { transform: translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
-.back   { transform: rotateY(180deg) translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
-.right  { transform: rotateY(90deg) translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
-.left   { transform: rotateY(-90deg) translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
-.top    { transform: rotateX(90deg) translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
-.bottom { transform: rotateX(-90deg) translateZ(50px); background-image: url("../assets/block-bg.jpg"); }
+.front  { transform: translateZ(50px); background-image: url("../assets/item-bg.jpeg"); }
+.back   { transform: rotateY(180deg) translateZ(50px); background-image: url("../assets/item-bg.jpeg"); }
+.right  { transform: rotateY(90deg) translateZ(50px); background-image: url("../assets/item-bg.jpeg"); }
+.left   { transform: rotateY(-90deg) translateZ(50px); background-image: url("../assets/item-bg.jpeg"); }
+.top    { transform: rotateX(90deg) translateZ(50px); background-image: url("../assets/item-bg.jpeg"); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); background-image: url("../assets/item-bg.jpeg"); }
 
 
 .item-info {
@@ -425,7 +425,11 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transform: scaleY(-1);
+    transition: all 2s ease-in-out;
+}
+
+#bag-image .finish{
+    transform: translateX(100%);
 }
 
 .fly-to-bag {

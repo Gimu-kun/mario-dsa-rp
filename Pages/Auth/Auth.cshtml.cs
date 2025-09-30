@@ -28,8 +28,7 @@ namespace mario_dsa_rp.Namespace
                 Message = tempMessage;
             }
         }
-
-        // Handler đăng ký
+        
         public async Task<IActionResult> OnPostRegisterAsync()
         {
             if (string.IsNullOrWhiteSpace(Username) || string.IsNullOrWhiteSpace(Passwords) || string.IsNullOrWhiteSpace(FullName))

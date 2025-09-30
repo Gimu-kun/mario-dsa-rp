@@ -11,8 +11,8 @@ namespace mario_dsa_rp.Namespace
         public string? HostId { get; set; }
         public string? Mode { get; set; }
         public string? Difficult { get; set; }
-        public string? Id { get; set; }         // <-- challenge id (đề)
-        public string? roomId { get; set; }     // <-- room id (phòng multiplayer)
+        public string? Id { get; set; }
+        public string? roomId { get; set; } 
         public int challengeTimer { get; set; } = 0;
 
         public DynamicBoardModel(IHttpClientFactory httpClientFactory)
@@ -58,9 +58,9 @@ namespace mario_dsa_rp.Namespace
                     UserId = result.UserId;
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                // swallow or log - không block page render
+                Console.WriteLine(ex.Message);
             }
         }
 

@@ -85,7 +85,7 @@ var ss = Model.challengeTimer % 60;
             </div>
         </div>
 
-        <div class="question-content position-sticky top-5 left-5 z-3">
+        <div class="question-content position-sticky top-2 left-5 z-3">
             <table class="item-table horizontal">
                 <thead>
                 <tr id="item-header"><th>Vật phẩm</th></tr>
@@ -113,7 +113,7 @@ var ss = Model.challengeTimer % 60;
             <div class="row gy-5 m-5"></div>
             <div class="knapsack-container mt-5 text-center">
                 <div id="knapsack" class="knapsack-img" ondrop="dropItem(event)" ondragover="allowDrop(event)">
-                    <img src="~/assets/mario_hat.png" alt="Bag" id="bag-image"/>
+                    <img src="~/assets/mine-car.png" alt="Bag" id="bag-image"/>
                 </div>
                 <p class="mt-3">
                     ⚖️ Trọng lượng hiện tại: <span id="bag-weight">0</span><br/>
@@ -254,7 +254,7 @@ var ss = Model.challengeTimer % 60;
         connection = new signalR.HubConnectionBuilder()
             .withUrl("http://localhost:5119/roomhub")
             .build();
-
+    
         // Player list update
         connection.on("PlayerListUpdated", (players, hostId) => {
             currentHostId = hostId;
@@ -286,7 +286,6 @@ var ss = Model.challengeTimer % 60;
 
         // Khi host share challenge tới các client
         connection.on("ChallengeGenerated", (challengeResponse,maxScore) => {
-            console.log("📥 Nhận đề bài từ host (SignalR):", challengeResponse);
             answer = initAnswerList(challengeResponse.challenge.dpBoardWithMiss);
             dpBoard = challengeResponse.challenge.dpBoard;
             dpBoardWithMiss = challengeResponse.challenge.dpBoardWithMiss;
@@ -304,29 +303,24 @@ var ss = Model.challengeTimer % 60;
 
         //Khi thay đổi đáp án thì đồng bộ với những người trong phòng
         connection.on("CellAnswered", (payload) => {
-            console.log("📥 CellAnswered từ player khác:", payload);
             applyCellAnswer(payload.x, payload.y, payload.v);
         });
 
         connection.on("ItemDropped", (payload) => {
-            console.log("📥 ItemDropped từ player khác:", payload);
             applyDroppedItem(payload);
         });
 
         connection.on("ReturnLastItem", (payload) => {
             if (payload.userId === userId) return; // bỏ qua của mình
-            console.log("📥 ReturnLastItem từ player khác:",payload);
             applyReturnLastItem(payload.elementId);
         });
 
         connection.on("ReturnAllItems", (payload) => {
             if (payload.userId === userId) return;
-            console.log("📥 ReturnAllItems từ player khác:",payload);
             applyReturnAllItems(payload.items);
         });
 
         await connection.start();
-        console.log("✅ SignalR connected");
 
         // Gọi JoinRoom với roomId (phải có roomId cho multiplay)
         if (!roomId) {
@@ -369,7 +363,7 @@ var ss = Model.challengeTimer % 60;
 
     async function getChallenge() {
         try {
-            // playerList cho server (single: chỉ mình; multiplay: lấy từ localStorage players)
+            // playerList cho server
             let playerList = [];
             if (mode === "single") {
                 playerList = [userId];
@@ -387,10 +381,9 @@ var ss = Model.challengeTimer % 60;
                 }
             );
 
-            if (!response.ok) throw new Error("❌ Lỗi khi gọi API: " + response.statusText);
+            if (!response.ok) throw new Error("Lỗi khi gọi API: " + response.statusText);
 
             const challengeResponse = await response.json();
-            console.log("📥 Challenge nhận được (API):", challengeResponse);
             answer = initAnswerList(challengeResponse.challenge.dpBoardWithMiss);
             dpBoard = challengeResponse.challenge.dpBoard;
             dpBoardWithMiss = challengeResponse.challenge.dpBoardWithMiss;
@@ -412,7 +405,7 @@ var ss = Model.challengeTimer % 60;
             buildTemplate(challenge);
 
         } catch (err) {
-            console.error("🚨 Lỗi khi getChallenge:", err);
+            console.error("Lỗi khi getChallenge:", err);
         }
     }
 
@@ -481,10 +474,12 @@ var ss = Model.challengeTimer % 60;
                          ondragstart="dragItem(event)"
                          data-weight="${item.weight}"
                          data-value="${item.value}">
-                        <div class="face front">
+                        <div class="face front bg-white rounded">
                             <div class="item-info text-center">
-                                <span class="item-value">💰 ${item.value}</span>
-                                <span class="item-weight">⚖️ ${item.weight}</span>
+                                <div class="w-75 h-75 bg-white rounded-2">
+                                    <span class="item-value">💰 ${item.value}</span>
+                                    <span class="item-weight">⚖️ ${item.weight}</span>
+                                </div>
                             </div>
                         </div>
                         <div class="face back"></div>
@@ -513,13 +508,13 @@ var ss = Model.challengeTimer % 60;
             revealAllHiddenCellsWithValue(val);
         }
 
-        // 🔑 check xem tất cả đã đúng chưa
+        // check xem tất cả đã đúng chưa
         const allCorrect = answer.every(a => a.v === dpBoard[a.x][a.y]);
         if (allCorrect) {
             unlockItemStage();
         }
 
-        // 🔹 Gửi SignalR cho các player khác
+        // Gửi SignalR cho các player khác
         if (mode === "multiplay" && connection) {
             connection.invoke("SendCellAnswer", roomId, {
                 x: x,
@@ -547,7 +542,7 @@ var ss = Model.challengeTimer % 60;
             revealAllHiddenCellsWithValue(val);
         }
 
-        // 🔑 check xem tất cả đã đúng chưa
+        // check xem tất cả đã đúng chưa
         console.log("answer",answer);
         console.log("resultList",dpBoard);
         const allCorrect = answer.every(a => a.v === dpBoard[a.x][a.y]);
@@ -730,6 +725,7 @@ var ss = Model.challengeTimer % 60;
         if (isFinished) return;
         isFinished = true;
         clearInterval(gameTimer);
+        document.getElementById("bag-image").style.transform = "translateX(1000%)";
         document.getElementById("return-last-btn").disabled = true;
         document.getElementById("return-all-btn").disabled = true;
 
@@ -756,9 +752,7 @@ var ss = Model.challengeTimer % 60;
         };
 
         try {
-            console.log(takens);
             const takenId = takens.find(i => i.userId === userId);
-            console.log(takenId);
             if(!takenId) return;
             const res = await fetch(`http://localhost:5119/api/take-challenge/save?id=${takenId.id}`, {
                 method: "POST",
@@ -770,7 +764,7 @@ var ss = Model.challengeTimer % 60;
             }
         } catch (err) {
             console.error("Fetch error:", err);
-            alert("❌ Có lỗi xảy ra khi gửi dữ liệu.");
+            alert("Có lỗi xảy ra khi gửi dữ liệu.");
         }
 }
 
@@ -891,9 +885,6 @@ var ss = Model.challengeTimer % 60;
 
     function applyReturnAllItems(itemIds) {
         try {
-            console.log("🟢 applyReturnAllItems được gọi với:", itemIds);
-            console.log("📦 removedItems trước:", removedItems);
-
             removedItems = removedItems.filter(item => {
                 if (itemIds.includes(item.id)) {
                     console.log("↩️ Trả lại item:", item);
@@ -911,11 +902,8 @@ var ss = Model.challengeTimer % 60;
             document.getElementById("bag-weight").innerText = bagWeight;
             document.getElementById("bag-value").innerText = bagValue;
             document.getElementById("bag-warning").innerText = "";
-
-            console.log("📦 removedItems sau:", removedItems);
-            console.log("⚖️ bagWeight:", bagWeight, "💰 bagValue:", bagValue);
         } catch (err) {
-            console.error("❌ applyReturnAllItems bị lỗi:", err);
+            console.error("applyReturnAllItems bị lỗi:", err);
         }
     }
 </script>

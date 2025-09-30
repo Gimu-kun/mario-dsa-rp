@@ -26,9 +26,6 @@ public class HistoryModel : PageModel
     public async Task OnGetAsync()
     {
         UserId = HttpContext.Session.GetString("uid");
-        Console.WriteLine("------------------"+ UserId);
-        Console.WriteLine("------------------"+ Difficulty);
-        Console.WriteLine("------------------"+ Mode);
         if (string.IsNullOrEmpty(UserId))
         {
             RedirectToPage("/Index");

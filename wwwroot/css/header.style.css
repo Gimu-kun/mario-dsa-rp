@@ -6,6 +6,7 @@
     width: 100%;
     background-color: #ffffff;
     padding: 0 80px;
+    z-index: 9;
   }
   
   .logo-container{
@@ -18,7 +19,6 @@
   
   .logo{
     height: 250%;
-    object-fit: 200%;
     cursor: pointer;
   }
   
@@ -133,7 +133,7 @@
     font-size: 18px;
     font-weight: 700;
     background-color: var(--btn-primary-color);
-    color: var(--btn-primary-text-color);
+    color: var(--btn-primary-txt-color);
     text-decoration: none;
     transition: color .3s ease-in;
     white-space: nowrap;
@@ -151,3 +151,25 @@
     border-right: 1px solid var(--btn-primary-txt-color);
   }
   
+  
+  @media(max-width:820px){
+      .logo-container{
+          height: 50px;
+          overflow: hidden;
+      }
+      .logo{
+          height: 180px;
+      }
+      .navbar{
+          height: 200px;
+          flex-direction: column;
+          row-gap: 5px;
+          padding: 0 10px;
+          max-width: 100%;
+          justify-content: center;
+      }
+      .links__item,.navbar__btn{
+          font-size: 20px;
+          padding: 0 20px;
+      }
+  }

@@ -233,3 +233,13 @@
         transform: translateX(-110%);
     }
 }
+
+
+@media (max-width: 820px) {
+    .c-chara10{
+        display: none;
+    }
+    .c-scroll-txt-infi{
+        font-size: 200px;
+    }
+}

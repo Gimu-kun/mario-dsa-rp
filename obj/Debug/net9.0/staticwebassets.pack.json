@@ -129,6 +129,10 @@
       "PackagePath": "staticwebassets/assets/img-mario-04.png"
     },
     {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/item-bg.jpeg",
+      "PackagePath": "staticwebassets/assets/item-bg.jpeg"
+    },
+    {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/jean-bg.png",
       "PackagePath": "staticwebassets/assets/jean-bg.png"
     },
@@ -167,6 +171,10 @@
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mask-jag.png",
       "PackagePath": "staticwebassets/assets/mask-jag.png"
+    },
+    {
+      "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/mine-car.png",
+      "PackagePath": "staticwebassets/assets/mine-car.png"
     },
     {
       "Id": "/Users/lehieunghiem/Desktop/mario-dsa-rp/wwwroot/assets/princess-rmbg.png",
